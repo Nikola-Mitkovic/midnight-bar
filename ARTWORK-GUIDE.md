@@ -2,7 +2,7 @@
 
 ## Easiest path: one image file per drink
 
-1. For hearts, replace the included PNG; for other cards, prepare a WebP image of the drink illustration (a transparent background works best).
+1. For spades and hearts, replace the included PNG; for other cards, prepare a WebP image of the drink illustration (a transparent background works best).
 2. Use its exact filename from the table below. Filenames are lowercase and case-sensitive on GitHub Pages.
 3. In GitHub, open the `images` folder, choose **Add file → Upload files**, and upload it. Commit the change.
 4. Once Pages redeploys, refresh the site. That image appears on the menu card, in recipe details, and in the hero if it is Old Fashioned. The same path is reused everywhere.
@@ -23,23 +23,23 @@ Use `src: null` to deliberately keep SVG artwork for that drink. A per-drink ver
 
 ## Exact filenames
 
-Some IDs keep simplified spellings for compatibility (for example `pi-a-colada`). Use the names below exactly rather than guessing them. Hearts use included PNG overrides; all other cards default to WebP.
+Some IDs keep simplified spellings for compatibility (for example `pi-a-colada`). Use the names below exactly rather than guessing them. Spades and hearts use included PNG overrides; all other cards default to WebP.
 
 | Card | File in images/ |
 | --- | --- |
-| A ♠ Old Fashioned | `old-fashioned.webp` |
-| 2 ♠ Manhattan | `manhattan.webp` |
-| 3 ♠ Whiskey Sour | `whiskey-sour.webp` |
-| 4 ♠ Mint Julep | `mint-julep.webp` |
-| 5 ♠ Sazerac | `sazerac.webp` |
-| 6 ♠ Boulevardier | `boulevardier.webp` |
-| 7 ♠ Irish Coffee | `irish-coffee.webp` |
-| 8 ♠ Rusty Nail | `rusty-nail.webp` |
-| 9 ♠ Penicillin | `penicillin.webp` |
-| 10 ♠ Rob Roy | `rob-roy.webp` |
-| J ♠ New York Sour | `new-york-sour.webp` |
-| Q ♠ Godfather | `godfather.webp` |
-| K ♠ Blood and Sand | `blood-and-sand.webp` |
+| A ♠ Old Fashioned | `old-fashioned.png` |
+| 2 ♠ Manhattan | `manhattan.png` |
+| 3 ♠ Whiskey Sour | `whiskey-sour.png` |
+| 4 ♠ Mint Julep | `mint-julep.png` |
+| 5 ♠ Sazerac | `sazerac.png` |
+| 6 ♠ Boulevardier | `boulevardier.png` |
+| 7 ♠ Irish Coffee | `irish-coffee.png` |
+| 8 ♠ Rusty Nail | `rusty-nail.png` |
+| 9 ♠ Penicillin | `penicillin.png` |
+| 10 ♠ Rob Roy | `rob-roy.png` |
+| J ♠ New York Sour | `new-york-sour.png` |
+| Q ♠ Godfather | `godfather.png` |
+| K ♠ Blood and Sand | `blood-and-sand.png` |
 | A ♣ Dry Martini | `dry-martini.webp` |
 | 2 ♣ Gin & Tonic | `gin-tonic.webp` |
 | 3 ♣ Gimlet | `gimlet.webp` |

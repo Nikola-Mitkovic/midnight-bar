@@ -27,10 +27,10 @@ Use a plain text editor or GitHub's file editor. Each drink is a separate object
 
 ## Two-sided cards
 
-All 13 hearts now flip. `researched: true` plus a nonempty `detailedSteps` array enables the two-sided layout for any drink.
+All 13 spades and all 13 hearts now flip. `researched: true` plus a nonempty `detailedSteps` array enables the two-sided layout for any drink.
 
 - Front: `ingredients` (metric / ounce / ingredient triples), `shortMethod`, `tip`, and artwork.
-- Back: `detailedSteps`, `tools`, `learn`, `recipeVersion`, and `recipeSources` (`title`, HTTPS `url`, and `accessed`).
+- Back: `detailedSteps`, `tools`, `learn` (technique/ingredient lesson), `expect` (flavor, texture, optional pairing), `recipeVersion`, and `recipeSources` (`title`, HTTPS `url`, and `accessed`).
 - `measureNote` explains the unit convention. `steps` remains the preparation field for unresearched cards.
 
 To upgrade another suit, follow a hearts object, verify its source, and fill these fields. Preserve ingredient/step agreement. The backs explicitly explain recipe variants instead of silently mixing recipes. Update the reference exports separately.
