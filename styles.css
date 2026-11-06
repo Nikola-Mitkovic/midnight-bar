@@ -33,3 +33,8 @@ header{background:#441d29;max-width:none;padding-inline:max(6%,calc((100vw - 116
 
 /* Shared edition notes and suit-specific ink. */
 .black-suit .heart-rank{color:#292326}.expect-note{margin-top:15px;border-left-color:#d5ad76;background:#d5ad7615}.edition-actions{display:flex;gap:9px;flex-wrap:wrap}.edition-note{flex-wrap:wrap}.hero .custom-art{object-fit:contain}
+/* Quiet, fixed-size rotating showcase card. */
+.hero-controls{margin-top:19px;display:flex;gap:9px;flex-wrap:wrap;align-items:center}.hero-controls p{flex-basis:100%;margin:0 0 2px;font-size:10px;letter-spacing:1px;color:#c7b595}.hero-controls button{min-height:44px;padding:10px 13px;color:#e5cfaa;background:#482330;border:1px solid #ad895b;border-radius:5px;font-size:11px}.hero-controls button:hover{background:#643046}.featured-card{height:450px;min-height:450px}.featured-card .card-kicker{margin:13px 18px 8px;min-height:20px;line-height:1.5}.featured-card h2{font-size:28px;line-height:1.08;height:85px;display:flex;align-items:center;justify-content:center;overflow-wrap:normal;margin:0 4px}.featured-card .card-caption{line-height:1.5;margin:10px 20px;min-height:30px}.featured-card.red-suit .corner{color:#923d40}.featured-content{animation:hero-deal .5s ease-out}.ghost-card{height:450px}.hero-art{min-height:505px}
+@keyframes hero-deal{from{opacity:.3}to{opacity:1}}
+@media(max-width:600px){.hero-controls{justify-content:center}.hero-art{min-height:500px}}
+@media(prefers-reduced-motion:reduce){.featured-content{animation:none}}

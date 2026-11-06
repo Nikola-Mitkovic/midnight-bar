@@ -1,6 +1,6 @@
 # The Midnight Bar — 54 distinct recipes
 
-Spades and hearts have researched backs. See their source guides. Flavor and pairing notes are editorial suggestions.
+Clubs, spades, and hearts have researched backs. See their source guides. Flavor and pairing notes are editorial suggestions.
 
 ## A ♠ Old Fashioned
 
@@ -181,120 +181,178 @@ What to expect: Soft orange, rich cherry, and malty whisky, with herbal vermouth
 
 ## A ♣ Dry Martini
 
-- 75 ml (2.5 oz) gin
-- 15 ml (0.5 oz) dry vermouth
-- 1 (1) lemon twist or olive
+- 60 ml (2 oz) gin
+- 10 ml (0.33 oz) dry vermouth
+- To garnish (To garnish) lemon peel or green olive
 
-Stir the gin and vermouth with ice until cold. Strain into a chilled cocktail glass. Garnish with a lemon twist or olive.
+Stir gin and vermouth with ice; strain into a chilled martini glass. Finish with lemon oil or an olive.
+
+One thing to learn: Dry vermouth is an aromatized wine, not a spirit. Refrigerate it after opening to help preserve its fresh character.
+
+What to expect: Crisp, juniper-led, and very spirit-forward, with subtle herbal wine notes. Lemon brightens it; an olive adds a savory accent.
 
 ## 2 ♣ Gin & Tonic
 
-- 60 ml (2 oz) gin
-- 120 ml (4 oz) tonic water
+- 50 ml (1.67 oz) gin
+- 100 ml (3.33 oz) chilled tonic water
 - 1 (1) lime wedge
 
-Fill a highball glass with ice and add gin. Pour in tonic, stir gently, and garnish with lime.
+Pour gin over plenty of ice. Squeeze in lime, add tonic, and stir gently.
+
+One thing to learn: Tonic and soda water are different mixers. Tonic brings bitterness and usually sweetness; soda primarily adds dilution and bubbles.
+
+What to expect: Bright gin botanicals and lime against bittersweet tonic, with a crisp sparkling texture. Try with salty snacks or cucumber sandwiches.
 
 ## 3 ♣ Gimlet
 
-- 60 ml (2 oz) gin
-- 22.5 ml (0.75 oz) lime juice
-- 22.5 ml (0.75 oz) simple syrup
+- 50 ml (1.67 oz) gin
+- 25 ml (0.83 oz) fresh lime juice
+- 15 ml (0.5 oz) simple syrup
+- To garnish (To garnish) lime wheel
 
-Shake all ingredients with ice. Strain into a chilled coupe.
+Shake gin, lime, and syrup with ice. Fine-strain into a chilled coupe and garnish with lime.
+
+One thing to learn: Fresh-lime Gimlets use juice plus syrup; older versions use sweetened lime cordial. They are different recipes, not one-for-one substitutions.
+
+What to expect: A direct, bright lime sour with juniper underneath. Taut and refreshing, with enough sweetness to soften the citrus.
 
 ## 4 ♣ Tom Collins
 
-- 60 ml (2 oz) gin
-- 30 ml (1 oz) lemon juice
-- 15 ml (0.5 oz) simple syrup
-- To top (To top) soda water
-- 1 (1) lemon slice
+- 50 ml (1.67 oz) Old Tom gin
+- 25 ml (0.83 oz) fresh lemon juice
+- 15 ml (0.5 oz) rich sugar syrup (2:1)
+- To top (To top) chilled soda water
+- To garnish (To garnish) lemon wheel
 
-Shake gin, lemon, and syrup with ice, then strain over fresh ice in a tall glass. Top with soda water and garnish with lemon.
+Shake gin, lemon, and syrup with ice. Strain over fresh ice, top with soda, and garnish.
+
+One thing to learn: Rich syrup uses two parts sugar to one part water. It is sweeter per measure than 1:1 simple syrup, so do not swap equal volumes without adjusting.
+
+What to expect: Sparkling lemon with rounded gin botanicals: a long, bright drink with a gentle sweet edge. A good match for light grilled dishes.
 
 ## 5 ♣ Aviation
 
-- 60 ml (2 oz) gin
+- 45 ml (1.5 oz) gin
 - 15 ml (0.5 oz) maraschino liqueur
-- 7.5 ml (0.25 oz) crème de violette
-- 22.5 ml (0.75 oz) lemon juice
+- 15 ml (0.5 oz) fresh lemon juice
+- 1 barspoon (1 barspoon) crème de violette
+- Optional (Optional) maraschino cherry
 
-Shake all ingredients with ice. Strain into a chilled coupe.
+Shake all liquids with cracked ice; strain into a chilled coupe. Add a cherry if desired.
+
+One thing to learn: A barspoon is a small measure, not a full jigger. With floral liqueurs, a little extra can change the balance noticeably.
+
+What to expect: Tart lemon, cherry-kernel notes, and a delicate violet perfume over gin. The lavender shade varies with the violet liqueur.
 
 ## 6 ♣ Bee’s Knees
 
 - 60 ml (2 oz) gin
-- 22.5 ml (0.75 oz) lemon juice
-- 22.5 ml (0.75 oz) honey syrup
+- 22.5 ml (0.75 oz) fresh lemon juice
+- 22.5 ml (0.75 oz) honey syrup (2:1 honey to water)
+- To garnish (To garnish) lemon twist
 
-Shake all ingredients vigorously with ice. Strain into a chilled coupe.
+Shake gin, lemon, and honey syrup with ice. Fine-strain into a chilled coupe; add lemon twist.
+
+One thing to learn: Diluting honey into syrup helps it mix evenly. Thick honey straight from the jar can stick to cold ice instead of blending into the cocktail.
+
+What to expect: Floral honey softens fresh lemon while gin keeps the finish lively. Rounder than a Gimlet; try with a small piece of mild goat cheese.
 
 ## 7 ♣ The Last Word
 
 - 22.5 ml (0.75 oz) gin
-- 22.5 ml (0.75 oz) green Chartreuse
+- 22.5 ml (0.75 oz) Green Chartreuse
 - 22.5 ml (0.75 oz) maraschino liqueur
-- 22.5 ml (0.75 oz) lime juice
+- 22.5 ml (0.75 oz) fresh lime juice
 
-Shake all four ingredients hard with ice. Strain into a chilled coupe.
+Shake all four ingredients with ice; strain into a chilled coupe, without garnish.
+
+One thing to learn: Equal parts means equal measured volumes, not equally strong flavors. Measure carefully so the potent herbal liqueur does not overwhelm the lime.
+
+What to expect: Intensely herbal, tart, and lightly sweet, with a cherry-kernel finish. More complex and assertive than a simple gin sour.
 
 ## 8 ♣ Singapore Sling
 
-- 45 ml (1.5 oz) gin
-- 15 ml (0.5 oz) cherry liqueur
+- 30 ml (1 oz) gin
+- 15 ml (0.5 oz) cherry liqueur (Sangue Morlacco)
 - 7.5 ml (0.25 oz) Cointreau
-- 15 ml (0.5 oz) lime juice
-- To taste (To taste) pineapple juice
-- To top (To top) soda water
+- 7.5 ml (0.25 oz) Bénédictine
+- 120 ml (4 oz) fresh pineapple juice
+- 15 ml (0.5 oz) fresh lime juice
+- 10 ml (0.33 oz) grenadine
+- 1 dash (1 dash) Angostura bitters
+- To garnish (To garnish) pineapple wedge and cocktail cherry
 
-Shake gin, liqueurs, lime, and pineapple juice with ice. Strain into an ice-filled tall glass and top with soda.
+Shake all liquids with ice; strain into a hurricane glass over fresh ice and garnish.
+
+One thing to learn: Pineapple juice can make its own frothy top when shaken. You do not need egg white to create that light foam.
+
+What to expect: Juicy pineapple and cherry with lime brightness and subtle herbal depth. A fruity, tropical long drink; try alongside ginger-spiced food.
 
 ## 9 ♣ Vesper
 
-- 90 ml (3 oz) gin
-- 30 ml (1 oz) vodka
-- 15 ml (0.5 oz) Lillet Blanc
-- 1 (1) lemon twist
+- 45 ml (1.5 oz) gin
+- 15 ml (0.5 oz) vodka
+- 7.5 ml (0.25 oz) Lillet Blanc
+- To garnish (To garnish) lemon zest
 
-Shake gin, vodka, and Lillet with ice as directed on the card. Strain into a chilled cocktail glass and garnish with lemon.
+Shake gin, vodka, and Lillet with ice; strain into a chilled martini glass and add lemon zest.
+
+One thing to learn: Lillet Blanc is an aromatized wine aperitif, not dry vermouth. Using the named ingredient preserves this recipe’s balance.
+
+What to expect: Very spirit-forward, crisp, and citrus-scented, with a faint rounded wine sweetness. More forceful than a citrus sour.
 
 ## 10 ♣ White Lady
 
-- 60 ml (2 oz) gin
-- 22.5 ml (0.75 oz) Cointreau
-- 22.5 ml (0.75 oz) lemon juice
-- 1 (1) pasteurized egg white (optional)
+- 40 ml (1.33 oz) gin
+- 30 ml (1 oz) triple sec
+- 20 ml (0.67 oz) fresh lemon juice
 
-Combine ingredients; if using egg white, shake without ice first. Add ice, shake well, and strain into a chilled coupe.
+Shake gin, triple sec, and lemon with ice. Strain into a chilled coupe without garnish.
+
+One thing to learn: Triple sec supplies both orange flavor and sweetness here. Adding syrup as well would create a different balance.
+
+What to expect: Lemon-led and orange-bright, with gin underneath and a clean finish. This egg-free version has a lighter texture than a foamy White Lady.
 
 ## J ♣ Negroni
 
 - 30 ml (1 oz) gin
 - 30 ml (1 oz) Campari
-- 30 ml (1 oz) sweet vermouth
-- 1 (1) orange peel
+- 30 ml (1 oz) sweet red vermouth
+- To garnish (To garnish) half orange slice
 
-Stir gin, Campari, and vermouth with ice. Serve over fresh ice and garnish with orange peel.
+Build equal parts gin, Campari, and vermouth over ice. Stir gently and add orange.
+
+One thing to learn: Dilution is part of the recipe even when water is not listed. Stirring with ice softens and integrates this concentrated combination.
+
+What to expect: Bold bitter orange, sweet herbs, and juniper. The finish is distinctly bitter, not sour; salty olives or roasted nuts make a good contrast.
 
 ## Q ♣ French 75
 
 - 30 ml (1 oz) gin
-- 15 ml (0.5 oz) lemon juice
+- 15 ml (0.5 oz) fresh lemon juice
 - 15 ml (0.5 oz) simple syrup
-- 90 ml (3 oz) Champagne
+- 60 ml (2 oz) chilled Champagne
 
-Shake gin, lemon, and syrup with ice. Strain into a flute. Top slowly with chilled Champagne.
+Shake gin, lemon, and syrup with ice; strain into a flute. Add Champagne and stir gently.
+
+One thing to learn: Never shake sparkling wine. Add it after straining the still ingredients so the drink keeps its bubbles and the shaker stays unpressurized.
+
+What to expect: Crisp lemon, light gin botanicals, and fine wine bubbles. Bright and elegant, with sweetness balanced by citrus and dry Champagne.
 
 ## K ♣ Corpse Reviver #2
 
-- 22.5 ml (0.75 oz) gin
-- 22.5 ml (0.75 oz) Cointreau
-- 22.5 ml (0.75 oz) Lillet Blanc
-- 22.5 ml (0.75 oz) lemon juice
-- A rinse (A rinse) absinthe
+- 30 ml (1 oz) gin
+- 30 ml (1 oz) Cointreau
+- 30 ml (1 oz) Lillet Blanc
+- 30 ml (1 oz) fresh lemon juice
+- 1 dash (1 dash) absinthe
+- To garnish (To garnish) orange zest
 
-Rinse a chilled coupe with absinthe and discard excess. Shake the remaining ingredients with ice and strain into the glass.
+Shake all liquids with ice; strain into a chilled coupe and garnish with orange zest.
+
+One thing to learn: A dash of absinthe goes into the shaker in this version. That is different from rinsing the serving glass and discarding the excess.
+
+What to expect: Bright lemon and orange with soft wine notes and a delicate anise edge. Tart and aromatic, with a lighter impression than a Martini.
 
 ## A ♦ Cosmopolitan
 

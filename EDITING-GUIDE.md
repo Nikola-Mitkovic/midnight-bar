@@ -10,6 +10,7 @@ The website still opens directly from disk and runs on GitHub Pages without a bu
 | `artwork.js` | Optional image paths, alternate text, and image cache versions |
 | `images/` | Your uploaded artwork; see `ARTWORK-GUIDE.md` for every filename |
 | `illustrations.js` | Original SVG fallback drawings |
+| `hero.js` | Landing card shuffle interval and controls |
 | `app.js` | Filtering, recipe dialogs, and image loading behavior |
 | `styles.css` | Layout, color, typography |
 | `index.html` | Landing-page copy and category dropdown labels |
@@ -27,7 +28,7 @@ Use a plain text editor or GitHub's file editor. Each drink is a separate object
 
 ## Two-sided cards
 
-All 13 spades and all 13 hearts now flip. `researched: true` plus a nonempty `detailedSteps` array enables the two-sided layout for any drink.
+All 13 clubs, 13 spades, and 13 hearts now flip. `researched: true` plus a nonempty `detailedSteps` array enables the two-sided layout for any drink.
 
 - Front: `ingredients` (metric / ounce / ingredient triples), `shortMethod`, `tip`, and artwork.
 - Back: `detailedSteps`, `tools`, `learn` (technique/ingredient lesson), `expect` (flavor, texture, optional pairing), `recipeVersion`, and `recipeSources` (`title`, HTTPS `url`, and `accessed`).

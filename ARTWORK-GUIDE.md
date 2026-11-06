@@ -2,10 +2,10 @@
 
 ## Easiest path: one image file per drink
 
-1. For spades and hearts, replace the included PNG; for other cards, prepare a WebP image of the drink illustration (a transparent background works best).
+1. For clubs, spades, and hearts, replace the included PNG; for other cards, prepare a WebP image of the drink illustration (a transparent background works best).
 2. Use its exact filename from the table below. Filenames are lowercase and case-sensitive on GitHub Pages.
 3. In GitHub, open the `images` folder, choose **Add file → Upload files**, and upload it. Commit the change.
-4. Once Pages redeploys, refresh the site. That image appears on the menu card, in recipe details, and in the hero if it is Old Fashioned. The same path is reused everywhere.
+4. Once Pages redeploys, refresh the site. That image appears on the menu card, in recipe details, and in the hero whenever that drink is drawn. The same path is reused everywhere.
 
 To replace it later, upload a new image with the same filename into `images` and commit. You do not need to edit any JavaScript. If the browser retains the old photo, hard-refresh or open a private tab. For a deliberate cache refresh across visitors, change the optional version in `artwork.js`.
 
@@ -23,7 +23,7 @@ Use `src: null` to deliberately keep SVG artwork for that drink. A per-drink ver
 
 ## Exact filenames
 
-Some IDs keep simplified spellings for compatibility (for example `pi-a-colada`). Use the names below exactly rather than guessing them. Spades and hearts use included PNG overrides; all other cards default to WebP.
+Some IDs keep simplified spellings for compatibility (for example `pi-a-colada`). Use the names below exactly rather than guessing them. Clubs, spades, and hearts use included PNG overrides; all other cards default to WebP.
 
 | Card | File in images/ |
 | --- | --- |
@@ -40,19 +40,19 @@ Some IDs keep simplified spellings for compatibility (for example `pi-a-colada`)
 | J ♠ New York Sour | `new-york-sour.png` |
 | Q ♠ Godfather | `godfather.png` |
 | K ♠ Blood and Sand | `blood-and-sand.png` |
-| A ♣ Dry Martini | `dry-martini.webp` |
-| 2 ♣ Gin & Tonic | `gin-tonic.webp` |
-| 3 ♣ Gimlet | `gimlet.webp` |
-| 4 ♣ Tom Collins | `tom-collins.webp` |
-| 5 ♣ Aviation | `aviation.webp` |
-| 6 ♣ Bee’s Knees | `bee-s-knees.webp` |
-| 7 ♣ The Last Word | `the-last-word.webp` |
-| 8 ♣ Singapore Sling | `singapore-sling.webp` |
-| 9 ♣ Vesper | `vesper.webp` |
-| 10 ♣ White Lady | `white-lady.webp` |
-| J ♣ Negroni | `negroni.webp` |
-| Q ♣ French 75 | `french-75.webp` |
-| K ♣ Corpse Reviver #2 | `corpse-reviver-2.webp` |
+| A ♣ Dry Martini | `dry-martini.png` |
+| 2 ♣ Gin & Tonic | `gin-tonic.png` |
+| 3 ♣ Gimlet | `gimlet.png` |
+| 4 ♣ Tom Collins | `tom-collins.png` |
+| 5 ♣ Aviation | `aviation.png` |
+| 6 ♣ Bee’s Knees | `bee-s-knees.png` |
+| 7 ♣ The Last Word | `the-last-word.png` |
+| 8 ♣ Singapore Sling | `singapore-sling.png` |
+| 9 ♣ Vesper | `vesper.png` |
+| 10 ♣ White Lady | `white-lady.png` |
+| J ♣ Negroni | `negroni.png` |
+| Q ♣ French 75 | `french-75.png` |
+| K ♣ Corpse Reviver #2 | `corpse-reviver-2.png` |
 | A ♦ Cosmopolitan | `cosmopolitan.webp` |
 | 2 ♦ Moscow Mule | `moscow-mule.webp` |
 | 3 ♦ Bloody Mary | `bloody-mary.webp` |

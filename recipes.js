@@ -1,5 +1,5 @@
 'use strict';
-// Live recipe data. Spades and hearts have researched, two-sided cards.
+// Live recipe data. Three suits have researched, two-sided cards.
 const cocktails = [
   {
     "id": "old-fashioned",
@@ -1044,30 +1044,29 @@ const cocktails = [
     "method": "Stirred",
     "ingredients": [
       [
-        "75 ml",
-        "2.5 oz",
+        "60 ml",
+        "2 oz",
         "gin"
       ],
       [
-        "15 ml",
-        "0.5 oz",
+        "10 ml",
+        "0.33 oz",
         "dry vermouth"
       ],
       [
-        "1",
-        "1",
-        "lemon twist or olive"
+        "To garnish",
+        "To garnish",
+        "lemon peel or green olive"
       ]
     ],
     "steps": [
-      "Stir the gin and vermouth with ice until cold.",
-      "Strain into a chilled cocktail glass. Garnish with a lemon twist or olive."
+      "Stir gin and vermouth with ice; strain into a chilled martini glass. Finish with lemon oil or an olive."
     ],
     "description": "Clean, crisp gin with a whisper of dry vermouth.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "Clean, crisp gin with a whisper of dry vermouth.",
-    "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "glass": "Chilled martini glass",
+    "tip": "An olive and a twist are both excellent company. You need not invite both.",
     "tags": [
       "Spirit-forward",
       "Herbal"
@@ -1075,10 +1074,34 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Stir the gin and vermouth with ice until cold. Strain into a chilled cocktail glass. Garnish with a lemon twist or olive.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "dry-martini"
+    "shortMethod": "Stir gin and vermouth with ice; strain into a chilled martini glass. Finish with lemon oil or an olive.",
+    "detailedSteps": [
+      "Chill a martini glass while you measure the ingredients.",
+      "Pour gin and dry vermouth into a mixing glass filled with ice.",
+      "Stir smoothly for about 20–30 seconds, until cold and slightly diluted.",
+      "Strain into the empty chilled glass. Express lemon peel over the drink or add an olive."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Dry Martini",
+        "url": "https://iba-world.com/iba-cocktail/dry-martini/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "dry-martini",
+    "learn": "Dry vermouth is an aromatized wine, not a spirit. Refrigerate it after opening to help preserve its fresh character.",
+    "expect": "Crisp, juniper-led, and very spirit-forward, with subtle herbal wine notes. Lemon brightens it; an olive adds a savory accent.",
+    "recipeVersion": "IBA 60/10 ml replaces the photographed 75/15 ml. The art shows both garnish choices; use either.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Mixing glass",
+      "Barspoon",
+      "Strainer"
+    ]
   },
   {
     "id": "gin-tonic",
@@ -1092,14 +1115,14 @@ const cocktails = [
     "method": "Built",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "50 ml",
+        "1.67 oz",
         "gin"
       ],
       [
-        "120 ml",
-        "4 oz",
-        "tonic water"
+        "100 ml",
+        "3.33 oz",
+        "chilled tonic water"
       ],
       [
         "1",
@@ -1108,14 +1131,13 @@ const cocktails = [
       ]
     ],
     "steps": [
-      "Fill a highball glass with ice and add gin.",
-      "Pour in tonic, stir gently, and garnish with lime."
+      "Pour gin over plenty of ice. Squeeze in lime, add tonic, and stir gently."
     ],
     "description": "Botanical gin, lively tonic, and a squeeze of lime.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "Botanical gin, lively tonic, and a squeeze of lime.",
     "glass": "Highball glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "The bubbles worked hard to get here. Stir politely.",
     "tags": [
       "Refreshing",
       "Bitter",
@@ -1125,10 +1147,32 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Fill a highball glass with ice and add gin. Pour in tonic, stir gently, and garnish with lime.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "gin-tonic"
+    "shortMethod": "Pour gin over plenty of ice. Squeeze in lime, add tonic, and stir gently.",
+    "detailedSteps": [
+      "Fill a highball glass with fresh ice.",
+      "Measure in the gin. Squeeze a lime wedge over it and drop the wedge in.",
+      "Pour chilled tonic slowly down the inside of the glass.",
+      "Lift gently once or twice with a spoon to combine without flattening the bubbles."
+    ],
+    "recipeSources": [
+      {
+        "title": "Bombay Sapphire · Gin & Tonic",
+        "url": "https://www.bombaysapphire.com/gin-cocktails/bombay-sapphire-and-tonic/23153/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "gin-tonic",
+    "learn": "Tonic and soda water are different mixers. Tonic brings bitterness and usually sweetness; soda primarily adds dilution and bubbles.",
+    "expect": "Bright gin botanicals and lime against bittersweet tonic, with a crisp sparkling texture. Try with salty snacks or cucumber sandwiches.",
+    "recipeVersion": "Uses Bombay Sapphire’s 50/100 ml ratio. A highball replaces the source’s balloon glass to match the deck.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ]
   },
   {
     "id": "gimlet",
@@ -1142,30 +1186,34 @@ const cocktails = [
     "method": "Shaken",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "50 ml",
+        "1.67 oz",
         "gin"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
-        "lime juice"
+        "25 ml",
+        "0.83 oz",
+        "fresh lime juice"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
+        "15 ml",
+        "0.5 oz",
         "simple syrup"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "lime wheel"
       ]
     ],
     "steps": [
-      "Shake all ingredients with ice.",
-      "Strain into a chilled coupe."
+      "Shake gin, lime, and syrup with ice. Fine-strain into a chilled coupe and garnish with lime."
     ],
     "description": "A bright, clean balance of gin and lime.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "A bright, clean balance of gin and lime.",
     "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "Small glass, very clear intentions.",
     "tags": [
       "Citrusy",
       "Sour"
@@ -1173,10 +1221,34 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Shake all ingredients with ice. Strain into a chilled coupe.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "gimlet"
+    "shortMethod": "Shake gin, lime, and syrup with ice. Fine-strain into a chilled coupe and garnish with lime.",
+    "detailedSteps": [
+      "Chill a coupe and squeeze the lime just before mixing.",
+      "Measure gin, lime juice, and syrup into a shaker.",
+      "Add ice and shake firmly for about 10–15 seconds.",
+      "Strain through a cocktail strainer and fine sieve into the empty coupe. Add a lime wheel."
+    ],
+    "recipeSources": [
+      {
+        "title": "Plymouth Gin · Gimlet",
+        "url": "https://www.plymouthgin.com/en/cocktail/gimlet/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "gimlet",
+    "learn": "Fresh-lime Gimlets use juice plus syrup; older versions use sweetened lime cordial. They are different recipes, not one-for-one substitutions.",
+    "expect": "A direct, bright lime sour with juniper underneath. Taut and refreshing, with enough sweetness to soften the citrus.",
+    "recipeVersion": "Uses Plymouth Gin’s fresh-lime 50/25/15 ml formula, served up to retain the card’s coupe rather than over ice as in the source.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer",
+      "Fine sieve"
+    ]
   },
   {
     "id": "tom-collins",
@@ -1190,40 +1262,39 @@ const cocktails = [
     "method": "Shaken",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "gin"
+        "50 ml",
+        "1.67 oz",
+        "Old Tom gin"
       ],
       [
-        "30 ml",
-        "1 oz",
-        "lemon juice"
+        "25 ml",
+        "0.83 oz",
+        "fresh lemon juice"
       ],
       [
         "15 ml",
         "0.5 oz",
-        "simple syrup"
+        "rich sugar syrup (2:1)"
       ],
       [
         "To top",
         "To top",
-        "soda water"
+        "chilled soda water"
       ],
       [
-        "1",
-        "1",
-        "lemon slice"
+        "To garnish",
+        "To garnish",
+        "lemon wheel"
       ]
     ],
     "steps": [
-      "Shake gin, lemon, and syrup with ice, then strain over fresh ice in a tall glass.",
-      "Top with soda water and garnish with lemon."
+      "Shake gin, lemon, and syrup with ice. Strain over fresh ice, top with soda, and garnish."
     ],
     "description": "Tall, sparkling, and freshly lemony.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "Tall, sparkling, and freshly lemony.",
-    "glass": "Highball glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "glass": "Collins glass",
+    "tip": "Lemonade put on its best jacket.",
     "tags": [
       "Citrusy",
       "Refreshing",
@@ -1232,10 +1303,35 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Shake gin, lemon, and syrup with ice, then strain over fresh ice in a tall glass. Top with soda water and garnish with lemon.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "tom-collins"
+    "shortMethod": "Shake gin, lemon, and syrup with ice. Strain over fresh ice, top with soda, and garnish.",
+    "detailedSteps": [
+      "Measure Old Tom gin, lemon juice, and rich syrup into a shaker; keep the soda separate.",
+      "Add ice and shake for 10–15 seconds.",
+      "Fine-strain into a Collins glass filled with fresh ice, leaving room for soda.",
+      "Top with chilled soda, stir gently, and garnish with a lemon wheel."
+    ],
+    "recipeSources": [
+      {
+        "title": "Hayman’s Gin · Tom Collins",
+        "url": "https://www.haymansgin.com/cocktails/tomcollins/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "tom-collins",
+    "learn": "Rich syrup uses two parts sugar to one part water. It is sweeter per measure than 1:1 simple syrup, so do not swap equal volumes without adjusting.",
+    "expect": "Sparkling lemon with rounded gin botanicals: a long, bright drink with a gentle sweet edge. A good match for light grilled dishes.",
+    "recipeVersion": "Follows Hayman’s Old Tom 50/25/15 ml recipe with rich syrup. The illustrated lemon wheel replaces its lemon peel; soda is never shaken.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer",
+      "Fine sieve",
+      "Barspoon"
+    ]
   },
   {
     "id": "aviation",
@@ -1249,8 +1345,8 @@ const cocktails = [
     "method": "Shaken",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "45 ml",
+        "1.5 oz",
         "gin"
       ],
       [
@@ -1259,25 +1355,29 @@ const cocktails = [
         "maraschino liqueur"
       ],
       [
-        "7.5 ml",
-        "0.25 oz",
+        "15 ml",
+        "0.5 oz",
+        "fresh lemon juice"
+      ],
+      [
+        "1 barspoon",
+        "1 barspoon",
         "crème de violette"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
-        "lemon juice"
+        "Optional",
+        "Optional",
+        "maraschino cherry"
       ]
     ],
     "steps": [
-      "Shake all ingredients with ice.",
-      "Strain into a chilled coupe."
+      "Shake all liquids with cracked ice; strain into a chilled coupe. Add a cherry if desired."
     ],
     "description": "Floral violet, cherry, and lemon lifted by gin.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "Floral violet, cherry, and lemon lifted by gin.",
     "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "A little violet flies a long way.",
     "tags": [
       "Citrusy",
       "Herbal",
@@ -1286,10 +1386,34 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Shake all ingredients with ice. Strain into a chilled coupe.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "aviation"
+    "shortMethod": "Shake all liquids with cracked ice; strain into a chilled coupe. Add a cherry if desired.",
+    "detailedSteps": [
+      "Chill a coupe and measure the gin, maraschino, and lemon into a shaker.",
+      "Add one barspoon of crème de violette; it is a concentrated accent.",
+      "Add cracked ice and shake until the shaker feels cold.",
+      "Strain into the coupe, without serving ice. Add an optional cherry."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Aviation",
+        "url": "https://iba-world.com/iba-cocktail/aviation/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "aviation",
+    "learn": "A barspoon is a small measure, not a full jigger. With floral liqueurs, a little extra can change the balance noticeably.",
+    "expect": "Tart lemon, cherry-kernel notes, and a delicate violet perfume over gin. The lavender shade varies with the violet liqueur.",
+    "recipeVersion": "Uses IBA 45/15/15 ml plus one barspoon violette, rather than the stronger photographed proportions.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "bee-s-knees",
@@ -1310,23 +1434,27 @@ const cocktails = [
       [
         "22.5 ml",
         "0.75 oz",
-        "lemon juice"
+        "fresh lemon juice"
       ],
       [
         "22.5 ml",
         "0.75 oz",
-        "honey syrup"
+        "honey syrup (2:1 honey to water)"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "lemon twist"
       ]
     ],
     "steps": [
-      "Shake all ingredients vigorously with ice.",
-      "Strain into a chilled coupe."
+      "Shake gin, lemon, and honey syrup with ice. Fine-strain into a chilled coupe; add lemon twist."
     ],
     "description": "Honeyed gin with a lively lemon finish.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "Honeyed gin with a lively lemon finish.",
     "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "The bees handled the complicated ingredient.",
     "tags": [
       "Citrusy",
       "Sweet",
@@ -1335,10 +1463,34 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Shake all ingredients vigorously with ice. Strain into a chilled coupe.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "bee-s-knees"
+    "shortMethod": "Shake gin, lemon, and honey syrup with ice. Fine-strain into a chilled coupe; add lemon twist.",
+    "detailedSteps": [
+      "For the syrup, combine two parts honey with one part hot water, stir, and let cool. Measure only the syrup needed for this drink.",
+      "Add gin, lemon juice, and cooled honey syrup to a shaker.",
+      "Fill with ice and shake firmly until cold.",
+      "Fine-strain into a chilled coupe and express a lemon twist over the surface."
+    ],
+    "recipeSources": [
+      {
+        "title": "Barr Hill · Bee’s Knees",
+        "url": "https://www.barrhill.com/pages/bees-knees-cocktail",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "bee-s-knees",
+    "learn": "Diluting honey into syrup helps it mix evenly. Thick honey straight from the jar can stick to cold ice instead of blending into the cocktail.",
+    "expect": "Floral honey softens fresh lemon while gin keeps the finish lively. Rounder than a Gimlet; try with a small piece of mild goat cheese.",
+    "recipeVersion": "Follows Barr Hill’s lemon-and-honey version, matching the deck’s character. Its 2:1 honey syrup is specified; IBA lists a different version containing orange juice.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer",
+      "Fine sieve"
+    ]
   },
   {
     "id": "the-last-word",
@@ -1359,7 +1511,7 @@ const cocktails = [
       [
         "22.5 ml",
         "0.75 oz",
-        "green Chartreuse"
+        "Green Chartreuse"
       ],
       [
         "22.5 ml",
@@ -1369,18 +1521,17 @@ const cocktails = [
       [
         "22.5 ml",
         "0.75 oz",
-        "lime juice"
+        "fresh lime juice"
       ]
     ],
     "steps": [
-      "Shake all four ingredients hard with ice.",
-      "Strain into a chilled coupe."
+      "Shake all four ingredients with ice; strain into a chilled coupe, without garnish."
     ],
     "description": "Herbal, tart, and perfectly equal in measure.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "Herbal, tart, and perfectly equal in measure.",
     "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "Four voices. Nobody needs a louder microphone.",
     "tags": [
       "Citrusy",
       "Herbal",
@@ -1389,10 +1540,33 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Shake all four ingredients hard with ice. Strain into a chilled coupe.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "the-last-word"
+    "shortMethod": "Shake all four ingredients with ice; strain into a chilled coupe, without garnish.",
+    "detailedSteps": [
+      "Chill the coupe before measuring.",
+      "Add equal measures of gin, Green Chartreuse, maraschino, and lime to a shaker.",
+      "Fill with ice and shake firmly until thoroughly chilled.",
+      "Strain into the empty coupe and serve without garnish."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · The Last Word",
+        "url": "https://iba-world.com/iba-cocktail/last-word/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "the-last-word",
+    "learn": "Equal parts means equal measured volumes, not equally strong flavors. Measure carefully so the potent herbal liqueur does not overwhelm the lime.",
+    "expect": "Intensely herbal, tart, and lightly sweet, with a cherry-kernel finish. More complex and assertive than a simple gin sour.",
+    "recipeVersion": "Matches IBA’s four equal 22.5 ml measures and no-garnish serve.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "singapore-sling",
@@ -1401,19 +1575,19 @@ const cocktails = [
     "suit": "♣",
     "category": "gin",
     "spirit": "Gin",
-    "shape": "tall",
+    "shape": "hurricane",
     "color": "#d78e76",
     "method": "Shaken",
     "ingredients": [
       [
-        "45 ml",
-        "1.5 oz",
+        "30 ml",
+        "1 oz",
         "gin"
       ],
       [
         "15 ml",
         "0.5 oz",
-        "cherry liqueur"
+        "cherry liqueur (Sangue Morlacco)"
       ],
       [
         "7.5 ml",
@@ -1421,43 +1595,79 @@ const cocktails = [
         "Cointreau"
       ],
       [
+        "7.5 ml",
+        "0.25 oz",
+        "Bénédictine"
+      ],
+      [
+        "120 ml",
+        "4 oz",
+        "fresh pineapple juice"
+      ],
+      [
         "15 ml",
         "0.5 oz",
-        "lime juice"
+        "fresh lime juice"
       ],
       [
-        "To taste",
-        "To taste",
-        "pineapple juice"
+        "10 ml",
+        "0.33 oz",
+        "grenadine"
       ],
       [
-        "To top",
-        "To top",
-        "soda water"
+        "1 dash",
+        "1 dash",
+        "Angostura bitters"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "pineapple wedge and cocktail cherry"
       ]
     ],
     "steps": [
-      "Shake gin, liqueurs, lime, and pineapple juice with ice.",
-      "Strain into an ice-filled tall glass and top with soda."
+      "Shake all liquids with ice; strain into a hurricane glass over fresh ice and garnish."
     ],
-    "description": "A fruit-forward gin sling with cherry and pineapple.",
-    "label": "The gin collection",
-    "profile": "A fruit-forward gin sling with cherry and pineapple.",
-    "glass": "Highball glass",
-    "tip": "The photographed card leaves pineapple and soda quantities unspecified; adjust to your glass and taste.",
+    "description": "Pineapple, cherry, and lime with a quietly herbal gin base.",
+    "label": "The clubs collection",
+    "profile": "Pineapple, cherry, and lime with a quietly herbal gin base.",
+    "glass": "Hurricane glass",
+    "tip": "A long ingredient list, a very sociable result.",
     "tags": [
       "Citrusy",
       "Fruity",
-      "Tropical",
-      "Sparkling"
+      "Tropical"
     ],
     "categories": [
       "gin"
     ],
-    "shortMethod": "Shake gin, liqueurs, lime, and pineapple juice with ice. Strain into an ice-filled tall glass and top with soda.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "singapore-sling"
+    "shortMethod": "Shake all liquids with ice; strain into a hurricane glass over fresh ice and garnish.",
+    "detailedSteps": [
+      "Use a large shaker to leave room for the juice and ice. Measure in all liquid ingredients.",
+      "Fill with ice and shake firmly until cold; pineapple juice creates a light froth.",
+      "Strain into a hurricane glass over fresh ice, allowing room for the foamy top.",
+      "Add a pineapple wedge and cherry. No soda is added in this version."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Singapore Sling",
+        "url": "https://iba-world.com/iba-cocktail/singapore-sling/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "singapore-sling",
+    "learn": "Pineapple juice can make its own frothy top when shaken. You do not need egg white to create that light foam.",
+    "expect": "Juicy pineapple and cherry with lime brightness and subtle herbal depth. A fruity, tropical long drink; try alongside ginger-spiced food.",
+    "recipeVersion": "Uses the full IBA formula, adding Bénédictine, grenadine, bitters, and a measured pineapple portion to the simplified card. Fresh serving ice is our house presentation.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Large shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "vesper",
@@ -1471,35 +1681,34 @@ const cocktails = [
     "method": "Shaken",
     "ingredients": [
       [
-        "90 ml",
-        "3 oz",
+        "45 ml",
+        "1.5 oz",
         "gin"
-      ],
-      [
-        "30 ml",
-        "1 oz",
-        "vodka"
       ],
       [
         "15 ml",
         "0.5 oz",
+        "vodka"
+      ],
+      [
+        "7.5 ml",
+        "0.25 oz",
         "Lillet Blanc"
       ],
       [
-        "1",
-        "1",
-        "lemon twist"
+        "To garnish",
+        "To garnish",
+        "lemon zest"
       ]
     ],
     "steps": [
-      "Shake gin, vodka, and Lillet with ice as directed on the card.",
-      "Strain into a chilled cocktail glass and garnish with lemon."
+      "Shake gin, vodka, and Lillet with ice; strain into a chilled martini glass and add lemon zest."
     ],
     "description": "Gin, vodka, and Lillet in a bold, crisp pour.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "Gin, vodka, and Lillet in a bold, crisp pour.",
-    "glass": "Chilled coupe",
-    "tip": "This is a large, spirit-forward serving; use a suitably sized glass.",
+    "glass": "Chilled martini glass",
+    "tip": "A sharp suit with a lemon-yellow pocket square.",
     "tags": [
       "Spirit-forward",
       "Herbal"
@@ -1508,10 +1717,33 @@ const cocktails = [
       "gin",
       "vodka"
     ],
-    "shortMethod": "Shake gin, vodka, and Lillet with ice as directed on the card. Strain into a chilled cocktail glass and garnish with lemon.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "vesper"
+    "shortMethod": "Shake gin, vodka, and Lillet with ice; strain into a chilled martini glass and add lemon zest.",
+    "detailedSteps": [
+      "Chill a martini glass before mixing.",
+      "Measure gin, vodka, and Lillet Blanc into a shaker.",
+      "Add ice and shake until very cold, about 10–15 seconds.",
+      "Strain into the empty glass. Express lemon zest over the surface and add it."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Vesper",
+        "url": "https://iba-world.com/iba-cocktail/vesper/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "vesper",
+    "learn": "Lillet Blanc is an aromatized wine aperitif, not dry vermouth. Using the named ingredient preserves this recipe’s balance.",
+    "expect": "Very spirit-forward, crisp, and citrus-scented, with a faint rounded wine sweetness. More forceful than a citrus sour.",
+    "recipeVersion": "Uses IBA 45/15/7.5 ml, half the photographed card’s measures but the same proportions. Shaking follows this recipe’s specified method.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "white-lady",
@@ -1525,35 +1757,29 @@ const cocktails = [
     "method": "Shaken",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "40 ml",
+        "1.33 oz",
         "gin"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
-        "Cointreau"
+        "30 ml",
+        "1 oz",
+        "triple sec"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
-        "lemon juice"
-      ],
-      [
-        "1",
-        "1",
-        "pasteurized egg white (optional)"
+        "20 ml",
+        "0.67 oz",
+        "fresh lemon juice"
       ]
     ],
     "steps": [
-      "Combine ingredients; if using egg white, shake without ice first.",
-      "Add ice, shake well, and strain into a chilled coupe."
+      "Shake gin, triple sec, and lemon with ice. Strain into a chilled coupe without garnish."
     ],
     "description": "A silky gin sour with a touch of orange.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "A silky gin sour with a touch of orange.",
     "glass": "Chilled coupe",
-    "tip": "The card leaves optional egg-white quantity unspecified; one pasteurized white is a preparation suggestion.",
+    "tip": "Three ingredients, dressed impeccably.",
     "tags": [
       "Citrusy",
       "Sour"
@@ -1561,10 +1787,33 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Combine ingredients; if using egg white, shake without ice first. Add ice, shake well, and strain into a chilled coupe.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "white-lady"
+    "shortMethod": "Shake gin, triple sec, and lemon with ice. Strain into a chilled coupe without garnish.",
+    "detailedSteps": [
+      "Chill a coupe and squeeze fresh lemon juice.",
+      "Measure gin, triple sec, and lemon into a shaker.",
+      "Add ice and shake firmly until cold and combined.",
+      "Strain into the coupe, without serving ice or garnish."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · White Lady",
+        "url": "https://iba-world.com/iba-cocktail/white-lady/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "white-lady",
+    "learn": "Triple sec supplies both orange flavor and sweetness here. Adding syrup as well would create a different balance.",
+    "expect": "Lemon-led and orange-bright, with gin underneath and a clean finish. This egg-free version has a lighter texture than a foamy White Lady.",
+    "recipeVersion": "Uses IBA’s 40/30/20 ml egg-free formula, replacing the photographed proportions and optional egg white.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "negroni",
@@ -1590,23 +1839,22 @@ const cocktails = [
       [
         "30 ml",
         "1 oz",
-        "sweet vermouth"
+        "sweet red vermouth"
       ],
       [
-        "1",
-        "1",
-        "orange peel"
+        "To garnish",
+        "To garnish",
+        "half orange slice"
       ]
     ],
     "steps": [
-      "Stir gin, Campari, and vermouth with ice.",
-      "Serve over fresh ice and garnish with orange peel."
+      "Build equal parts gin, Campari, and vermouth over ice. Stir gently and add orange."
     ],
     "description": "Bittersweet, botanical, and unmistakably Italian.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "Bittersweet, botanical, and unmistakably Italian.",
     "glass": "Rocks glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "Bitter is a flavor, not a complaint.",
     "tags": [
       "Spirit-forward",
       "Bitter"
@@ -1614,10 +1862,32 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Stir gin, Campari, and vermouth with ice. Serve over fresh ice and garnish with orange peel.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "negroni"
+    "shortMethod": "Build equal parts gin, Campari, and vermouth over ice. Stir gently and add orange.",
+    "detailedSteps": [
+      "Fill a chilled rocks glass with fresh ice.",
+      "Measure equal amounts of gin, Campari, and sweet vermouth directly into the glass.",
+      "Stir gently until combined and cold.",
+      "Add half an orange slice and serve over the ice."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Negroni",
+        "url": "https://iba-world.com/iba-cocktail/negroni/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "negroni",
+    "learn": "Dilution is part of the recipe even when water is not listed. Stirring with ice softens and integrates this concentrated combination.",
+    "expect": "Bold bitter orange, sweet herbs, and juniper. The finish is distinctly bitter, not sour; salty olives or roasted nuts make a good contrast.",
+    "recipeVersion": "Matches IBA’s equal 30 ml measures. Half an orange slice replaces the photographed orange peel.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ]
   },
   {
     "id": "french-75",
@@ -1638,7 +1908,7 @@ const cocktails = [
       [
         "15 ml",
         "0.5 oz",
-        "lemon juice"
+        "fresh lemon juice"
       ],
       [
         "15 ml",
@@ -1646,20 +1916,19 @@ const cocktails = [
         "simple syrup"
       ],
       [
-        "90 ml",
-        "3 oz",
-        "Champagne"
+        "60 ml",
+        "2 oz",
+        "chilled Champagne"
       ]
     ],
     "steps": [
-      "Shake gin, lemon, and syrup with ice. Strain into a flute.",
-      "Top slowly with chilled Champagne."
+      "Shake gin, lemon, and syrup with ice; strain into a flute. Add Champagne and stir gently."
     ],
     "description": "Bright gin and lemon with a Champagne sparkle.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "Bright gin and lemon with a Champagne sparkle.",
     "glass": "Champagne flute",
-    "tip": "Add Champagne after shaking, never to the shaker.",
+    "tip": "The bubbles make their entrance last.",
     "tags": [
       "Citrusy",
       "Sparkling"
@@ -1667,10 +1936,34 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Shake gin, lemon, and syrup with ice. Strain into a flute. Top slowly with chilled Champagne.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "french-75"
+    "shortMethod": "Shake gin, lemon, and syrup with ice; strain into a flute. Add Champagne and stir gently.",
+    "detailedSteps": [
+      "Chill a Champagne flute and keep the sparkling wine cold.",
+      "Shake gin, lemon juice, and syrup with ice until cold; leave the Champagne out.",
+      "Strain into the flute, then slowly add the measured Champagne.",
+      "Stir very gently once to combine. Serve without garnish."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · French 75",
+        "url": "https://iba-world.com/iba-cocktail/french-75/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "french-75",
+    "learn": "Never shake sparkling wine. Add it after straining the still ingredients so the drink keeps its bubbles and the shaker stays unpressurized.",
+    "expect": "Crisp lemon, light gin botanicals, and fine wine bubbles. Bright and elegant, with sweetness balanced by citrus and dry Champagne.",
+    "recipeVersion": "Uses IBA’s 60 ml Champagne rather than the card’s 90 ml; other measures match. No garnish is specified.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer",
+      "Barspoon"
+    ]
   },
   {
     "id": "corpse-reviver-2",
@@ -1684,40 +1977,44 @@ const cocktails = [
     "method": "Shaken",
     "ingredients": [
       [
-        "22.5 ml",
-        "0.75 oz",
+        "30 ml",
+        "1 oz",
         "gin"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
+        "30 ml",
+        "1 oz",
         "Cointreau"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
+        "30 ml",
+        "1 oz",
         "Lillet Blanc"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
-        "lemon juice"
+        "30 ml",
+        "1 oz",
+        "fresh lemon juice"
       ],
       [
-        "A rinse",
-        "A rinse",
+        "1 dash",
+        "1 dash",
         "absinthe"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "orange zest"
       ]
     ],
     "steps": [
-      "Rinse a chilled coupe with absinthe and discard excess.",
-      "Shake the remaining ingredients with ice and strain into the glass."
+      "Shake all liquids with ice; strain into a chilled coupe and garnish with orange zest."
     ],
     "description": "Citrus and botanicals with a delicate anise edge.",
-    "label": "The gin collection",
+    "label": "The clubs collection",
     "profile": "Citrus and botanicals with a delicate anise edge.",
     "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "A dramatic name; a surprisingly tidy recipe.",
     "tags": [
       "Citrusy",
       "Herbal",
@@ -1726,10 +2023,33 @@ const cocktails = [
     "categories": [
       "gin"
     ],
-    "shortMethod": "Rinse a chilled coupe with absinthe and discard excess. Shake the remaining ingredients with ice and strain into the glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "corpse-reviver-2"
+    "shortMethod": "Shake all liquids with ice; strain into a chilled coupe and garnish with orange zest.",
+    "detailedSteps": [
+      "Chill a coupe and measure gin, Cointreau, Lillet, and lemon into a shaker.",
+      "Add just one dash of absinthe; it is an accent, not an equal part.",
+      "Fill with ice and shake firmly until cold.",
+      "Strain into the coupe and express orange zest over the surface before adding it."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Corpse Reviver #2",
+        "url": "https://iba-world.com/iba-cocktail/corpse-reviver-2/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "corpse-reviver-2",
+    "learn": "A dash of absinthe goes into the shaker in this version. That is different from rinsing the serving glass and discarding the excess.",
+    "expect": "Bright lemon and orange with soft wine notes and a delicate anise edge. Tart and aromatic, with a lighter impression than a Martini.",
+    "recipeVersion": "Uses IBA’s four equal 30 ml measures and an absinthe dash, instead of the card’s 22.5 ml measures and glass rinse. The name makes no health claim.",
+    "researched": true,
+    "edition": "clubs-2026-11",
+    "artworkVersion": "clubs-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "cosmopolitan",

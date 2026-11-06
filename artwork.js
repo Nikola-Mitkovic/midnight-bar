@@ -1,5 +1,5 @@
 'use strict';
-// Included watercolor images; edit individual paths or versions here.
+// Included artwork; change individual paths or cache versions here.
 const ARTWORK = {
   "version": "hearts-1",
   "overrides": {
@@ -119,6 +119,71 @@ const ARTWORK = {
       "src": "images/blood-and-sand.png",
       "alt": "Vintage watercolor illustration of blood and sand",
       "version": "spades-1"
+    },
+    "dry-martini": {
+      "src": "images/dry-martini.png",
+      "alt": "Vintage watercolor illustration of Dry Martini",
+      "version": "clubs-1"
+    },
+    "gin-tonic": {
+      "src": "images/gin-tonic.png",
+      "alt": "Vintage watercolor illustration of Gin & Tonic",
+      "version": "clubs-1"
+    },
+    "gimlet": {
+      "src": "images/gimlet.png",
+      "alt": "Vintage watercolor illustration of Gimlet",
+      "version": "clubs-1"
+    },
+    "tom-collins": {
+      "src": "images/tom-collins.png",
+      "alt": "Vintage watercolor illustration of Tom Collins",
+      "version": "clubs-1"
+    },
+    "aviation": {
+      "src": "images/aviation.png",
+      "alt": "Vintage watercolor illustration of Aviation",
+      "version": "clubs-1"
+    },
+    "bee-s-knees": {
+      "src": "images/bee-s-knees.png",
+      "alt": "Vintage watercolor illustration of Bee’s Knees",
+      "version": "clubs-1"
+    },
+    "the-last-word": {
+      "src": "images/the-last-word.png",
+      "alt": "Vintage watercolor illustration of The Last Word",
+      "version": "clubs-1"
+    },
+    "singapore-sling": {
+      "src": "images/singapore-sling.png",
+      "alt": "Vintage watercolor illustration of Singapore Sling",
+      "version": "clubs-1"
+    },
+    "vesper": {
+      "src": "images/vesper.png",
+      "alt": "Vintage watercolor illustration of Vesper",
+      "version": "clubs-1"
+    },
+    "white-lady": {
+      "src": "images/white-lady.png",
+      "alt": "Vintage watercolor illustration of White Lady",
+      "version": "clubs-1"
+    },
+    "negroni": {
+      "src": "images/negroni.png",
+      "alt": "Vintage watercolor illustration of Negroni",
+      "version": "clubs-1"
+    },
+    "french-75": {
+      "src": "images/french-75.png",
+      "alt": "Vintage watercolor illustration of French 75",
+      "version": "clubs-1"
+    },
+    "corpse-reviver-2": {
+      "src": "images/corpse-reviver-2.png",
+      "alt": "Vintage watercolor illustration of Corpse Reviver #2",
+      "version": "clubs-1"
     }
   }
 };

@@ -74,6 +74,7 @@ function clearFilters(){search.value='';[spiritSelect,suitSelect,styleSelect].fo
  grid.addEventListener('click',e=>{const recipe=e.target.closest('[data-recipe]');if(recipe){openRecipe(recipe.dataset.recipe,recipe);return;}const tag=e.target.closest('[data-tag]');if(tag){styleSelect.value=styleSelect.value===tag.dataset.tag?'all':tag.dataset.tag;renderCards();styleSelect.focus();}});
  search.addEventListener('input',renderCards);
  [spiritSelect,suitSelect,styleSelect].forEach(el=>el.addEventListener('change',renderCards));
+ document.querySelector('#browse-clubs').addEventListener('click',()=>{search.value='';spiritSelect.value='all';styleSelect.value='all';suitSelect.value='♣';renderCards();suitSelect.focus();});
  document.querySelector('#browse-spades').addEventListener('click',()=>{search.value='';spiritSelect.value='all';styleSelect.value='all';suitSelect.value='♠';renderCards();suitSelect.focus();});
  document.querySelector('#browse-hearts').addEventListener('click',()=>{search.value='';spiritSelect.value='all';styleSelect.value='all';suitSelect.value='♥';renderCards();suitSelect.focus();});
  document.querySelector('#reset').addEventListener('click',clearFilters);
@@ -81,6 +82,4 @@ function clearFilters(){search.value='';[spiritSelect,suitSelect,styleSelect].fo
  dialog.querySelector('.close').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',e=>{if(e.target.closest('#flip-card')){flipRecipe();return;}const b=e.target.closest('[data-unit]');if(b){unit=Number(b.dataset.unit);dialog.querySelectorAll('[data-unit]').forEach(el=>el.setAttribute('aria-pressed',String(el===b)));renderIngredients();}if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
  dialog.addEventListener('close',()=>{document.body.classList.remove('modal-open');lastTrigger?.focus();});
- document.querySelector('#hero-drink').innerHTML=artwork(cocktails.find(c=>c.id==='old-fashioned'),'hero');
- activateArtwork(document.querySelector('#hero-drink'));
  renderCards();
