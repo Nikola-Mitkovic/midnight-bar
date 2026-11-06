@@ -1,6 +1,6 @@
-# The Midnight Bar — Hearts edition
+# The Midnight Bar — Spades & hearts edition
 
-54 distinct cocktails. All 13 hearts include individual watercolor PNG illustrations and two-sided researched recipe cards. The 6♥ duplicate Moscow Mule is now Painkiller; 2♦ remains Moscow Mule. Other suits retain their existing illustrations and recipe dialogs.
+54 distinct cocktails. All 13 spades and 13 hearts include individual watercolor PNG illustrations and two-sided researched recipe cards. The 6♥ duplicate Moscow Mule is now Painkiller; 2♦ remains Moscow Mule. Clubs, diamonds, and jokers retain their existing illustrations and recipe dialogs.
 
 ## Install this update on GitHub
 
@@ -14,23 +14,23 @@ Required website files:
 - **`recipes.js` — new, required**
 - **`artwork.js` — new, required**
 - **`illustrations.js` — new, required**
-- **`images/` — new, artwork location** (includes 13 hearts illustrations)
+- **`images/` — new, artwork location** (includes 26 spades/hearts illustrations)
 
 You can upload the documentation and reference exports too. Commit to your existing Pages branch, normally `main`, and wait for deployment. Keep the filenames and folder structure intact; do not nest the files inside an extra folder. Your URL stays https://nikola-mitkovic.github.io/midnight-bar/ . The assistant has not uploaded this update.
 
-The new HTML uses `?v=4` links to avoid serving old scripts/styles. If the page looks stale after deployment, refresh or try a private tab. For future changes, increment relevant script versions in `index.html` if necessary.
+The new HTML uses `?v=5` links to avoid serving old scripts/styles. If the page looks stale after deployment, refresh or try a private tab. For future changes, increment relevant script versions in `index.html` if necessary.
 
 ## Change artwork yourself
 
 Upload an image to the `images` folder using a listed filename, for example `images/old-fashioned.webp`. That image is automatically used everywhere the drink appears. Replace it with a new file of the same name whenever you want. Missing or unreadable images show the original SVG art, with no broken-image icon. Files are lazy-loaded on menu cards.
 
-See **ARTWORK-GUIDE.md** for all 54 filenames, image preparation tips, PNG/JPEG overrides, optional cache versions, and how to keep an individual drink on SVG. The hearts PNGs are included; the other suits retain SVG fallback art. Optional images that have not been uploaded may generate expected 404 entries in browser developer tools; the visible fallback is intentional.
+See **ARTWORK-GUIDE.md** for all 54 filenames, image preparation tips, PNG/JPEG overrides, optional cache versions, and how to keep an individual drink on SVG. Spades and hearts PNGs are included; clubs, diamonds, and jokers retain SVG fallback art. Optional images that have not been uploaded may generate expected 404 entries in browser developer tools; the visible fallback is intentional.
 
 ## Edit content in batches
 
 See **EDITING-GUIDE.md**. All live recipe content now lives in `recipes.js`, separate from interactions and illustrations. Tags and recipe sources can be added drink by drink. `recipes.json` and `RECIPES.md` are reference exports only and are not loaded by the site; update them separately if you need matching exports.
 
-Hearts use `shortMethod` on the front and `detailedSteps` on the back, with source links and learning notes. See HEARTS-SOURCES.md for recipe choices. Artwork was generated with the built-in image tool; prompts are in ART-PROMPTS.md.
+Spades and hearts use `shortMethod` on the front and `detailedSteps` on the back, with source links and learning notes. See HEARTS-SOURCES.md and SPADES-SOURCES.md for recipe choices. Artwork was generated with the built-in image tool; prompts are in ART-PROMPTS.md and SPADES-ART-PROMPTS.md.
 
 ## Categories
 
@@ -48,14 +48,18 @@ Open `index.html` with all required files beside it. No installation or build st
 
 ## Verification
 
-Passed syntax and automated checks for all 54 records, dialogs, units, artwork paths, tag/spirit/suit filters, search, and all 13 hearts flip states. Browser checks verified watercolor loading, front/back navigation, source links, and a 390 CSS-pixel layout without horizontal overflow.
+Passed syntax and automated checks for all 54 records, dialogs, units, artwork paths, tag/spirit/suit filters, search, and all 26 researched card flip states. Browser checks verified watercolor loading, front/back navigation, source links, and a 390 CSS-pixel layout without horizontal overflow.
 
 ## Recipe and QR notes
 
-Hearts now use the researched versions documented in HEARTS-SOURCES.md; other suits retain their previous card transcriptions. Bar conversion is rounded at 30 ml per recipe ounce. Optional egg whites in the other suits remain labeled pasteurized. Original photographs are not redistributed.
+Spades and hearts use the researched versions documented in their source guides; other suits retain their previous card transcriptions. Bar conversion is rounded at 30 ml per recipe ounce. Optional egg whites in the other suits remain labeled pasteurized. Original photographs are not redistributed.
 
 Any QR pointing to the existing site address can keep the same destination after this update. No new QR code is included or scan-tested.
 
 ## Included artwork
 
-The 13 original transparent PNGs total about 25 MB and load lazily in the menu. They prioritize illustration quality; first visits can take longer on a slow mobile connection. Your reference JPG photos are not included in the ZIP.
+The 26 original transparent PNGs total about 48 MB and load lazily in the menu. They prioritize illustration quality; first visits can take longer on a slow mobile connection. Your reference JPG photos are not included in the ZIP.
+
+## Two separate notes
+
+One thing to learn (`learn`) explains technique or ingredient knowledge. What to expect (`expect`) describes flavor, texture, and occasional suggested pairings. Both appear on all 26 researched card backs. Tasting and pairing notes are editorial interpretations, not source quotations. Repeated techniques are intentional where useful.

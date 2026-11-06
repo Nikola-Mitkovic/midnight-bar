@@ -30,3 +30,6 @@ header{background:#441d29;max-width:none;padding-inline:max(6%,calc((100vw - 116
 @keyframes card-turn{from{opacity:.45;transform:perspective(900px) rotateY(-12deg)}to{opacity:1;transform:perspective(900px) rotateY(0)}}
 @media(max-width:600px){.edition-note{align-items:start;flex-direction:column;gap:10px}.heart-dialog{padding:23px 18px;max-height:94dvh}.heart-title{padding:12px 22px 0}.heart-title h2{font-size:30px}.heart-rank{font-size:18px;left:-4px;top:-8px}.heart-title .eyebrow{font-size:7px;letter-spacing:1.5px}.flip-tools{margin-top:15px;gap:7px}.flip-tools>button{font-size:12px;padding:10px 9px}.flip-tools .unit-toggle{gap:4px}.flip-tools .unit-toggle button{padding:9px 11px;font-size:12px}.front-grid{grid-template-columns:1fr;gap:13px}.front-grid>.art-slot{height:210px;max-width:280px}.front-amounts h3{text-align:center}.front-amounts .ingredients li{padding:7px 0}.recipe-back{padding:18px 15px}.detailed-steps{padding-left:20px}.heart-edition .art-slot{height:260px}}
 @media(prefers-reduced-motion:reduce){.recipe-face{animation:none}}
+
+/* Shared edition notes and suit-specific ink. */
+.black-suit .heart-rank{color:#292326}.expect-note{margin-top:15px;border-left-color:#d5ad76;background:#d5ad7615}.edition-actions{display:flex;gap:9px;flex-wrap:wrap}.edition-note{flex-wrap:wrap}.hero .custom-art{object-fit:contain}

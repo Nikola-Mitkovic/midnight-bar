@@ -1,5 +1,5 @@
 'use strict';
-// Live recipe data. Hearts edition: linked research, detailed backs, original generated artwork.
+// Live recipe data. Spades and hearts have researched, two-sided cards.
 const cocktails = [
   {
     "id": "old-fashioned",
@@ -13,9 +13,9 @@ const cocktails = [
     "method": "Stirred",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "bourbon whiskey"
+        "45 ml",
+        "1.5 oz",
+        "bourbon or rye whiskey"
       ],
       [
         "1",
@@ -23,25 +23,29 @@ const cocktails = [
         "sugar cube"
       ],
       [
-        "2 dashes",
-        "2 dashes",
+        "A few dashes",
+        "A few dashes",
         "Angostura bitters"
       ],
       [
-        "1",
-        "1",
-        "orange peel"
+        "A few dashes",
+        "A few dashes",
+        "water"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "orange zest and cocktail cherry"
       ]
     ],
     "steps": [
-      "Muddle the sugar with the bitters and a small splash of water until dissolved.",
-      "Add bourbon and ice, then stir until chilled. Express the orange peel over the glass and add it."
+      "Dissolve sugar with bitters and water. Add ice and whiskey; stir and garnish."
     ],
     "description": "Rich whiskey, aromatic bitters, and a little sweetness.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "Rich whiskey, aromatic bitters, and a little sweetness.",
     "glass": "Rocks glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "The peel has a speaking part. Let it introduce the drink.",
     "tags": [
       "Spirit-forward",
       "Sweet",
@@ -50,10 +54,33 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Muddle the sugar with the bitters and a small splash of water until dissolved. Add bourbon and ice, then stir until chilled. Express the orange peel over the glass and add it.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "old-fashioned"
+    "shortMethod": "Dissolve sugar with bitters and water. Add ice and whiskey; stir and garnish.",
+    "detailedSteps": [
+      "Wet the sugar cube with bitters and a little water in a rocks glass.",
+      "Crush and stir until the sugar dissolves; grit at the bottom means it needs more mixing.",
+      "Add fresh ice and whiskey. Stir gently until the glass feels cold.",
+      "Bend orange zest over the surface to release its oils, then add it with a cherry."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Old Fashioned",
+        "url": "https://iba-world.com/iba-cocktail/old-fashioned/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "old-fashioned",
+    "learn": "Expressing citrus means bending the peel, coloured side toward the drink, to spray aromatic oils onto its surface.",
+    "expect": "A slow, whiskey-led sip: oak, caramel, orange oil, and baking spice, with sweetness rounding the edges. Try alongside toasted pecans.",
+    "recipeVersion": "IBA’s 45 ml whiskey replaces the photographed 60 ml. Orange zest and cherry follow its garnish options.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon",
+      "Muddler"
+    ]
   },
   {
     "id": "manhattan",
@@ -67,18 +94,18 @@ const cocktails = [
     "method": "Stirred",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "50 ml",
+        "1.67 oz",
         "rye whiskey"
       ],
       [
-        "30 ml",
-        "1 oz",
-        "sweet vermouth"
+        "20 ml",
+        "0.67 oz",
+        "sweet red vermouth"
       ],
       [
-        "2 dashes",
-        "2 dashes",
+        "1 dash",
+        "1 dash",
         "Angostura bitters"
       ],
       [
@@ -88,14 +115,13 @@ const cocktails = [
       ]
     ],
     "steps": [
-      "Stir the rye, vermouth, and bitters with ice until chilled.",
-      "Strain into a chilled coupe and garnish with the cherry."
+      "Stir whiskey, vermouth, and bitters with ice; strain into a chilled coupe and add a cherry."
     ],
     "description": "Silky rye and sweet vermouth, finished with cherry.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "Silky rye and sweet vermouth, finished with cherry.",
     "glass": "Chilled coupe",
-    "tip": "Refrigerate opened vermouth to keep its aromas fresh.",
+    "tip": "A cherry is a garnish, not a substitute for good vermouth.",
     "tags": [
       "Spirit-forward",
       "Spiced"
@@ -103,10 +129,34 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Stir the rye, vermouth, and bitters with ice until chilled. Strain into a chilled coupe and garnish with the cherry.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "manhattan"
+    "shortMethod": "Stir whiskey, vermouth, and bitters with ice; strain into a chilled coupe and add a cherry.",
+    "detailedSteps": [
+      "Chill the serving coupe before mixing.",
+      "Measure rye, vermouth, and bitters into a mixing glass, then fill with ice.",
+      "Stir smoothly for about 20–30 seconds, until cold and slightly diluted.",
+      "Strain into the empty chilled coupe and garnish with the cherry."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Manhattan",
+        "url": "https://iba-world.com/iba-cocktail/manhattan/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "manhattan",
+    "learn": "Stirring chills and dilutes without the aeration of shaking, keeping this spirit-led drink clear and silky.",
+    "expect": "Rye spice meets dark fruit and herbal sweetness, with a gently bitter finish. A small piece of aged cheddar makes a savory contrast.",
+    "recipeVersion": "Uses IBA 50/20 ml measures and one dash of bitters instead of the card’s 60/30 ml and two dashes.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Mixing glass",
+      "Barspoon",
+      "Strainer"
+    ]
   },
   {
     "id": "whiskey-sour",
@@ -120,35 +170,39 @@ const cocktails = [
     "method": "Shaken",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "bourbon"
+        "45 ml",
+        "1.5 oz",
+        "bourbon whiskey"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
-        "lemon juice"
+        "25 ml",
+        "0.83 oz",
+        "fresh lemon juice"
       ],
       [
-        "15 ml",
-        "0.5 oz",
+        "20 ml",
+        "0.67 oz",
         "simple syrup"
       ],
       [
-        "1",
-        "1",
-        "pasteurized egg white (optional)"
+        "A few drops, optional",
+        "A few drops, optional",
+        "pasteurized egg white"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "half orange slice and cocktail cherry"
       ]
     ],
     "steps": [
-      "If using egg white, shake it with the other ingredients without ice first.",
-      "Add ice, shake vigorously, and strain over fresh ice."
+      "Shake bourbon, lemon, syrup, and optional egg white with ice. Strain over fresh ice; garnish."
     ],
     "description": "Golden bourbon balanced with fresh lemon.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "Golden bourbon balanced with fresh lemon.",
     "glass": "Rocks glass",
-    "tip": "The card lists one optional egg white; use pasteurized egg white or omit it.",
+    "tip": "Fresh lemon gets the lead role. Bourbon still gets the applause.",
     "tags": [
       "Citrusy",
       "Sour"
@@ -156,10 +210,33 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "If using egg white, shake it with the other ingredients without ice first. Add ice, shake vigorously, and strain over fresh ice.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "whiskey-sour"
+    "shortMethod": "Shake bourbon, lemon, syrup, and optional egg white with ice. Strain over fresh ice; garnish.",
+    "detailedSteps": [
+      "Measure bourbon, fresh lemon juice, and syrup into a shaker. Add pasteurized egg white if using.",
+      "Fill with ice, close firmly, and shake briskly for about 15 seconds; shake especially well with egg white.",
+      "Strain into a rocks glass containing fresh ice.",
+      "Add orange and cherry. The illustrated foam is most noticeable when egg white is included."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Whiskey Sour",
+        "url": "https://iba-world.com/iba-cocktail/whiskey-sour/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "whiskey-sour",
+    "learn": "Egg white adds foam and a softer texture rather than sweetness. The drink also works without it.",
+    "expect": "Bright lemon first, then rounded bourbon and a sweet-tart finish. With egg white it feels softer and silkier; without, more direct and crisp.",
+    "recipeVersion": "Uses IBA 45/25/20 ml measures; optional egg white is specified as pasteurized for home mixing.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "mint-julep",
@@ -173,35 +250,44 @@ const cocktails = [
     "method": "Built",
     "ingredients": [
       [
-        "75 ml",
-        "2.5 oz",
-        "bourbon"
+        "60 ml",
+        "2 oz",
+        "bourbon whiskey"
       ],
       [
-        "15 ml",
-        "0.5 oz",
-        "simple syrup"
+        "4 sprigs",
+        "4 sprigs",
+        "fresh mint"
       ],
       [
-        "8–10",
-        "8–10",
-        "mint leaves"
+        "1 tsp",
+        "1 tsp",
+        "powdered sugar"
+      ],
+      [
+        "2 tsp",
+        "2 tsp",
+        "water"
       ],
       [
         "To fill",
         "To fill",
-        "crushed ice"
+        "cracked ice"
+      ],
+      [
+        "1 sprig",
+        "1 sprig",
+        "mint for garnish"
       ]
     ],
     "steps": [
-      "Gently press the mint with the syrup in a julep cup.",
-      "Add bourbon, pack with crushed ice, and stir until the cup is cold."
+      "Gently press mint with sugar and water. Add cracked ice and bourbon; stir until frosty."
     ],
     "description": "Bourbon over crushed ice with fragrant fresh mint.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "Bourbon over crushed ice with fragrant fresh mint.",
-    "glass": "Julep cup",
-    "tip": "Press mint gently; shredding it can add bitterness.",
+    "glass": "Metal julep cup",
+    "tip": "Hold the cup by the rim and let the frost do its thing.",
     "tags": [
       "Refreshing",
       "Herbal"
@@ -209,10 +295,33 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Gently press the mint with the syrup in a julep cup. Add bourbon, pack with crushed ice, and stir until the cup is cold.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "mint-julep"
+    "shortMethod": "Gently press mint with sugar and water. Add cracked ice and bourbon; stir until frosty.",
+    "detailedSteps": [
+      "Place mint, sugar, and water in a metal julep cup.",
+      "Press gently with a muddler to release aroma without shredding the leaves.",
+      "Fill with cracked ice, add bourbon, and stir until the cup feels very cold.",
+      "Top up the ice mound and tuck a fresh mint sprig beside a short straw, if using."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Mint Julep",
+        "url": "https://iba-world.com/iba-cocktail/mint-julep/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "mint-julep",
+    "learn": "Cracked ice packs closely around the drink and chills it quickly. Top it up after stirring as the first ice settles.",
+    "expect": "Cold mint aroma over gently sweet bourbon. It is refreshing but still whiskey-forward, without citrus tartness. Try with smoky grilled food.",
+    "recipeVersion": "Uses IBA 60 ml bourbon, mint sprigs, powdered sugar, and water in place of the card’s syrup formula.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Muddler",
+      "Barspoon"
+    ]
   },
   {
     "id": "sazerac",
@@ -226,14 +335,14 @@ const cocktails = [
     "method": "Stirred",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "rye whiskey"
+        "45 ml",
+        "1.5 oz",
+        "Sazerac rye whiskey"
       ],
       [
-        "7.5 ml",
-        "0.25 oz",
-        "simple syrup"
+        "1",
+        "1",
+        "sugar cube"
       ],
       [
         "3 dashes",
@@ -241,20 +350,24 @@ const cocktails = [
         "Peychaud’s bitters"
       ],
       [
-        "A rinse",
-        "A rinse",
-        "absinthe"
+        "7.5 ml",
+        "0.25 oz",
+        "Herbsaint, for rinsing (discard excess)"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "lemon peel"
       ]
     ],
     "steps": [
-      "Rinse a chilled rocks glass with absinthe and discard the excess.",
-      "Stir rye, syrup, and bitters with ice. Strain into the prepared glass."
+      "Stir rye, sugar, and bitters with ice. Strain into a chilled Herbsaint-rinsed glass; add lemon peel."
     ],
     "description": "Rye, anise, and bitters in a New Orleans classic.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "Rye, anise, and bitters in a New Orleans classic.",
-    "glass": "Rocks glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "glass": "Chilled rocks glass, no serving ice",
+    "tip": "The anise should arrive as perfume, not take over the room.",
     "tags": [
       "Spirit-forward",
       "Herbal",
@@ -263,10 +376,35 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Rinse a chilled rocks glass with absinthe and discard the excess. Stir rye, syrup, and bitters with ice. Strain into the prepared glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "sazerac"
+    "shortMethod": "Stir rye, sugar, and bitters with ice. Strain into a chilled Herbsaint-rinsed glass; add lemon peel.",
+    "detailedSteps": [
+      "Chill one rocks glass with ice. In another, crush the sugar cube with Peychaud’s bitters.",
+      "Add rye, stir to dissolve the sugar, then add ice and stir until chilled.",
+      "Empty the first glass. Swirl Herbsaint around its inside and discard the excess.",
+      "Strain the whiskey mixture into the coated glass without serving ice. Express lemon peel over it and garnish."
+    ],
+    "recipeSources": [
+      {
+        "title": "Sazerac House · Official recipe (PDF)",
+        "url": "https://www.sazerachouse.com/wp-content/uploads/2025/05/Sazerac_Pamphlet_SazHouse_RGB-Pages.pdf",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "sazerac",
+    "learn": "A rinse coats the glass with a thin film of aroma. The measured rinsing spirit is not a full ingredient pour: discard the excess.",
+    "expect": "Concentrated rye spice, lemon oil, and a distinctive anise aroma. It is a short, lightly sweet sipping drink with no citrus juice.",
+    "recipeVersion": "Follows Sazerac House’s rye-and-Herbsaint version, preserving the whiskey suit. IBA instead specifies cognac and absinthe. The card’s syrup is replaced by a sugar cube.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Two rocks glasses",
+      "Muddler",
+      "Barspoon",
+      "Strainer"
+    ]
   },
   {
     "id": "boulevardier",
@@ -275,14 +413,14 @@ const cocktails = [
     "suit": "♠",
     "category": "whiskey",
     "spirit": "Bourbon",
-    "shape": "rocks",
+    "shape": "coupe",
     "color": "#b84325",
     "method": "Stirred",
     "ingredients": [
       [
         "45 ml",
         "1.5 oz",
-        "bourbon"
+        "bourbon or rye whiskey"
       ],
       [
         "30 ml",
@@ -292,23 +430,22 @@ const cocktails = [
       [
         "30 ml",
         "1 oz",
-        "sweet vermouth"
+        "sweet red vermouth"
       ],
       [
-        "1",
-        "1",
-        "orange peel"
+        "To garnish",
+        "To garnish",
+        "orange zest"
       ]
     ],
     "steps": [
-      "Stir the bourbon, Campari, and vermouth with ice.",
-      "Strain over fresh ice and garnish with the orange peel."
+      "Stir whiskey, Campari, and vermouth with ice. Strain into a chilled coupe; add orange zest."
     ],
     "description": "A warming whiskey turn on a bitter Italian classic.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "A warming whiskey turn on a bitter Italian classic.",
-    "glass": "Rocks glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "glass": "Chilled coupe",
+    "tip": "For the friend who always steals the darkest chocolate.",
     "tags": [
       "Spirit-forward",
       "Bitter"
@@ -316,10 +453,34 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Stir the bourbon, Campari, and vermouth with ice. Strain over fresh ice and garnish with the orange peel.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "boulevardier"
+    "shortMethod": "Stir whiskey, Campari, and vermouth with ice. Strain into a chilled coupe; add orange zest.",
+    "detailedSteps": [
+      "Chill a coupe while measuring the ingredients.",
+      "Combine whiskey, Campari, and sweet vermouth in a mixing glass full of ice.",
+      "Stir smoothly until cold, about 20–30 seconds.",
+      "Strain into the empty coupe. Express orange zest over the drink and add it."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Boulevardier",
+        "url": "https://iba-world.com/iba-cocktail/boulevardier/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "boulevardier",
+    "learn": "Serving “up” means chilled and strained without serving ice. It differs from “on the rocks,” which means served over ice.",
+    "expect": "Bittersweet orange and herbs wrapped around whiskey warmth. Expect a firmer bitter finish than a Manhattan; salty olives make a useful contrast.",
+    "recipeVersion": "Uses IBA 45/30/30 ml and an up serve; the photographed version uses 37.5 ml bourbon and a rocks glass.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Mixing glass",
+      "Barspoon",
+      "Strainer"
+    ]
   },
   {
     "id": "irish-coffee",
@@ -333,35 +494,34 @@ const cocktails = [
     "method": "Built",
     "ingredients": [
       [
-        "45 ml",
-        "1.5 oz",
+        "50 ml",
+        "1.67 oz",
         "Irish whiskey"
       ],
       [
         "120 ml",
         "4 oz",
-        "hot coffee"
+        "hot black coffee"
+      ],
+      [
+        "50 ml",
+        "1.67 oz",
+        "fresh cream, chilled"
       ],
       [
         "1 tsp",
         "1 tsp",
-        "brown sugar"
-      ],
-      [
-        "To float",
-        "To float",
-        "heavy cream"
+        "sugar"
       ]
     ],
     "steps": [
-      "Warm a heatproof glass, then add hot coffee, whiskey, and sugar. Stir to dissolve.",
-      "Lightly whip the cream and float it over the back of a spoon. Do not stir."
+      "Stir whiskey and sugar into hot coffee in a warmed glass. Float chilled cream over a spoon."
     ],
     "description": "Warm coffee and Irish whiskey beneath soft cream.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "Warm coffee and Irish whiskey beneath soft cream.",
     "glass": "Heatproof coffee glass",
-    "tip": "The card does not specify a cream quantity; add a thin floating layer.",
+    "tip": "Sip through the cream. The spoon has already done its job.",
     "tags": [
       "Creamy",
       "Coffee",
@@ -370,10 +530,34 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Warm a heatproof glass, then add hot coffee, whiskey, and sugar. Stir to dissolve. Lightly whip the cream and float it over the back of a spoon. Do not stir.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "irish-coffee"
+    "shortMethod": "Stir whiskey and sugar into hot coffee in a warmed glass. Float chilled cream over a spoon.",
+    "detailedSteps": [
+      "Warm a heatproof Irish coffee glass with hot water, then empty it.",
+      "Add hot coffee, whiskey, and sugar. Stir until the sugar dissolves.",
+      "Lightly thicken the chilled cream with a whisk if needed; it should still pour, not hold stiff peaks.",
+      "Pour the cream slowly over the back of a spoon just above the coffee. Serve without stirring the layers together."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Irish Coffee",
+        "url": "https://iba-world.com/iba-cocktail/irish-coffee/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "irish-coffee",
+    "learn": "A cream float needs a slow pour close to the surface. Pourable, slightly thick cream is easier to layer than stiff whipped cream.",
+    "expect": "Hot, lightly sweet coffee under cool, rich cream, with mellow whiskey warmth. A little shortbread suits its coffee-and-cream character.",
+    "recipeVersion": "Uses IBA 50 ml whiskey and 50 ml cream; retains 120 ml coffee. No garnish is specified.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Heatproof glass",
+      "Teaspoon",
+      "Small whisk"
+    ]
   },
   {
     "id": "rusty-nail",
@@ -392,25 +576,24 @@ const cocktails = [
         "Scotch whisky"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
+        "25 ml",
+        "0.83 oz",
         "Drambuie"
       ],
       [
-        "1",
-        "1",
-        "lemon twist"
+        "To garnish",
+        "To garnish",
+        "lemon zest"
       ]
     ],
     "steps": [
-      "Build the Scotch and Drambuie in a rocks glass over ice.",
-      "Stir gently and garnish with the lemon twist."
+      "Pour Scotch and Drambuie over ice, stir gently, and finish with lemon zest."
     ],
     "description": "Scotch softened by honeyed, herbal Drambuie.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "Scotch softened by honeyed, herbal Drambuie.",
     "glass": "Rocks glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "A remarkably polished drink for something named after hardware.",
     "tags": [
       "Spirit-forward",
       "Sweet"
@@ -418,10 +601,32 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Build the Scotch and Drambuie in a rocks glass over ice. Stir gently and garnish with the lemon twist.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "rusty-nail"
+    "shortMethod": "Pour Scotch and Drambuie over ice, stir gently, and finish with lemon zest.",
+    "detailedSteps": [
+      "Fill a rocks glass with fresh ice.",
+      "Measure Scotch and Drambuie directly into the glass.",
+      "Stir gently until the drink is evenly mixed and cold.",
+      "Express a strip of lemon zest above the drink and drop it in."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Rusty Nail",
+        "url": "https://iba-world.com/iba-cocktail/rusty-nail/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "rusty-nail",
+    "learn": "Building means mixing in the serving glass. With two still ingredients, a spoon is enough; a shaker adds unnecessary aeration.",
+    "expect": "Honeyed sweetness, warming whisky, and an herbal finish. Richer and sweeter than a plain Scotch; try a small piece of dark chocolate.",
+    "recipeVersion": "Uses IBA 45 ml Scotch and 25 ml Drambuie, slightly more liqueur than the photographed 22.5 ml.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ]
   },
   {
     "id": "penicillin",
@@ -437,33 +642,42 @@ const cocktails = [
       [
         "60 ml",
         "2 oz",
-        "blended Scotch"
+        "blended Scotch whisky"
       ],
       [
         "22.5 ml",
         "0.75 oz",
-        "lemon juice"
+        "fresh lemon juice"
       ],
       [
         "22.5 ml",
         "0.75 oz",
-        "honey-ginger syrup"
+        "honey syrup"
+      ],
+      [
+        "2–3 coin-size slices",
+        "2–3 coin-size slices",
+        "fresh ginger"
       ],
       [
         "7.5 ml",
         "0.25 oz",
-        "Islay Scotch"
+        "Lagavulin 16 or another smoky Islay Scotch, to float"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "candied ginger"
       ]
     ],
     "steps": [
-      "Shake the blended Scotch, lemon, and honey-ginger syrup with ice.",
-      "Strain over fresh ice. Float the Islay Scotch gently on top."
+      "Muddle ginger. Shake with blended Scotch, lemon, and honey syrup; fine-strain over ice and float Islay Scotch."
     ],
     "description": "Bright lemon, ginger warmth, and a smoky finish.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "Bright lemon, ginger warmth, and a smoky finish.",
     "glass": "Rocks glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "A smoky entrance; a ginger encore.",
     "tags": [
       "Citrusy",
       "Smoky",
@@ -473,10 +687,36 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Shake the blended Scotch, lemon, and honey-ginger syrup with ice. Strain over fresh ice. Float the Islay Scotch gently on top.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "penicillin"
+    "shortMethod": "Muddle ginger. Shake with blended Scotch, lemon, and honey syrup; fine-strain over ice and float Islay Scotch.",
+    "detailedSteps": [
+      "Press fresh ginger slices in a shaker. Add blended Scotch, lemon, and honey syrup; reserve the Islay Scotch.",
+      "Fill with ice and shake firmly until cold.",
+      "Strain through a cocktail strainer and a fine sieve into a rocks glass with fresh ice, catching ginger fibres.",
+      "Slowly pour the Islay Scotch over a spoon onto the surface. Garnish with candied ginger."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Penicillin",
+        "url": "https://iba-world.com/iba-cocktail/penicillin/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "penicillin",
+    "learn": "Fine-straining uses a second, fine-mesh sieve to catch ginger fibres and small ice chips that pass through a cocktail strainer.",
+    "expect": "Lemon brightness and honey give way to fresh ginger heat. The smoky top layer reaches your nose first, rather than dominating every sip.",
+    "recipeVersion": "Uses IBA’s fresh ginger plus honey syrup instead of the card’s combined honey-ginger syrup. Lagavulin 16 is the named IBA float; other smoky Islay Scotch is an explicit substitution.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Muddler",
+      "Shaker",
+      "Strainer",
+      "Fine sieve",
+      "Barspoon"
+    ]
   },
   {
     "id": "rob-roy",
@@ -492,7 +732,7 @@ const cocktails = [
       [
         "60 ml",
         "2 oz",
-        "Scotch whisky"
+        "blended Scotch whisky"
       ],
       [
         "30 ml",
@@ -503,17 +743,21 @@ const cocktails = [
         "2 dashes",
         "2 dashes",
         "Angostura bitters"
+      ],
+      [
+        "1",
+        "1",
+        "cocktail cherry"
       ]
     ],
     "steps": [
-      "Stir all ingredients with ice until chilled.",
-      "Strain into a chilled cocktail glass."
+      "Stir Scotch, vermouth, and bitters over ice; strain into a chilled coupe and garnish with cherry."
     ],
     "description": "The Manhattan’s Scotch cousin, rich and aromatic.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "The Manhattan’s Scotch cousin, rich and aromatic.",
     "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "The Manhattan’s Scottish cousin brought a very good coat.",
     "tags": [
       "Spirit-forward",
       "Spiced"
@@ -521,10 +765,34 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Stir all ingredients with ice until chilled. Strain into a chilled cocktail glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "rob-roy"
+    "shortMethod": "Stir Scotch, vermouth, and bitters over ice; strain into a chilled coupe and garnish with cherry.",
+    "detailedSteps": [
+      "Chill a coupe; this cocktail will be served without ice.",
+      "Measure Scotch, sweet vermouth, and bitters into a mixing glass filled with ice.",
+      "Stir for about 20–30 seconds, keeping the spoon moving smoothly around the glass.",
+      "Strain into the coupe and add a cocktail cherry."
+    ],
+    "recipeSources": [
+      {
+        "title": "Chivas Regal · Rob Roy",
+        "url": "https://www.chivas.com/en-us/cocktails/rob-roy/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "rob-roy",
+    "learn": "Changing the base spirit can define a new cocktail: a Rob Roy follows the Manhattan family but uses Scotch rather than rye or bourbon.",
+    "expect": "Malt, dark fruit, herbs, and gentle sweetness in a silky sip. Smoke depends on the Scotch you choose; it is not inevitable.",
+    "recipeVersion": "Retains the photographed 60/30 ml proportions, matching Chivas’s 2:1 recipe with two dashes of bitters. A coupe replaces its martini glass.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Mixing glass",
+      "Barspoon",
+      "Strainer"
+    ]
   },
   {
     "id": "new-york-sour",
@@ -540,33 +808,42 @@ const cocktails = [
       [
         "60 ml",
         "2 oz",
-        "rye whiskey"
+        "rye whiskey or bourbon"
+      ],
+      [
+        "30 ml",
+        "1 oz",
+        "fresh lemon juice"
       ],
       [
         "22.5 ml",
         "0.75 oz",
-        "lemon juice"
-      ],
-      [
-        "15 ml",
-        "0.5 oz",
         "simple syrup"
       ],
       [
+        "A few drops, optional",
+        "A few drops, optional",
+        "pasteurized egg white"
+      ],
+      [
         "15 ml",
         "0.5 oz",
-        "red wine, to float"
+        "dry red wine, such as Shiraz or Malbec"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "lemon zest and cocktail cherry"
       ]
     ],
     "steps": [
-      "Shake the rye, lemon, and syrup with ice. Strain over fresh ice.",
-      "Slowly pour the wine over the back of a spoon to float it on top."
+      "Shake whiskey, lemon, syrup, and optional egg white. Strain over ice, then gently float red wine."
     ],
     "description": "A whiskey sour crowned with a ruby wine float.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "A whiskey sour crowned with a ruby wine float.",
     "glass": "Rocks glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "The skyline is best poured slowly.",
     "tags": [
       "Citrusy",
       "Sour"
@@ -574,10 +851,34 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Shake the rye, lemon, and syrup with ice. Strain over fresh ice. Slowly pour the wine over the back of a spoon to float it on top.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "new-york-sour"
+    "shortMethod": "Shake whiskey, lemon, syrup, and optional egg white. Strain over ice, then gently float red wine.",
+    "detailedSteps": [
+      "Put whiskey, lemon, syrup, and optional pasteurized egg white in a shaker. Keep the wine separate.",
+      "Add ice and shake vigorously until cold.",
+      "Strain into a chilled rocks glass filled with fresh ice.",
+      "Hold a spoon close to the surface and pour the wine slowly over its back. Finish with lemon zest and cherry."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · New York Sour",
+        "url": "https://iba-world.com/iba-cocktail/new-york-sour/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "new-york-sour",
+    "learn": "Floating means gently layering one liquid over another. Keep the spoon close to the surface and pour slowly to avoid disturbing the layer.",
+    "expect": "A bright whiskey sour with a fruity, slightly tannic red-wine finish. The wine adds depth and a drier edge rather than extra sweetness.",
+    "recipeVersion": "Uses IBA 60/30/22.5/15 ml measures. Egg white is made optional and pasteurized; the wine is reserved for the float, never shaken with the base.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer",
+      "Barspoon"
+    ]
   },
   {
     "id": "godfather",
@@ -596,25 +897,24 @@ const cocktails = [
         "Scotch whisky"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
+        "15 ml",
+        "0.5 oz",
         "amaretto"
       ],
       [
-        "1",
-        "1",
-        "orange peel"
+        "Optional",
+        "Optional",
+        "orange zest and cocktail cherry"
       ]
     ],
     "steps": [
-      "Build the Scotch and amaretto over ice.",
-      "Stir gently and garnish with the orange peel."
+      "Stir Scotch and amaretto with ice. Strain over fresh ice; optionally add orange zest and cherry."
     ],
     "description": "Scotch with a smooth almond sweetness.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "Scotch with a smooth almond sweetness.",
     "glass": "Rocks glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "Two ingredients, no lengthy negotiations.",
     "tags": [
       "Spirit-forward",
       "Sweet",
@@ -623,10 +923,34 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Build the Scotch and amaretto over ice. Stir gently and garnish with the orange peel.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "godfather"
+    "shortMethod": "Stir Scotch and amaretto with ice. Strain over fresh ice; optionally add orange zest and cherry.",
+    "detailedSteps": [
+      "Fill a mixing glass with ice.",
+      "Measure Scotch and amaretto into it.",
+      "Stir until cold and combined, then strain into a rocks glass over fresh ice.",
+      "Serve plain as illustrated, or express orange zest and add a cherry for the source’s garnish."
+    ],
+    "recipeSources": [
+      {
+        "title": "The Glenlivet · The Godfather",
+        "url": "https://www.theglenlivet.com/en/whisky-cocktails/the-godfather/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "godfather",
+    "learn": "Ratios matter even in a two-ingredient drink. This 3:1 Scotch-to-amaretto version is less sweet than an equal-parts version.",
+    "expect": "Almond-like sweetness over warm whisky and oak. A rounded after-dinner sip; try with a plain almond biscuit. The whisky remains prominent.",
+    "recipeVersion": "Uses The Glenlivet’s 45/15 ml formula rather than the card’s 45/22.5 ml. Its orange-and-cherry garnish is optional here.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Mixing glass",
+      "Barspoon",
+      "Strainer"
+    ]
   },
   {
     "id": "blood-and-sand",
@@ -657,18 +981,22 @@ const cocktails = [
       [
         "22.5 ml",
         "0.75 oz",
-        "orange juice"
+        "fresh orange juice"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "orange zest"
       ]
     ],
     "steps": [
-      "Shake all ingredients with ice.",
-      "Strain into a chilled coupe."
+      "Shake all four liquids with ice; strain into a chilled coupe and finish with orange zest."
     ],
     "description": "Equal parts Scotch, cherry, vermouth, and orange.",
-    "label": "The whiskey collection",
+    "label": "The spades collection",
     "profile": "Equal parts Scotch, cherry, vermouth, and orange.",
     "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "An unlikely quartet that knows its harmonies.",
     "tags": [
       "Citrusy",
       "Fruity"
@@ -676,10 +1004,33 @@ const cocktails = [
     "categories": [
       "whiskey"
     ],
-    "shortMethod": "Shake all ingredients with ice. Strain into a chilled coupe.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "blood-and-sand"
+    "shortMethod": "Shake all four liquids with ice; strain into a chilled coupe and finish with orange zest.",
+    "detailedSteps": [
+      "Chill a coupe and squeeze fresh orange juice.",
+      "Measure equal amounts of Scotch, cherry liqueur, vermouth, and orange juice into a shaker.",
+      "Add ice and shake firmly until the ingredients are fully mixed and cold.",
+      "Strain into the coupe and express orange zest over the surface. Add the zest as a house garnish."
+    ],
+    "recipeSources": [
+      {
+        "title": "Difford’s Guide · Classic formula discussion",
+        "url": "https://www.diffordsguide.com/cocktails/recipe/556/blood-and-sand-diffords-recipe",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "blood-and-sand",
+    "learn": "Orange juice changes the method: shaking blends and aerates the juice with the spirits, unlike the stirring used for a clear Rob Roy.",
+    "expect": "Soft orange, rich cherry, and malty whisky, with herbal vermouth underneath. Fruity and rounded rather than sharply sour; sweetness varies with the orange.",
+    "recipeVersion": "Retains the photographed equal-parts classic described in Difford’s review, not the tweaked recipe at the top of that page. Orange zest is our house garnish.",
+    "researched": true,
+    "edition": "spades-2026-11",
+    "artworkVersion": "spades-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "dry-martini",
@@ -2154,7 +2505,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Clean, bright lime with a lightly sweet rum finish. A crisp, short sour rather than a frozen fruit drink."
   },
   {
     "id": "cuba-libre",
@@ -2228,7 +2580,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Familiar cola sweetness sharpened by lime, with lively bubbles. Try alongside a salty grilled sandwich."
   },
   {
     "id": "mai-tai",
@@ -2319,7 +2672,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Rum-forward with tart lime, rounded almond, and orange aroma. Tropical, but not a pineapple-juice punch."
   },
   {
     "id": "pi-a-colada",
@@ -2399,7 +2753,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Soft coconut, juicy pineapple, and a thick frozen texture. More creamy and dessert-like than a sharp citrus sour."
   },
   {
     "id": "dark-n-stormy",
@@ -2469,7 +2824,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Fizzy ginger heat with dark-rum richness and lime aroma. A spicy, refreshing long drink."
   },
   {
     "id": "painkiller",
@@ -2556,7 +2912,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Rich coconut and pineapple with a softer orange note, finished by nutmeg aroma. Creamy and tropical; try with lightly spiced grilled food."
   },
   {
     "id": "hemingway-daiquiri",
@@ -2636,7 +2993,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Brisk lime and grapefruit, a faint cherry note, and a relatively dry finish. More tart and bittersweet than a standard Daiquiri."
   },
   {
     "id": "planter-s-punch",
@@ -2715,7 +3073,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Jamaican rum leads, softened by cane juice and lifted by lime. This compact version is more rum-led than a tall fruit punch."
   },
   {
     "id": "hurricane",
@@ -2806,7 +3165,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Passion fruit and orange with tart lime and a little grenadine sweetness. Juicy, bright, and tropical."
   },
   {
     "id": "caipirinha",
@@ -2880,7 +3240,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Zesty lime oils, fresh lime juice, and a grassy cane-spirit character. Sweet-tart with a lively, rustic texture."
   },
   {
     "id": "jack-rose",
@@ -2955,7 +3316,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Apple-brandy warmth, lemon brightness, and a pomegranate finish. Fruity but still a compact, tart cocktail."
   },
   {
     "id": "ti-punch",
@@ -3015,7 +3377,7 @@ const cocktails = [
       }
     ],
     "artworkKey": "ti-punch",
-    "learn": "Rhum agricole is made from fresh sugar-cane juice, giving it a character different from many molasses rums.",
+    "learn": "Rhum agricole is distilled from fresh sugar-cane juice rather than molasses. Check the bottle label: ordinary white rum is not the same ingredient.",
     "tools": [
       "Jigger",
       "Barspoon"
@@ -3024,7 +3386,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "A short, concentrated sip with grassy cane character, a little sweetness, and lime-peel aroma. No juice-heavy tropical softness."
   },
   {
     "id": "mojito",
@@ -3110,7 +3473,8 @@ const cocktails = [
     "researched": true,
     "edition": "hearts-2026-11",
     "artworkVersion": "hearts-1",
-    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "expect": "Fresh mint, bright lime, and light sweetness with crisp soda bubbles. A refreshing partner for grilled vegetables or seafood."
   },
   {
     "id": "zombie",
