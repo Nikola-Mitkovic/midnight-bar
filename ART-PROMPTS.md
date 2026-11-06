@@ -1,0 +1,55 @@
+# Hearts artwork prompts
+
+Created with the built-in image-generation tool; requested transparent backgrounds. Original generated PNG assets are in images/. No CLI image generation was used.
+
+## daiquiri
+
+Detailed vintage watercolor Daiquiri in a coupe, pale lime drink, lime-wheel garnish, transparent background; sepia ink and refracted glass details, no text or scenery.
+
+## cuba-libre
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. Cuba Libre: tall straight highball glass, deep cola-brown drink with amber sunlit edges, several large clear ice cubes, fresh lime wedge hooked on rim. Condensation and tiny fizz bubbles. Detailed faceted glass foot.
+
+## mai-tai
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. Mai Tai: squat heavy double rocks glass, golden amber rum drink over crushed ice, lush fresh mint sprig, spent lime half shell nestled among ice, small pineapple spear. Fine glass ribs, wet ice facets and detailed mint veins. No cherry, no umbrella.
+
+## pi-a-colada
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. Piña Colada: elegant curving hurricane glass on short stem with creamy ivory pale-gold frozen drink, soft blended texture, pineapple wedge and one small red cherry on rim. Detailed pineapple skin and frothy soft top. Full glass base visible.
+
+## dark-n-stormy
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. Dark 'n' Stormy: tall highball glass with large ice cubes and a distinct layered gradient: golden ginger beer lower two-thirds and dark mahogany rum floating above, fresh lime wedge on rim, fine carbonation. Entire glass visible.
+
+## painkiller
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. Use a clear cutout alpha silhouette. Do not paint any blurred glow or background around the drink. Painkiller cocktail: round-bellied snifter on short stem, pale creamy golden pineapple-coconut rum drink over crushed ice, a fine dusting of brown grated nutmeg, slender orange half-wheel and one small dark red cherry garnish. Detailed ice sparkle, soft froth, luminous glass.
+
+## hemingway-daiquiri
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. Use a clear cutout alpha silhouette. Do not paint any blurred glow or background around the drink. Hemingway Daiquiri: elegant shallow stemmed coupe with very pale blush pink grapefruit-and-rum cocktail, NO ice, slender curled grapefruit peel resting on rim. Fine etched glass lines and gentle pink watercolor gradients, full stem and foot visible.
+
+## planter-s-punch
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. Use a clear cutout alpha silhouette. Do not paint any blurred glow or background around the drink. Planter's Punch: short rustic terracotta tumbler with rich reddish sienna glaze and a subtly flared lip, a little amber rum punch visible at top over a few ice pieces, long curling fresh orange peel on rim. Beautiful handmade pottery texture and delicate watercolor ink hatching. No tiki face.
+
+## hurricane
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. Use a clear cutout alpha silhouette. Do not paint any blurred glow or background around the drink. Hurricane cocktail: tall curving hurricane glass on short sturdy stem, vibrant sunset coral-orange rum and passionfruit punch over visible large ice cubes, orange wheel and dark red cherry on rim. Detailed condensation and reflected light. Entire vessel and foot visible.
+
+## caipirinha
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. A clean cutout with no painted halo or blurred backdrop. Caipirinha: low broad heavy rocks glass of pale clear golden cachaça, numerous irregular cracked ice pieces and juicy green lime wedges muddled visibly at the bottom. A few sparkling sugar crystals, wet textured rind, delicate glass facets. No mint, no stem.
+
+## jack-rose
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. A clean cutout with no painted halo or blurred backdrop. Jack Rose: graceful small coupe with a slender long stem, clear luminous rosy coral-pink applejack cocktail, NO ice, a single narrow curled lemon twist on rim. Fine vintage glass etching and expressive pink watercolor pooling. No actual rose flower.
+
+## ti-punch
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. A clean cutout with no painted halo or blurred backdrop. Ti' Punch: very small squat old-fashioned glass, a shallow measure of pale clear golden rhum agricole, a thick small green lime cheek resting partly in liquid. NO ice. Fine sugar glints at base, elegant thick glass refractions. Full vessel, subtle delicate watercolor detail.
+
+## mojito
+
+Create ONE isolated cocktail illustration for a vintage cream recipe playing card. Richly detailed hand-painted watercolor with delicate sepia ink, antique botanical-plate finish, translucent pigment blooms, fine glass refractions and highlights, not vector, not photographic. Whole vessel and garnish, centered upright, generous clear margins. Genuinely transparent background; no paper rectangle, scenery, labels, lettering, logos, borders, extra objects or external shadow. Match an elegant watercolor Daiquiri illustration in warm muted natural pigments. A clean cutout with no painted halo or blurred backdrop. Mojito: tall narrow highball glass, pale transparent lime-rum-soda drink filled with irregular sparkling ice, fresh mint leaves suspended through it, green lime wedges at bottom, a lush fragrant mint sprig above rim. Tiny rising bubbles, wet glass highlights, extremely detailed leaf veins, full base visible.

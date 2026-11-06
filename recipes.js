@@ -1,6 +1,5 @@
 'use strict';
-// EDIT RECIPES HERE. Plain scripts keep the site usable by double-clicking index.html.
-// detailedSteps / recipeSources are reserved for the later flip-card update.
+// Live recipe data. Hearts edition: linked research, detailed backs, original generated artwork.
 const cocktails = [
   {
     "id": "old-fashioned",
@@ -2096,28 +2095,32 @@ const cocktails = [
       [
         "60 ml",
         "2 oz",
-        "white rum"
+        "white Cuban rum"
       ],
       [
-        "30 ml",
-        "1 oz",
+        "20 ml",
+        "0.67 oz",
         "fresh lime juice"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
-        "simple syrup"
+        "2 barspoons",
+        "2 barspoons",
+        "superfine sugar"
+      ],
+      [
+        "Optional",
+        "Optional",
+        "lime wheel"
       ]
     ],
     "steps": [
-      "Shake all ingredients hard with ice.",
-      "Strain into a chilled coupe."
+      "Dissolve sugar with rum and lime. Shake with ice; strain into a chilled coupe."
     ],
     "description": "Rum, lime, and sugar in a beautifully simple balance.",
     "label": "The hearts collection",
     "profile": "Rum, lime, and sugar in a beautifully simple balance.",
     "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "Three ingredients. Nowhere for a tired lime to hide.",
     "tags": [
       "Citrusy",
       "Sour"
@@ -2125,10 +2128,33 @@ const cocktails = [
     "categories": [
       "rum"
     ],
-    "shortMethod": "Shake all ingredients hard with ice. Strain into a chilled coupe.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "daiquiri"
+    "shortMethod": "Dissolve sugar with rum and lime. Shake with ice; strain into a chilled coupe.",
+    "detailedSteps": [
+      "Chill a coupe while you measure the drink. Squeeze the lime just before mixing.",
+      "Stir rum, lime juice, and superfine sugar in the shaker until no gritty sugar remains.",
+      "Fill the shaker with ice, seal it, and shake firmly for about 10–15 seconds, until cold.",
+      "Empty the coupe and strain in the cocktail without ice. The illustrated lime wheel is an optional house garnish."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Daiquiri",
+        "url": "https://iba-world.com/iba-cocktail/daiquiri/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "daiquiri",
+    "learn": "Shaking chills and dilutes the drink. Dissolving sugar first keeps the final sip from being gritty.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer",
+      "Barspoon"
+    ],
+    "recipeVersion": "IBA measures replace the photographed syrup version. The lime-wheel garnish is optional; IBA specifies none.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "cuba-libre",
@@ -2142,8 +2168,8 @@ const cocktails = [
     "method": "Built",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "50 ml",
+        "1.67 oz",
         "white rum"
       ],
       [
@@ -2152,8 +2178,8 @@ const cocktails = [
         "cola"
       ],
       [
-        "15 ml",
-        "0.5 oz",
+        "10 ml",
+        "0.33 oz",
         "fresh lime juice"
       ],
       [
@@ -2163,14 +2189,13 @@ const cocktails = [
       ]
     ],
     "steps": [
-      "Build the rum, cola, and lime juice over ice.",
-      "Squeeze in the lime wedge and stir gently."
+      "Build rum, lime, and cola over ice. Stir gently and add a lime wedge."
     ],
     "description": "Rum and cola made lively with fresh lime.",
     "label": "The hearts collection",
     "profile": "Rum and cola made lively with fresh lime.",
     "glass": "Highball glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "The lime does more work than its size suggests.",
     "tags": [
       "Citrusy",
       "Refreshing",
@@ -2179,10 +2204,31 @@ const cocktails = [
     "categories": [
       "rum"
     ],
-    "shortMethod": "Build the rum, cola, and lime juice over ice. Squeeze in the lime wedge and stir gently.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "cuba-libre"
+    "shortMethod": "Build rum, lime, and cola over ice. Stir gently and add a lime wedge.",
+    "detailedSteps": [
+      "Fill a highball glass with fresh ice so the drink stays cold from the start.",
+      "Measure the rum and freshly squeezed lime juice into the glass.",
+      "Add chilled cola slowly. Lift once or twice with a spoon to combine without flattening the bubbles.",
+      "Set a lime wedge on the rim and serve immediately."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Cuba Libre",
+        "url": "https://iba-world.com/iba-cocktail/cuba-libre/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "cuba-libre",
+    "learn": "Build means mix directly in the serving glass. Carbonated ingredients go in last and are never shaken.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ],
+    "recipeVersion": "Uses IBA measures: 50 ml rum, 120 ml cola, and 10 ml lime; slightly different from the photographed card.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "mai-tai",
@@ -2190,46 +2236,55 @@ const cocktails = [
     "rank": "3",
     "suit": "♥",
     "category": "rum",
-    "spirit": "Aged rum",
+    "spirit": "Jamaican & Martinique rum",
     "shape": "rocks",
     "color": "#d6a24e",
     "method": "Shaken",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "aged rum"
+        "30 ml",
+        "1 oz",
+        "amber Jamaican rum"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
+        "30 ml",
+        "1 oz",
+        "Martinique molasses rum"
+      ],
+      [
+        "15 ml",
+        "0.5 oz",
         "orange curaçao"
       ],
       [
         "15 ml",
         "0.5 oz",
-        "orgeat"
+        "orgeat (almond syrup)"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
-        "lime juice"
+        "30 ml",
+        "1 oz",
+        "fresh lime juice"
+      ],
+      [
+        "7.5 ml",
+        "0.25 oz",
+        "simple syrup"
       ],
       [
         "To garnish",
         "To garnish",
-        "mint"
+        "mint, pineapple spear, and lime peel"
       ]
     ],
     "steps": [
-      "Shake rum, curaçao, orgeat, and lime with ice.",
-      "Pour over crushed ice and garnish with mint."
+      "Shake everything except garnish with ice. Pour into a double rocks glass; garnish generously."
     ],
     "description": "Aged rum, almond, and orange with a tart lime finish.",
     "label": "The hearts collection",
     "profile": "Aged rum, almond, and orange with a tart lime finish.",
     "glass": "Rocks glass",
-    "tip": "Orgeat usually contains almonds; check the label when serving guests.",
+    "tip": "The mint is a tiny aromatic parasol. Give it room.",
     "tags": [
       "Citrusy",
       "Fruity",
@@ -2240,10 +2295,31 @@ const cocktails = [
     "categories": [
       "rum"
     ],
-    "shortMethod": "Shake rum, curaçao, orgeat, and lime with ice. Pour over crushed ice and garnish with mint.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "mai-tai"
+    "shortMethod": "Shake everything except garnish with ice. Pour into a double rocks glass; garnish generously.",
+    "detailedSteps": [
+      "Measure both rums, curaçao, orgeat, lime, and simple syrup into a shaker.",
+      "Add ice and shake briskly until the shaker feels cold.",
+      "Pour the drink and ice into a double rocks glass. Add a little fresh ice if needed.",
+      "Garnish with mint, pineapple, and lime. Lightly clap the mint once to release its aroma."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Mai-Tai",
+        "url": "https://iba-world.com/iba-cocktail/mai-tai/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "mai-tai",
+    "learn": "Orgeat brings almond flavour and texture. It usually contains nuts. The IBA specification calls for molasses rum, not agricole.",
+    "tools": [
+      "Jigger",
+      "Shaker"
+    ],
+    "recipeVersion": "The IBA two-rum formula replaces the card’s single aged rum and adds simple syrup. A lime shell in the artwork is decorative.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "pi-a-colada",
@@ -2257,35 +2333,39 @@ const cocktails = [
     "method": "Blended",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "50 ml",
+        "1.67 oz",
         "white rum"
       ],
       [
-        "60 ml",
-        "2 oz",
-        "pineapple juice"
-      ],
-      [
-        "45 ml",
-        "1.5 oz",
+        "30 ml",
+        "1 oz",
         "coconut cream"
       ],
       [
-        "1",
-        "1",
-        "pineapple wedge"
+        "50 ml",
+        "1.67 oz",
+        "fresh pineapple juice"
+      ],
+      [
+        "To blend",
+        "To blend",
+        "ice"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "pineapple slice and cocktail cherry"
       ]
     ],
     "steps": [
-      "Blend rum, pineapple juice, and coconut cream with ice until smooth.",
-      "Pour into a glass and garnish with pineapple."
+      "Blend rum, coconut cream, and pineapple juice with ice until smooth. Pour and garnish."
     ],
     "description": "Creamy coconut and pineapple with white rum.",
     "label": "The hearts collection",
     "profile": "Creamy coconut and pineapple with white rum.",
     "glass": "Hurricane glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "A little tropical weather, without the airport queue.",
     "tags": [
       "Fruity",
       "Tropical",
@@ -2295,10 +2375,31 @@ const cocktails = [
     "categories": [
       "rum"
     ],
-    "shortMethod": "Blend rum, pineapple juice, and coconut cream with ice until smooth. Pour into a glass and garnish with pineapple.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "pi-a-colada"
+    "shortMethod": "Blend rum, coconut cream, and pineapple juice with ice until smooth. Pour and garnish.",
+    "detailedSteps": [
+      "Stir the coconut cream until uniform, then measure it into a blender with rum and pineapple juice.",
+      "Add a small scoop of ice. Blend, stopping once the drink becomes smooth and spoonably thick.",
+      "If needed, add ice a little at a time and blend briefly again; too much makes the flavour watery.",
+      "Pour into a large hurricane glass and garnish with pineapple and a cherry."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Piña Colada",
+        "url": "https://iba-world.com/iba-cocktail/pina-colada/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "pi-a-colada",
+    "learn": "Coconut products vary in sweetness and thickness. This card follows IBA’s coconut-cream wording; check your product before mixing.",
+    "tools": [
+      "Jigger",
+      "Blender"
+    ],
+    "recipeVersion": "Uses IBA 50/30/50 ml proportions instead of the photographed 60/45/60 ml recipe.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "dark-n-stormy",
@@ -2314,33 +2415,27 @@ const cocktails = [
       [
         "60 ml",
         "2 oz",
-        "dark rum"
+        "Goslings rum"
       ],
       [
-        "120 ml",
-        "4 oz",
+        "100 ml",
+        "3.33 oz",
         "ginger beer"
       ],
       [
-        "15 ml",
-        "0.5 oz",
-        "lime juice"
-      ],
-      [
         "1",
         "1",
-        "lime wedge"
+        "lime wedge or slice"
       ]
     ],
     "steps": [
-      "Build rum and lime over ice in a tall glass.",
-      "Top with ginger beer, stir gently, and garnish with lime."
+      "Fill a highball with ice and ginger beer. Float the rum on top; garnish with lime."
     ],
     "description": "Dark rum and ginger with a refreshing lime edge.",
     "label": "The hearts collection",
     "profile": "Dark rum and ginger with a refreshing lime edge.",
     "glass": "Highball glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "Admire the storm cloud. Then stir it into the sunshine.",
     "tags": [
       "Citrusy",
       "Refreshing",
@@ -2350,65 +2445,118 @@ const cocktails = [
     "categories": [
       "rum"
     ],
-    "shortMethod": "Build rum and lime over ice in a tall glass. Top with ginger beer, stir gently, and garnish with lime.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "dark-n-stormy"
+    "shortMethod": "Fill a highball with ice and ginger beer. Float the rum on top; garnish with lime.",
+    "detailedSteps": [
+      "Pack a highball glass with ice and pour in well-chilled ginger beer.",
+      "Hold a spoon near the surface and slowly pour the rum over its back to help form a dark top layer.",
+      "Garnish with lime. The colour gradient is presentation, not a mixing requirement.",
+      "Give the drink a gentle stir before sipping if you prefer an even flavour throughout."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Dark ’N’ Stormy",
+        "url": "https://iba-world.com/iba-cocktail/dark-n-stormy/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "dark-n-stormy",
+    "learn": "Floating means layering one liquid gently over another. Ginger beer is added directly to the glass, never shaken.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ],
+    "recipeVersion": "IBA version: Goslings rum, ginger beer, and lime garnish. The photographed added lime juice is omitted.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
-    "id": "moscow-mule-hearts",
-    "name": "Moscow Mule",
+    "id": "painkiller",
+    "name": "Painkiller",
     "rank": "6",
     "suit": "♥",
-    "category": "vodka",
-    "spirit": "Vodka",
-    "shape": "mug",
-    "color": "#c79c55",
-    "method": "Built",
+    "category": "rum",
+    "spirit": "Pusser’s rum",
+    "shape": "hurricane",
+    "color": "#e0bd72",
+    "method": "Shaken",
     "ingredients": [
       [
         "60 ml",
         "2 oz",
-        "vodka"
+        "Pusser’s rum"
       ],
       [
         "120 ml",
         "4 oz",
-        "ginger beer"
+        "pineapple juice"
       ],
       [
-        "15 ml",
-        "0.5 oz",
-        "lime juice"
+        "30 ml",
+        "1 oz",
+        "orange juice"
+      ],
+      [
+        "30 ml",
+        "1 oz",
+        "cream of coconut (sweetened)"
       ],
       [
         "To garnish",
         "To garnish",
-        "lime and mint"
+        "freshly grated nutmeg"
+      ],
+      [
+        "Optional",
+        "Optional",
+        "orange slice and cherry"
       ]
     ],
     "steps": [
-      "Build vodka and lime juice in an ice-filled copper mug.",
-      "Add ginger beer, stir gently, and garnish with lime and mint."
+      "Shake rum, juices, and cream of coconut with ice. Pour over ice; finish with nutmeg."
     ],
-    "description": "The heart-suit Mule, finished with lime and mint.",
+    "description": "Pineapple and coconut, orange brightness, and a fragrant nutmeg finish.",
     "label": "The hearts collection",
-    "profile": "The heart-suit Mule, finished with lime and mint.",
-    "glass": "Copper mug",
-    "tip": "This card appears in the hearts suit but uses vodka, so it is listed under the vodka filter.",
+    "profile": "Creamy · tropical · spiced",
+    "glass": "Large snifter or hurricane glass",
+    "tip": "The nutmeg is the tiny detail that steals the scene.",
     "tags": [
-      "Citrusy",
-      "Refreshing",
-      "Sparkling",
-      "Spiced"
+      "Tropical",
+      "Fruity",
+      "Creamy",
+      "Spiced",
+      "Sweet"
     ],
     "categories": [
-      "vodka"
+      "rum"
     ],
-    "shortMethod": "Build vodka and lime juice in an ice-filled copper mug. Add ginger beer, stir gently, and garnish with lime and mint.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "moscow-mule-hearts"
+    "shortMethod": "Shake rum, juices, and cream of coconut with ice. Pour over ice; finish with nutmeg.",
+    "detailedSteps": [
+      "Stir the sweetened cream of coconut until smooth. Measure it with rum and both juices into a shaker.",
+      "Add ice and shake firmly to combine the thick coconut with the juices.",
+      "Pour into a large snifter or hurricane glass over fresh ice, leaving room for garnish.",
+      "Grate a little nutmeg over the surface. An orange slice and cherry are optional finishing touches."
+    ],
+    "recipeSources": [
+      {
+        "title": "Pusser’s · Painkiller",
+        "url": "https://pussersrum.com/blogs/logbook/best-painkiller-cocktail-recipes-for-a-soothing-night-in",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "painkiller",
+    "learn": "Cream of coconut is sweetened and differs from plain coconut cream. This recipe needs the sweetened product.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Nutmeg grater"
+    ],
+    "recipeVersion": "Pusser’s 2:4:1:1 formula fills the former 6♥ Moscow Mule slot. The 2♦ vodka Mule remains.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "hemingway-daiquiri",
@@ -2427,30 +2575,34 @@ const cocktails = [
         "white rum"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
-        "lime juice"
-      ],
-      [
-        "15 ml",
-        "0.5 oz",
+        "40 ml",
+        "1.33 oz",
         "grapefruit juice"
       ],
       [
         "15 ml",
         "0.5 oz",
         "maraschino liqueur"
+      ],
+      [
+        "15 ml",
+        "0.5 oz",
+        "fresh lime juice"
+      ],
+      [
+        "Optional",
+        "Optional",
+        "grapefruit twist"
       ]
     ],
     "steps": [
-      "Shake all ingredients vigorously with ice.",
-      "Strain into a chilled coupe."
+      "Shake rum, grapefruit, maraschino, and lime with ice. Strain into a large chilled coupe."
     ],
     "description": "A dry, citrus-led daiquiri with grapefruit and cherry.",
     "label": "The hearts collection",
     "profile": "A dry, citrus-led daiquiri with grapefruit and cherry.",
     "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "No diary required. Just a fresh grapefruit and a cold glass.",
     "tags": [
       "Citrusy",
       "Fruity",
@@ -2459,10 +2611,32 @@ const cocktails = [
     "categories": [
       "rum"
     ],
-    "shortMethod": "Shake all ingredients vigorously with ice. Strain into a chilled coupe.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "hemingway-daiquiri"
+    "shortMethod": "Shake rum, grapefruit, maraschino, and lime with ice. Strain into a large chilled coupe.",
+    "detailedSteps": [
+      "Chill a large coupe. Measure the rum, grapefruit juice, maraschino liqueur, and lime into a shaker.",
+      "Add plenty of ice and seal the shaker securely.",
+      "Shake until cold, then strain into the empty chilled glass, leaving the ice behind.",
+      "Serve without ice. A grapefruit twist, as pictured, is an optional house garnish."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Hemingway Special",
+        "url": "https://iba-world.com/iba-cocktail/hemingway-special/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "hemingway-daiquiri",
+    "learn": "Maraschino is a clear cherry liqueur, not the syrup from a jar of cocktail cherries.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ],
+    "recipeVersion": "Keeps the familiar menu name but uses IBA Hemingway Special measures. IBA specifies no garnish.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "planter-s-punch",
@@ -2471,52 +2645,77 @@ const cocktails = [
     "suit": "♥",
     "category": "rum",
     "spirit": "Dark rum",
-    "shape": "tall",
+    "shape": "rocks",
     "color": "#b5753c",
-    "method": "Shaken",
+    "method": "Built",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "dark rum"
-      ],
-      [
-        "30 ml",
-        "1 oz",
-        "lime juice"
+        "45 ml",
+        "1.5 oz",
+        "Jamaican rum"
       ],
       [
         "15 ml",
         "0.5 oz",
-        "simple syrup"
+        "fresh lime juice"
       ],
       [
-        "2 dashes",
-        "2 dashes",
-        "Angostura bitters"
+        "30 ml",
+        "1 oz",
+        "sugar-cane juice"
+      ],
+      [
+        "To taste",
+        "To taste",
+        "ice or water for dilution"
+      ],
+      [
+        "1",
+        "1",
+        "orange zest strip"
       ]
     ],
     "steps": [
-      "Shake all ingredients with ice.",
-      "Pour over crushed ice in a tall glass."
+      "Build rum, lime, and cane juice in a small tumbler. Dilute to taste and garnish with orange zest."
     ],
-    "description": "Dark rum and lime with an aromatic bitters finish.",
+    "description": "Jamaican rum and fresh lime, softened with sugar-cane juice.",
     "label": "The hearts collection",
     "profile": "Dark rum and lime with an aromatic bitters finish.",
-    "glass": "Highball glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "glass": "Small tumbler or terracotta cup",
+    "tip": "A little punch with a big opinion about good rum.",
     "tags": [
       "Citrusy",
-      "Tropical",
-      "Sour"
+      "Spirit-forward"
     ],
     "categories": [
       "rum"
     ],
-    "shortMethod": "Shake all ingredients with ice. Pour over crushed ice in a tall glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "planter-s-punch"
+    "shortMethod": "Build rum, lime, and cane juice in a small tumbler. Dilute to taste and garnish with orange zest.",
+    "detailedSteps": [
+      "Measure rum, lime, and sugar-cane juice into a small tumbler or terracotta cup.",
+      "Stir to combine. Sugar-cane juice is a juice, not concentrated cane syrup.",
+      "Add a few ice pieces or a small splash of water. Stir, taste, and adjust dilution gradually.",
+      "Twist orange zest over the surface and rest it on the rim."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Planters Punch",
+        "url": "https://iba-world.com/iba-cocktail/planters-punch/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "planter-s-punch",
+    "learn": "Dilution is part of the recipe: water softens intensity and lets aromas open up.",
+    "tools": [
+      "Jigger",
+      "Barspoon",
+      "Peeler"
+    ],
+    "recipeVersion": "This is the current IBA cane-juice version, not the photographed syrup-and-bitters variation.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "hurricane",
@@ -2530,40 +2729,49 @@ const cocktails = [
     "method": "Shaken",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "white rum"
+        "30 ml",
+        "1 oz",
+        "BACARDÍ Black rum"
       ],
       [
-        "60 ml",
-        "2 oz",
-        "dark rum"
-      ],
-      [
-        "60 ml",
-        "2 oz",
-        "passion fruit juice"
+        "22.5 ml",
+        "0.75 oz",
+        "BACARDÍ Superior rum"
       ],
       [
         "30 ml",
         "1 oz",
-        "lime juice"
+        "orange juice"
       ],
       [
-        "15 ml",
-        "0.5 oz",
+        "30 ml",
+        "1 oz",
+        "fresh lime juice"
+      ],
+      [
+        "30 ml",
+        "1 oz",
+        "passion-fruit syrup"
+      ],
+      [
+        "1 tsp",
+        "1 tsp",
         "grenadine"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "lemon wheel, orange peel, and cherry"
       ]
     ],
     "steps": [
-      "Shake all ingredients with ice.",
-      "Serve over fresh ice in a large hurricane glass."
+      "Shake both rums, juices, and syrups with ice. Strain over fresh ice in a hurricane glass."
     ],
-    "description": "A generous rum punch with passion fruit and lime.",
+    "description": "Two rums with passion fruit, orange, lime, and a blush of grenadine.",
     "label": "The hearts collection",
     "profile": "A generous rum punch with passion fruit and lime.",
     "glass": "Hurricane glass",
-    "tip": "This card makes a large serving; choose a large glass or divide between two smaller glasses.",
+    "tip": "Forecast: passion fruit, bright citrus, and a cherry on top.",
     "tags": [
       "Citrusy",
       "Fruity",
@@ -2573,10 +2781,32 @@ const cocktails = [
     "categories": [
       "rum"
     ],
-    "shortMethod": "Shake all ingredients with ice. Serve over fresh ice in a large hurricane glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "hurricane"
+    "shortMethod": "Shake both rums, juices, and syrups with ice. Strain over fresh ice in a hurricane glass.",
+    "detailedSteps": [
+      "Fill the serving glass with fresh ice. Measure all liquid ingredients into a shaker.",
+      "Add plenty of ice, seal, and shake vigorously until the shaker is cold.",
+      "Strain into the prepared glass; leave enough space at the top for the garnish.",
+      "Finish with citrus and a cherry. The artwork’s orange wheel is an optional substitute for the peel."
+    ],
+    "recipeSources": [
+      {
+        "title": "BACARDÍ US · Hurricane",
+        "url": "https://www.bacardi.com/us/en/rum-cocktails/hurricane/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "hurricane",
+    "learn": "Passion-fruit syrup is sweetened. Juice or purée is not a direct one-for-one substitute.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ],
+    "recipeVersion": "Uses BACARDÍ’s US recipe, with less rum than the photographed card. Other Hurricane versions differ.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "caipirinha",
@@ -2590,35 +2820,34 @@ const cocktails = [
     "method": "Muddled",
     "ingredients": [
       [
-        "15 ml",
-        "0.5 oz",
-        "sugar"
-      ],
-      [
-        "1",
-        "1",
-        "lime, quartered"
-      ],
-      [
         "60 ml",
         "2 oz",
         "cachaça"
       ],
       [
+        "1",
+        "1",
+        "lime, cut into small wedges"
+      ],
+      [
+        "4 tsp",
+        "4 tsp",
+        "white cane sugar"
+      ],
+      [
         "To fill",
         "To fill",
-        "crushed ice"
+        "cracked ice"
       ]
     ],
     "steps": [
-      "Muddle the lime and sugar in a rocks glass.",
-      "Add cachaça and crushed ice, then stir."
+      "Gently muddle lime with sugar. Fill with cracked ice, add cachaça, and stir."
     ],
     "description": "Fresh muddled lime and sugar with Brazilian cachaça.",
     "label": "The hearts collection",
     "profile": "Fresh muddled lime and sugar with Brazilian cachaça.",
     "glass": "Rocks glass",
-    "tip": "The card omits the cachaça amount; 2 oz / 60 ml is an added preparation measure. Sugar is shown as a volume measure, as on the card.",
+    "tip": "Persuade the lime. No interrogation necessary.",
     "tags": [
       "Citrusy",
       "Refreshing"
@@ -2626,10 +2855,32 @@ const cocktails = [
     "categories": [
       "cachaca"
     ],
-    "shortMethod": "Muddle the lime and sugar in a rocks glass. Add cachaça and crushed ice, then stir.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "caipirinha"
+    "shortMethod": "Gently muddle lime with sugar. Fill with cracked ice, add cachaça, and stir.",
+    "detailedSteps": [
+      "Cut a washed lime into small wedges and place them in a sturdy double rocks glass.",
+      "Add sugar and press gently with a muddler to release juice. Avoid grinding the peel into a paste.",
+      "Fill the glass with cracked ice, then measure in the cachaça.",
+      "Stir from the bottom to lift the sweetened lime juice through the drink. Leave the lime pieces in."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Caipirinha",
+        "url": "https://iba-world.com/iba-cocktail/caipirinha/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "caipirinha",
+    "learn": "Cachaça is the defining spirit here. Muddling releases juice and peel oils; a gentle touch limits bitterness.",
+    "tools": [
+      "Jigger",
+      "Muddler",
+      "Barspoon"
+    ],
+    "recipeVersion": "IBA supplies the card’s missing spirit amount and specifies four teaspoons of sugar.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "jack-rose",
@@ -2645,28 +2896,32 @@ const cocktails = [
       [
         "60 ml",
         "2 oz",
-        "applejack"
+        "Laird’s Applejack"
       ],
       [
         "22.5 ml",
         "0.75 oz",
-        "lemon juice"
+        "fresh lemon juice"
       ],
       [
         "15 ml",
         "0.5 oz",
-        "grenadine"
+        "pomegranate grenadine"
+      ],
+      [
+        "Optional",
+        "Optional",
+        "lemon twist"
       ]
     ],
     "steps": [
-      "Shake all ingredients with ice.",
-      "Strain into a chilled cocktail glass."
+      "Shake applejack, lemon, and grenadine with ice. Strain into a chilled coupe."
     ],
     "description": "Apple brandy, lemon, and a blush of grenadine.",
     "label": "The hearts collection",
     "profile": "Apple brandy, lemon, and a blush of grenadine.",
     "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "The rose is the colour. The apple does the talking.",
     "tags": [
       "Citrusy",
       "Fruity",
@@ -2675,10 +2930,32 @@ const cocktails = [
     "categories": [
       "applejack"
     ],
-    "shortMethod": "Shake all ingredients with ice. Strain into a chilled cocktail glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "jack-rose"
+    "shortMethod": "Shake applejack, lemon, and grenadine with ice. Strain into a chilled coupe.",
+    "detailedSteps": [
+      "Chill a coupe. Measure applejack, fresh lemon juice, and pomegranate grenadine into a shaker.",
+      "Add ice and shake firmly for about 10–15 seconds.",
+      "Strain into the chilled glass without ice; use a fine strainer too if you prefer a cleaner surface.",
+      "Add an optional lemon twist, expressing its oils over the drink first."
+    ],
+    "recipeSources": [
+      {
+        "title": "Laird & Company · Jack Rose",
+        "url": "https://www.lairdandcompany.com/all-cocktails/jack-rose-cocktail",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "jack-rose",
+    "learn": "Grenadine is pomegranate-based syrup. Applejack gives this sour its apple character; it is not a rum drink.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ],
+    "recipeVersion": "Measures match Laird’s published recipe and the photographed card. Expanded steps and garnish are house guidance.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "ti-punch",
@@ -2692,30 +2969,29 @@ const cocktails = [
     "method": "Stirred",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "rhum agricole"
-      ],
-      [
-        "15 ml",
-        "0.5 oz",
-        "cane syrup"
+        "50 ml",
+        "1.67 oz",
+        "white rhum agricole"
       ],
       [
         "1",
         "1",
-        "lime disc"
+        "lime wedge or cheek"
+      ],
+      [
+        "1 tsp",
+        "1 tsp",
+        "cane sugar or cane syrup"
       ]
     ],
     "steps": [
-      "Squeeze the lime disc into a rocks glass and drop it in.",
-      "Add cane syrup and rhum agricole, then stir."
+      "Press lime into sugar, stir, then add rhum agricole and stir again. Serve in a small glass."
     ],
     "description": "Grassy agricole rum with cane syrup and a little lime.",
     "label": "The hearts collection",
     "profile": "Grassy agricole rum with cane syrup and a little lime.",
     "glass": "Rocks glass",
-    "tip": "Traditionally served with little or no ice; adjust to your preference.",
+    "tip": "Small glass. Big cane-field energy.",
     "tags": [
       "Spirit-forward",
       "Citrusy",
@@ -2724,10 +3000,31 @@ const cocktails = [
     "categories": [
       "rum"
     ],
-    "shortMethod": "Squeeze the lime disc into a rocks glass and drop it in. Add cane syrup and rhum agricole, then stir.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "ti-punch"
+    "shortMethod": "Press lime into sugar, stir, then add rhum agricole and stir again. Serve in a small glass.",
+    "detailedSteps": [
+      "Put a teaspoon of cane sugar or syrup into a small rocks glass.",
+      "Press a lime wedge or cheek over it, drop it in, and stir to combine the juice and sugar.",
+      "Measure in rhum agricole and stir again until the mixture is integrated.",
+      "Serve as a small, spirit-led drink. The illustration shows it without ice; add a small cube if preferred."
+    ],
+    "recipeSources": [
+      {
+        "title": "Rhum Clément · Ti’Punch",
+        "url": "https://www.rhum-clement.com/en/cocktail/tipunch/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "ti-punch",
+    "learn": "Rhum agricole is made from fresh sugar-cane juice, giving it a character different from many molasses rums.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ],
+    "recipeVersion": "Uses Clément’s 50 ml rum and teaspoon of sugar/syrup, rather than the photographed 60/15 ml formula.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "mojito",
@@ -2741,40 +3038,44 @@ const cocktails = [
     "method": "Muddled",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "white rum"
+        "45 ml",
+        "1.5 oz",
+        "white Cuban rum"
       ],
       [
-        "30 ml",
-        "1 oz",
+        "20 ml",
+        "0.67 oz",
         "fresh lime juice"
       ],
       [
-        "2 tsp",
-        "2 tsp",
-        "sugar"
+        "6 small sprigs",
+        "6 small sprigs",
+        "mint"
       ],
       [
-        "6–8",
-        "6–8",
-        "mint leaves"
+        "2 tsp",
+        "2 tsp",
+        "white cane sugar"
       ],
       [
         "To top",
         "To top",
         "soda water"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "mint sprig and lime slice"
       ]
     ],
     "steps": [
-      "Gently muddle mint with sugar and lime juice.",
-      "Add rum and ice, top with soda water, and stir gently."
+      "Gently press mint with sugar and lime. Add ice and rum, top with soda, and stir lightly."
     ],
     "description": "Cool mint, fresh lime, and sparkling white rum.",
     "label": "The hearts collection",
     "profile": "Cool mint, fresh lime, and sparkling white rum.",
     "glass": "Highball glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "Wake the mint up. Don’t send it through a wood chipper.",
     "tags": [
       "Citrusy",
       "Refreshing",
@@ -2784,10 +3085,32 @@ const cocktails = [
     "categories": [
       "rum"
     ],
-    "shortMethod": "Gently muddle mint with sugar and lime juice. Add rum and ice, top with soda water, and stir gently.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "mojito"
+    "shortMethod": "Gently press mint with sugar and lime. Add ice and rum, top with soda, and stir lightly.",
+    "detailedSteps": [
+      "Put mint, sugar, and lime juice in a tall glass. Gently press the mint; do not shred the leaves.",
+      "Add a small splash of soda and stir to help dissolve the sugar.",
+      "Fill with ice, pour in the rum, and top with chilled soda water.",
+      "Lift gently with a spoon to mix. Garnish with mint and a lime slice."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Mojito",
+        "url": "https://iba-world.com/iba-cocktail/mojito/",
+        "accessed": "2026-11-06"
+      }
+    ],
+    "artworkKey": "mojito",
+    "learn": "The aroma of intact mint is part of the drink. Gentle mixing preserves both fresh fragrance and soda bubbles.",
+    "tools": [
+      "Jigger",
+      "Barspoon",
+      "Muddler"
+    ],
+    "recipeVersion": "Follows IBA rum, lime, and sugar measures. IBA lists six mint sprigs; use small sprigs that fit the glass.",
+    "researched": true,
+    "edition": "hearts-2026-11",
+    "artworkVersion": "hearts-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce."
   },
   {
     "id": "zombie",

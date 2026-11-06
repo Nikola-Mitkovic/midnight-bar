@@ -1,6 +1,6 @@
-# The Midnight Bar — Modular edition
+# The Midnight Bar — Hearts edition
 
-54 card recipes, editable artwork, and combined category filters. The duplicate Moscow Mule remains until a replacement is chosen. The card-flip redesign is prepared in the content structure but is not implemented yet.
+54 distinct cocktails. All 13 hearts include individual watercolor PNG illustrations and two-sided researched recipe cards. The 6♥ duplicate Moscow Mule is now Painkiller; 2♦ remains Moscow Mule. Other suits retain their existing illustrations and recipe dialogs.
 
 ## Install this update on GitHub
 
@@ -14,23 +14,23 @@ Required website files:
 - **`recipes.js` — new, required**
 - **`artwork.js` — new, required**
 - **`illustrations.js` — new, required**
-- **`images/` — new, artwork location** (currently contains instructions only)
+- **`images/` — new, artwork location** (includes 13 hearts illustrations)
 
 You can upload the documentation and reference exports too. Commit to your existing Pages branch, normally `main`, and wait for deployment. Keep the filenames and folder structure intact; do not nest the files inside an extra folder. Your URL stays https://nikola-mitkovic.github.io/midnight-bar/ . The assistant has not uploaded this update.
 
-The new HTML uses `?v=3` links to avoid serving old scripts/styles. If the page looks stale after deployment, refresh or try a private tab. For future changes, increment relevant script versions in `index.html` if necessary.
+The new HTML uses `?v=4` links to avoid serving old scripts/styles. If the page looks stale after deployment, refresh or try a private tab. For future changes, increment relevant script versions in `index.html` if necessary.
 
 ## Change artwork yourself
 
 Upload an image to the `images` folder using a listed filename, for example `images/old-fashioned.webp`. That image is automatically used everywhere the drink appears. Replace it with a new file of the same name whenever you want. Missing or unreadable images show the original SVG art, with no broken-image icon. Files are lazy-loaded on menu cards.
 
-See **ARTWORK-GUIDE.md** for all 54 filenames, image preparation tips, PNG/JPEG overrides, optional cache versions, and how to keep an individual drink on SVG. There are no replacement photos in this release. Optional images that have not been uploaded may generate expected 404 entries in browser developer tools; the visible fallback is intentional.
+See **ARTWORK-GUIDE.md** for all 54 filenames, image preparation tips, PNG/JPEG overrides, optional cache versions, and how to keep an individual drink on SVG. The hearts PNGs are included; the other suits retain SVG fallback art. Optional images that have not been uploaded may generate expected 404 entries in browser developer tools; the visible fallback is intentional.
 
 ## Edit content in batches
 
 See **EDITING-GUIDE.md**. All live recipe content now lives in `recipes.js`, separate from interactions and illustrations. Tags and recipe sources can be added drink by drink. `recipes.json` and `RECIPES.md` are reference exports only and are not loaded by the site; update them separately if you need matching exports.
 
-New fields reserve space for `shortMethod`, `detailedSteps`, and `recipeSources` for a later flip-card interface. Existing `steps` still powers the current dialog. Detailed instructions have not been researched in this release. Both Moscow Mule cards have distinct IDs and image slots for easy later replacement.
+Hearts use `shortMethod` on the front and `detailedSteps` on the back, with source links and learning notes. See HEARTS-SOURCES.md for recipe choices. Artwork was generated with the built-in image tool; prompts are in ART-PROMPTS.md.
 
 ## Categories
 
@@ -40,7 +40,7 @@ New fields reserve space for `shortMethod`, `detailedSteps`, and `recipeSources`
 - Search names, ingredients, tags, and preparation methods. Accents are optional: `pina` finds Piña Colada.
 - All filters combine. Click a tag to filter by it; use Clear filters to reset everything.
 
-Taste tags are editorial descriptions, not numerical strength/sweetness measures or allergen certifications. Suit and spirit are separate: the hearts Moscow Mule remains vodka; the Zombie is a rum-based joker.
+Taste tags are editorial descriptions, not numerical strength/sweetness measures or allergen certifications. Suit and spirit are separate: the hearts Jack Rose uses applejack; the Zombie is a rum-based joker.
 
 ## Preview
 
@@ -48,10 +48,14 @@ Open `index.html` with all required files beside it. No installation or build st
 
 ## Verification
 
-Passed syntax and automated checks for all 54 data records, recipe dialogs, unit switching, artwork paths, 16 tag filters, 8 spirit categories, 5 suit groups, combined filters, accented search, and optional image overrides. Browser checks confirmed successful image replacement in the hero and dialog, fallback restoration after removing the test image, tag clicking, empty-result reset, and recipe units. At a 390 px viewport the page had no horizontal overflow and recipe artwork remained visible. The temporary artwork test file was removed before packaging.
+Passed syntax and automated checks for all 54 records, dialogs, units, artwork paths, tag/spirit/suit filters, search, and all 13 hearts flip states. Browser checks verified watercolor loading, front/back navigation, source links, and a 390 CSS-pixel layout without horizontal overflow.
 
 ## Recipe and QR notes
 
-Recipes retain the photographed-card versions and their previous transcription notes. Bar conversion remains 30 ml per recipe ounce. Caipirinha's omitted cachaça quantity is marked as an added 60 ml / 2 oz suggestion; unspecified mixers remain to top/to taste. Optional egg whites are labeled pasteurized. The original photographs are not redistributed.
+Hearts now use the researched versions documented in HEARTS-SOURCES.md; other suits retain their previous card transcriptions. Bar conversion is rounded at 30 ml per recipe ounce. Optional egg whites in the other suits remain labeled pasteurized. Original photographs are not redistributed.
 
 Any QR pointing to the existing site address can keep the same destination after this update. No new QR code is included or scan-tested.
+
+## Included artwork
+
+The 13 original transparent PNGs total about 25 MB and load lazily in the menu. They prioritize illustration quality; first visits can take longer on a slow mobile connection. Your reference JPG photos are not included in the ZIP.
