@@ -39,8 +39,19 @@
     "label": "The whiskey collection",
     "profile": "Rich whiskey, aromatic bitters, and a little sweetness.",
     "glass": "Rocks glass",
-    "style": "bold",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Spirit-forward",
+      "Sweet",
+      "Spiced"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Muddle the sugar with the bitters and a small splash of water until dissolved. Add bourbon and ice, then stir until chilled. Express the orange peel over the glass and add it.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "old-fashioned"
   },
   {
     "id": "manhattan",
@@ -82,8 +93,18 @@
     "label": "The whiskey collection",
     "profile": "Silky rye and sweet vermouth, finished with cherry.",
     "glass": "Chilled coupe",
-    "style": "bold",
-    "tip": "Refrigerate opened vermouth to keep its aromas fresh."
+    "tip": "Refrigerate opened vermouth to keep its aromas fresh.",
+    "tags": [
+      "Spirit-forward",
+      "Spiced"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Stir the rye, vermouth, and bitters with ice until chilled. Strain into a chilled coupe and garnish with the cherry.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "manhattan"
   },
   {
     "id": "whiskey-sour",
@@ -125,8 +146,18 @@
     "label": "The whiskey collection",
     "profile": "Golden bourbon balanced with fresh lemon.",
     "glass": "Rocks glass",
-    "style": "citrus",
-    "tip": "The card lists one optional egg white; use pasteurized egg white or omit it."
+    "tip": "The card lists one optional egg white; use pasteurized egg white or omit it.",
+    "tags": [
+      "Citrusy",
+      "Sour"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "If using egg white, shake it with the other ingredients without ice first. Add ice, shake vigorously, and strain over fresh ice.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "whiskey-sour"
   },
   {
     "id": "mint-julep",
@@ -168,8 +199,18 @@
     "label": "The whiskey collection",
     "profile": "Bourbon over crushed ice with fragrant fresh mint.",
     "glass": "Julep cup",
-    "style": "citrus",
-    "tip": "Press mint gently; shredding it can add bitterness."
+    "tip": "Press mint gently; shredding it can add bitterness.",
+    "tags": [
+      "Refreshing",
+      "Herbal"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Gently press the mint with the syrup in a julep cup. Add bourbon, pack with crushed ice, and stir until the cup is cold.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "mint-julep"
   },
   {
     "id": "sazerac",
@@ -211,8 +252,19 @@
     "label": "The whiskey collection",
     "profile": "Rye, anise, and bitters in a New Orleans classic.",
     "glass": "Rocks glass",
-    "style": "bold",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Spirit-forward",
+      "Herbal",
+      "Spiced"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Rinse a chilled rocks glass with absinthe and discard the excess. Stir rye, syrup, and bitters with ice. Strain into the prepared glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "sazerac"
   },
   {
     "id": "boulevardier",
@@ -254,8 +306,18 @@
     "label": "The whiskey collection",
     "profile": "A warming whiskey turn on a bitter Italian classic.",
     "glass": "Rocks glass",
-    "style": "bold",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Spirit-forward",
+      "Bitter"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Stir the bourbon, Campari, and vermouth with ice. Strain over fresh ice and garnish with the orange peel.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "boulevardier"
   },
   {
     "id": "irish-coffee",
@@ -297,8 +359,19 @@
     "label": "The whiskey collection",
     "profile": "Warm coffee and Irish whiskey beneath soft cream.",
     "glass": "Heatproof coffee glass",
-    "style": "citrus",
-    "tip": "The card does not specify a cream quantity; add a thin floating layer."
+    "tip": "The card does not specify a cream quantity; add a thin floating layer.",
+    "tags": [
+      "Creamy",
+      "Coffee",
+      "Sweet"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Warm a heatproof glass, then add hot coffee, whiskey, and sugar. Stir to dissolve. Lightly whip the cream and float it over the back of a spoon. Do not stir.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "irish-coffee"
   },
   {
     "id": "rusty-nail",
@@ -335,8 +408,18 @@
     "label": "The whiskey collection",
     "profile": "Scotch softened by honeyed, herbal Drambuie.",
     "glass": "Rocks glass",
-    "style": "bold",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Spirit-forward",
+      "Sweet"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Build the Scotch and Drambuie in a rocks glass over ice. Stir gently and garnish with the lemon twist.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "rusty-nail"
   },
   {
     "id": "penicillin",
@@ -378,8 +461,20 @@
     "label": "The whiskey collection",
     "profile": "Bright lemon, ginger warmth, and a smoky finish.",
     "glass": "Rocks glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Smoky",
+      "Sour",
+      "Spiced"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Shake the blended Scotch, lemon, and honey-ginger syrup with ice. Strain over fresh ice. Float the Islay Scotch gently on top.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "penicillin"
   },
   {
     "id": "rob-roy",
@@ -416,8 +511,18 @@
     "label": "The whiskey collection",
     "profile": "The Manhattan’s Scotch cousin, rich and aromatic.",
     "glass": "Chilled coupe",
-    "style": "bold",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Spirit-forward",
+      "Spiced"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Stir all ingredients with ice until chilled. Strain into a chilled cocktail glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "rob-roy"
   },
   {
     "id": "new-york-sour",
@@ -459,8 +564,18 @@
     "label": "The whiskey collection",
     "profile": "A whiskey sour crowned with a ruby wine float.",
     "glass": "Rocks glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Sour"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Shake the rye, lemon, and syrup with ice. Strain over fresh ice. Slowly pour the wine over the back of a spoon to float it on top.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "new-york-sour"
   },
   {
     "id": "godfather",
@@ -497,8 +612,19 @@
     "label": "The whiskey collection",
     "profile": "Scotch with a smooth almond sweetness.",
     "glass": "Rocks glass",
-    "style": "bold",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Spirit-forward",
+      "Sweet",
+      "Nutty"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Build the Scotch and amaretto over ice. Stir gently and garnish with the orange peel.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "godfather"
   },
   {
     "id": "blood-and-sand",
@@ -540,8 +666,18 @@
     "label": "The whiskey collection",
     "profile": "Equal parts Scotch, cherry, vermouth, and orange.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Fruity"
+    ],
+    "categories": [
+      "whiskey"
+    ],
+    "shortMethod": "Shake all ingredients with ice. Strain into a chilled coupe.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "blood-and-sand"
   },
   {
     "id": "dry-martini",
@@ -578,8 +714,18 @@
     "label": "The gin collection",
     "profile": "Clean, crisp gin with a whisper of dry vermouth.",
     "glass": "Chilled coupe",
-    "style": "bold",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Spirit-forward",
+      "Herbal"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Stir the gin and vermouth with ice until cold. Strain into a chilled cocktail glass. Garnish with a lemon twist or olive.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "dry-martini"
   },
   {
     "id": "gin-tonic",
@@ -616,8 +762,20 @@
     "label": "The gin collection",
     "profile": "Botanical gin, lively tonic, and a squeeze of lime.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Refreshing",
+      "Bitter",
+      "Herbal",
+      "Sparkling"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Fill a highball glass with ice and add gin. Pour in tonic, stir gently, and garnish with lime.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "gin-tonic"
   },
   {
     "id": "gimlet",
@@ -654,8 +812,18 @@
     "label": "The gin collection",
     "profile": "A bright, clean balance of gin and lime.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Sour"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Shake all ingredients with ice. Strain into a chilled coupe.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "gimlet"
   },
   {
     "id": "tom-collins",
@@ -702,8 +870,19 @@
     "label": "The gin collection",
     "profile": "Tall, sparkling, and freshly lemony.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Refreshing",
+      "Sparkling"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Shake gin, lemon, and syrup with ice, then strain over fresh ice in a tall glass. Top with soda water and garnish with lemon.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "tom-collins"
   },
   {
     "id": "aviation",
@@ -745,8 +924,19 @@
     "label": "The gin collection",
     "profile": "Floral violet, cherry, and lemon lifted by gin.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Herbal",
+      "Sour"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Shake all ingredients with ice. Strain into a chilled coupe.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "aviation"
   },
   {
     "id": "bee-s-knees",
@@ -783,8 +973,19 @@
     "label": "The gin collection",
     "profile": "Honeyed gin with a lively lemon finish.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Sweet",
+      "Sour"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Shake all ingredients vigorously with ice. Strain into a chilled coupe.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "bee-s-knees"
   },
   {
     "id": "the-last-word",
@@ -826,8 +1027,19 @@
     "label": "The gin collection",
     "profile": "Herbal, tart, and perfectly equal in measure.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Herbal",
+      "Sour"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Shake all four ingredients hard with ice. Strain into a chilled coupe.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "the-last-word"
   },
   {
     "id": "singapore-sling",
@@ -879,8 +1091,20 @@
     "label": "The gin collection",
     "profile": "A fruit-forward gin sling with cherry and pineapple.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "The photographed card leaves pineapple and soda quantities unspecified; adjust to your glass and taste."
+    "tip": "The photographed card leaves pineapple and soda quantities unspecified; adjust to your glass and taste.",
+    "tags": [
+      "Citrusy",
+      "Fruity",
+      "Tropical",
+      "Sparkling"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Shake gin, liqueurs, lime, and pineapple juice with ice. Strain into an ice-filled tall glass and top with soda.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "singapore-sling"
   },
   {
     "id": "vesper",
@@ -922,8 +1146,19 @@
     "label": "The gin collection",
     "profile": "Gin, vodka, and Lillet in a bold, crisp pour.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "This is a large, spirit-forward serving; use a suitably sized glass."
+    "tip": "This is a large, spirit-forward serving; use a suitably sized glass.",
+    "tags": [
+      "Spirit-forward",
+      "Herbal"
+    ],
+    "categories": [
+      "gin",
+      "vodka"
+    ],
+    "shortMethod": "Shake gin, vodka, and Lillet with ice as directed on the card. Strain into a chilled cocktail glass and garnish with lemon.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "vesper"
   },
   {
     "id": "white-lady",
@@ -965,8 +1200,18 @@
     "label": "The gin collection",
     "profile": "A silky gin sour with a touch of orange.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "The card leaves optional egg-white quantity unspecified; one pasteurized white is a preparation suggestion."
+    "tip": "The card leaves optional egg-white quantity unspecified; one pasteurized white is a preparation suggestion.",
+    "tags": [
+      "Citrusy",
+      "Sour"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Combine ingredients; if using egg white, shake without ice first. Add ice, shake well, and strain into a chilled coupe.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "white-lady"
   },
   {
     "id": "negroni",
@@ -1008,8 +1253,18 @@
     "label": "The gin collection",
     "profile": "Bittersweet, botanical, and unmistakably Italian.",
     "glass": "Rocks glass",
-    "style": "bold",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Spirit-forward",
+      "Bitter"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Stir gin, Campari, and vermouth with ice. Serve over fresh ice and garnish with orange peel.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "negroni"
   },
   {
     "id": "french-75",
@@ -1051,8 +1306,18 @@
     "label": "The gin collection",
     "profile": "Bright gin and lemon with a Champagne sparkle.",
     "glass": "Champagne flute",
-    "style": "citrus",
-    "tip": "Add Champagne after shaking, never to the shaker."
+    "tip": "Add Champagne after shaking, never to the shaker.",
+    "tags": [
+      "Citrusy",
+      "Sparkling"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Shake gin, lemon, and syrup with ice. Strain into a flute. Top slowly with chilled Champagne.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "french-75"
   },
   {
     "id": "corpse-reviver-2",
@@ -1099,8 +1364,19 @@
     "label": "The gin collection",
     "profile": "Citrus and botanicals with a delicate anise edge.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Herbal",
+      "Sour"
+    ],
+    "categories": [
+      "gin"
+    ],
+    "shortMethod": "Rinse a chilled coupe with absinthe and discard excess. Shake the remaining ingredients with ice and strain into the glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "corpse-reviver-2"
   },
   {
     "id": "cosmopolitan",
@@ -1147,8 +1423,19 @@
     "label": "Vodka & tequila",
     "profile": "Cranberry blush with a bright orange-lime finish.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Fruity",
+      "Sour"
+    ],
+    "categories": [
+      "vodka"
+    ],
+    "shortMethod": "Shake the liquid ingredients with ice. Strain into a chilled cocktail glass and garnish with lime.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "cosmopolitan"
   },
   {
     "id": "moscow-mule",
@@ -1190,8 +1477,20 @@
     "label": "Vodka & tequila",
     "profile": "Zesty lime and fiery ginger in a frosty mug.",
     "glass": "Copper mug",
-    "style": "citrus",
-    "tip": "The diamond-suit version from the photographed deck."
+    "tip": "The diamond-suit version from the photographed deck.",
+    "tags": [
+      "Citrusy",
+      "Refreshing",
+      "Sparkling",
+      "Spiced"
+    ],
+    "categories": [
+      "vodka"
+    ],
+    "shortMethod": "Fill a copper mug with ice. Add vodka and lime juice. Top with ginger beer, stir gently, and add the lime wedge.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "moscow-mule"
   },
   {
     "id": "bloody-mary",
@@ -1243,8 +1542,19 @@
     "label": "Vodka & tequila",
     "profile": "Savory tomato, warming spice, and a citrus lift.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "The card does not specify sauce quantities; season to taste."
+    "tip": "The card does not specify sauce quantities; season to taste.",
+    "tags": [
+      "Citrusy",
+      "Savory",
+      "Spiced"
+    ],
+    "categories": [
+      "vodka"
+    ],
+    "shortMethod": "Combine the liquids with ice and gently roll between two mixing vessels. Pour into a tall glass and garnish with celery.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "bloody-mary"
   },
   {
     "id": "espresso-martini",
@@ -1286,8 +1596,18 @@
     "label": "Vodka & tequila",
     "profile": "Fresh espresso and coffee liqueur with a velvet foam.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Coffee",
+      "Sweet"
+    ],
+    "categories": [
+      "vodka"
+    ],
+    "shortMethod": "Add all ingredients to a shaker with ice. Shake hard to create foam and strain into a chilled cocktail glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "espresso-martini"
   },
   {
     "id": "sex-on-the-beach",
@@ -1329,8 +1649,19 @@
     "label": "Vodka & tequila",
     "profile": "Peach, orange, and cranberry in a sunny long drink.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Fruity",
+      "Sweet"
+    ],
+    "categories": [
+      "vodka"
+    ],
+    "shortMethod": "Shake all ingredients with ice. Strain over fresh ice in a tall glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "sex-on-the-beach"
   },
   {
     "id": "white-russian",
@@ -1367,8 +1698,19 @@
     "label": "Vodka & tequila",
     "profile": "Coffee and cream meet a smooth vodka base.",
     "glass": "Rocks glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Creamy",
+      "Coffee",
+      "Sweet"
+    ],
+    "categories": [
+      "vodka"
+    ],
+    "shortMethod": "Add vodka and coffee liqueur to a rocks glass over ice. Slowly float the cream on top.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "white-russian"
   },
   {
     "id": "lemon-drop",
@@ -1410,8 +1752,18 @@
     "label": "Vodka & tequila",
     "profile": "Sweet-tart lemon with a sparkling sugar rim.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Sour"
+    ],
+    "categories": [
+      "vodka"
+    ],
+    "shortMethod": "Moisten the glass rim with lemon and dip in sugar. Shake vodka, lemon, and syrup with ice. Strain into the prepared glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "lemon-drop"
   },
   {
     "id": "tequila-sunrise",
@@ -1448,8 +1800,19 @@
     "label": "Vodka & tequila",
     "profile": "Orange and tequila with a glowing grenadine sunrise.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Fruity",
+      "Sweet"
+    ],
+    "categories": [
+      "tequila"
+    ],
+    "shortMethod": "Add tequila and orange juice to an ice-filled tall glass. Slowly pour in grenadine and let it settle; leave the gradient unstirred.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "tequila-sunrise"
   },
   {
     "id": "paloma",
@@ -1491,8 +1854,20 @@
     "label": "Vodka & tequila",
     "profile": "Grapefruit sparkle, fresh lime, and a salted edge.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Refreshing",
+      "Fruity",
+      "Sparkling"
+    ],
+    "categories": [
+      "tequila"
+    ],
+    "shortMethod": "Moisten the rim with lime and dip in salt. Fill the glass with ice. Add tequila and lime; top with grapefruit soda and stir gently.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "paloma"
   },
   {
     "id": "tommy-s-margarita",
@@ -1529,8 +1904,18 @@
     "label": "Vodka & tequila",
     "profile": "A simple trio of tequila, lime, and agave.",
     "glass": "Rocks glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Sour"
+    ],
+    "categories": [
+      "tequila"
+    ],
+    "shortMethod": "Shake tequila, lime, and agave nectar with ice. Strain over fresh ice in a rocks glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "tommy-s-margarita"
   },
   {
     "id": "el-diablo",
@@ -1572,8 +1957,20 @@
     "label": "Vodka & tequila",
     "profile": "Blackcurrant richness with tequila and ginger bite.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Refreshing",
+      "Fruity",
+      "Sparkling"
+    ],
+    "categories": [
+      "tequila"
+    ],
+    "shortMethod": "Build tequila, cassis, and lime juice over ice in a tall glass. Top with ginger beer and stir gently.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "el-diablo"
   },
   {
     "id": "margarita",
@@ -1615,8 +2012,18 @@
     "label": "Vodka & tequila",
     "profile": "The classic tequila, orange, and lime combination.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Sour"
+    ],
+    "categories": [
+      "tequila"
+    ],
+    "shortMethod": "Moisten the rim with lime and dip in salt. Shake tequila, Cointreau, and lime with ice. Strain into the prepared glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "margarita"
   },
   {
     "id": "batanga",
@@ -1658,8 +2065,19 @@
     "label": "Vodka & tequila",
     "profile": "Tequila and cola sharpened with lime and salt.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "The card mentions stirring with a knife; a bar spoon is an easier preparation choice."
+    "tip": "The card mentions stirring with a knife; a bar spoon is an easier preparation choice.",
+    "tags": [
+      "Citrusy",
+      "Refreshing",
+      "Sparkling"
+    ],
+    "categories": [
+      "tequila"
+    ],
+    "shortMethod": "Salt the rim and fill a tall glass with ice. Add tequila and lime, top with cola, and stir gently.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "batanga"
   },
   {
     "id": "daiquiri",
@@ -1696,8 +2114,18 @@
     "label": "The hearts collection",
     "profile": "Rum, lime, and sugar in a beautifully simple balance.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Sour"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Shake all ingredients hard with ice. Strain into a chilled coupe.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "daiquiri"
   },
   {
     "id": "cuba-libre",
@@ -1739,8 +2167,19 @@
     "label": "The hearts collection",
     "profile": "Rum and cola made lively with fresh lime.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Refreshing",
+      "Sparkling"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Build the rum, cola, and lime juice over ice. Squeeze in the lime wedge and stir gently.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "cuba-libre"
   },
   {
     "id": "mai-tai",
@@ -1787,8 +2226,21 @@
     "label": "The hearts collection",
     "profile": "Aged rum, almond, and orange with a tart lime finish.",
     "glass": "Rocks glass",
-    "style": "citrus",
-    "tip": "Orgeat usually contains almonds; check the label when serving guests."
+    "tip": "Orgeat usually contains almonds; check the label when serving guests.",
+    "tags": [
+      "Citrusy",
+      "Fruity",
+      "Tropical",
+      "Sour",
+      "Nutty"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Shake rum, curaçao, orgeat, and lime with ice. Pour over crushed ice and garnish with mint.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "mai-tai"
   },
   {
     "id": "pi-a-colada",
@@ -1830,8 +2282,20 @@
     "label": "The hearts collection",
     "profile": "Creamy coconut and pineapple with white rum.",
     "glass": "Hurricane glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Fruity",
+      "Tropical",
+      "Creamy",
+      "Sweet"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Blend rum, pineapple juice, and coconut cream with ice until smooth. Pour into a glass and garnish with pineapple.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "pi-a-colada"
   },
   {
     "id": "dark-n-stormy",
@@ -1873,8 +2337,20 @@
     "label": "The hearts collection",
     "profile": "Dark rum and ginger with a refreshing lime edge.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Refreshing",
+      "Sparkling",
+      "Spiced"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Build rum and lime over ice in a tall glass. Top with ginger beer, stir gently, and garnish with lime.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "dark-n-stormy"
   },
   {
     "id": "moscow-mule-hearts",
@@ -1916,8 +2392,20 @@
     "label": "The hearts collection",
     "profile": "The heart-suit Mule, finished with lime and mint.",
     "glass": "Copper mug",
-    "style": "citrus",
-    "tip": "This card appears in the hearts suit but uses vodka, so it is listed under the vodka filter."
+    "tip": "This card appears in the hearts suit but uses vodka, so it is listed under the vodka filter.",
+    "tags": [
+      "Citrusy",
+      "Refreshing",
+      "Sparkling",
+      "Spiced"
+    ],
+    "categories": [
+      "vodka"
+    ],
+    "shortMethod": "Build vodka and lime juice in an ice-filled copper mug. Add ginger beer, stir gently, and garnish with lime and mint.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "moscow-mule-hearts"
   },
   {
     "id": "hemingway-daiquiri",
@@ -1959,8 +2447,19 @@
     "label": "The hearts collection",
     "profile": "A dry, citrus-led daiquiri with grapefruit and cherry.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Fruity",
+      "Sour"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Shake all ingredients vigorously with ice. Strain into a chilled coupe.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "hemingway-daiquiri"
   },
   {
     "id": "planter-s-punch",
@@ -2002,8 +2501,19 @@
     "label": "The hearts collection",
     "profile": "Dark rum and lime with an aromatic bitters finish.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Tropical",
+      "Sour"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Shake all ingredients with ice. Pour over crushed ice in a tall glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "planter-s-punch"
   },
   {
     "id": "hurricane",
@@ -2050,8 +2560,20 @@
     "label": "The hearts collection",
     "profile": "A generous rum punch with passion fruit and lime.",
     "glass": "Hurricane glass",
-    "style": "citrus",
-    "tip": "This card makes a large serving; choose a large glass or divide between two smaller glasses."
+    "tip": "This card makes a large serving; choose a large glass or divide between two smaller glasses.",
+    "tags": [
+      "Citrusy",
+      "Fruity",
+      "Tropical",
+      "Sweet"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Shake all ingredients with ice. Serve over fresh ice in a large hurricane glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "hurricane"
   },
   {
     "id": "caipirinha",
@@ -2093,8 +2615,18 @@
     "label": "The hearts collection",
     "profile": "Fresh muddled lime and sugar with Brazilian cachaça.",
     "glass": "Rocks glass",
-    "style": "citrus",
-    "tip": "The card omits the cachaça amount; 2 oz / 60 ml is an added preparation measure. Sugar is shown as a volume measure, as on the card."
+    "tip": "The card omits the cachaça amount; 2 oz / 60 ml is an added preparation measure. Sugar is shown as a volume measure, as on the card.",
+    "tags": [
+      "Citrusy",
+      "Refreshing"
+    ],
+    "categories": [
+      "cachaca"
+    ],
+    "shortMethod": "Muddle the lime and sugar in a rocks glass. Add cachaça and crushed ice, then stir.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "caipirinha"
   },
   {
     "id": "jack-rose",
@@ -2131,8 +2663,19 @@
     "label": "The hearts collection",
     "profile": "Apple brandy, lemon, and a blush of grenadine.",
     "glass": "Chilled coupe",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Fruity",
+      "Sour"
+    ],
+    "categories": [
+      "applejack"
+    ],
+    "shortMethod": "Shake all ingredients with ice. Strain into a chilled cocktail glass.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "jack-rose"
   },
   {
     "id": "ti-punch",
@@ -2169,8 +2712,19 @@
     "label": "The hearts collection",
     "profile": "Grassy agricole rum with cane syrup and a little lime.",
     "glass": "Rocks glass",
-    "style": "bold",
-    "tip": "Traditionally served with little or no ice; adjust to your preference."
+    "tip": "Traditionally served with little or no ice; adjust to your preference.",
+    "tags": [
+      "Spirit-forward",
+      "Citrusy",
+      "Herbal"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Squeeze the lime disc into a rocks glass and drop it in. Add cane syrup and rhum agricole, then stir.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "ti-punch"
   },
   {
     "id": "mojito",
@@ -2217,8 +2771,20 @@
     "label": "The hearts collection",
     "profile": "Cool mint, fresh lime, and sparkling white rum.",
     "glass": "Highball glass",
-    "style": "citrus",
-    "tip": "Use fresh ice and chill the glass before serving."
+    "tip": "Use fresh ice and chill the glass before serving.",
+    "tags": [
+      "Citrusy",
+      "Refreshing",
+      "Herbal",
+      "Sparkling"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Gently muddle mint with sugar and lime juice. Add rum and ice, top with soda water, and stir gently.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "mojito"
   },
   {
     "id": "zombie",
@@ -2280,8 +2846,20 @@
     "label": "The wild cards",
     "profile": "Three rums, tropical fruit, and a wild-card finish.",
     "glass": "Tiki mug",
-    "style": "citrus",
-    "tip": "This is a strong, large serving, including 151-proof rum; it can be divided into smaller portions."
+    "tip": "This is a strong, large serving, including 151-proof rum; it can be divided into smaller portions.",
+    "tags": [
+      "Citrusy",
+      "Fruity",
+      "Tropical",
+      "Spiced"
+    ],
+    "categories": [
+      "rum"
+    ],
+    "shortMethod": "Shake all ingredients with ice until the sugar is dissolved. Pour into a tiki mug over fresh ice and garnish with tropical fruit.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "zombie"
   },
   {
     "id": "death-in-the-afternoon",
@@ -2313,7 +2891,18 @@
     "label": "The wild cards",
     "profile": "Anise and Champagne in a pale, sparkling wild card.",
     "glass": "Champagne flute",
-    "style": "citrus",
-    "tip": "Pour slowly to control the foam. Choose a glass that holds at least 165 ml with room to spare."
+    "tip": "Pour slowly to control the foam. Choose a glass that holds at least 165 ml with room to spare.",
+    "tags": [
+      "Spirit-forward",
+      "Herbal",
+      "Sparkling"
+    ],
+    "categories": [
+      "absinthe"
+    ],
+    "shortMethod": "Pour absinthe into a large flute. Slowly top with chilled Champagne.",
+    "detailedSteps": [],
+    "recipeSources": [],
+    "artworkKey": "death-in-the-afternoon"
   }
 ]

@@ -1,44 +1,57 @@
-# The Midnight Bar — Full deck edition
+# The Midnight Bar — Modular edition
 
-54 cards from the supplied photographs: four complete suits and two jokers. There are 53 distinct cocktail names because Moscow Mule appears in both diamonds and hearts, with different garnishes. Both cards are retained.
+54 card recipes, editable artwork, and combined category filters. The duplicate Moscow Mule remains until a replacement is chosen. The card-flip redesign is prepared in the content structure but is not implemented yet.
 
-## Update your published GitHub site
+## Install this update on GitHub
 
-Your site address stays https://nikola-mitkovic.github.io/midnight-bar/ . These updated files have not been uploaded by the assistant.
+Extract the ZIP and upload its contents into the same repository folder that already contains `index.html`. Replace the existing files and ADD the new files/folder. Do not upload only the original three files for this update.
 
-1. Extract the ZIP on your computer.
-2. Open your existing `nikola-mitkovic/midnight-bar` repository on GitHub. Open the folder that currently contains `index.html` (normally the repository root on `main`).
-3. Choose **Add file → Upload files**. Upload the new `index.html`, `styles.css`, and `app.js` to the same location, keeping those exact filenames. They replace the existing versions when you commit. You can also upload the updated README, RECIPES.md, and recipes.json reference export.
-4. Commit the changes to the branch already used by Pages, normally `main`. Do not upload the ZIP itself or nest everything inside another folder. Do not create a new repository.
-5. Wait for the Pages deployment to finish in the repository's Actions tab, then reload the website. No Pages settings changes are needed if the same branch and folder remain selected.
-6. If your phone still shows the old page, refresh or reopen it in a private tab. The updated HTML uses versioned CSS/JS links to help avoid stale assets.
+Required website files:
 
-Official GitHub Pages publishing-source instructions:
-https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+- `index.html`
+- `styles.css`
+- `app.js`
+- **`recipes.js` — new, required**
+- **`artwork.js` — new, required**
+- **`illustrations.js` — new, required**
+- **`images/` — new, artwork location** (currently contains instructions only)
 
-## Preview offline
+You can upload the documentation and reference exports too. Commit to your existing Pages branch, normally `main`, and wait for deployment. Keep the filenames and folder structure intact; do not nest the files inside an extra folder. Your URL stays https://nikola-mitkovic.github.io/midnight-bar/ . The assistant has not uploaded this update.
 
-Open `index.html` in a current browser with `styles.css` and `app.js` alongside it. No dependencies, installation, fonts, or image downloads are needed. Optionally run `python -m http.server 8000` in the extracted folder and visit http://localhost:8000 . Stop it with Ctrl+C.
+The new HTML uses `?v=3` links to avoid serving old scripts/styles. If the page looks stale after deployment, refresh or try a private tab. For future changes, increment relevant script versions in `index.html` if necessary.
 
-## What's changed
+## Change artwork yourself
 
-- All 54 cards with suits, ranks, ingredients, expanded preparation steps, and ml/US oz units.
-- Search plus base-spirit and style filters, combined together.
-- Clearly burgundy header and hero, including the first mobile screen.
-- Large burgundy recipe buttons with a gold double border and matching suit symbols.
-- Original local SVG illustrations with different glass shapes and garnishes.
-- Updated copy, results counts, and a readable recipe reference.
+Upload an image to the `images` folder using a listed filename, for example `images/old-fashioned.webp`. That image is automatically used everywhere the drink appears. Replace it with a new file of the same name whenever you want. Missing or unreadable images show the original SVG art, with no broken-image icon. Files are lazy-loaded on menu cards.
 
-## Recipe transcription notes
+See **ARTWORK-GUIDE.md** for all 54 filenames, image preparation tips, PNG/JPEG overrides, optional cache versions, and how to keep an individual drink on SVG. There are no replacement photos in this release. Optional images that have not been uploaded may generate expected 404 entries in browser developer tools; the visible fallback is intentional.
 
-Recipes follow the supplied photographs rather than a separate canonical recipe standard. Preparation wording is expanded. Measures use conventional rounded bar conversions: 1 recipe ounce = 30 ml. The pictured Caipirinha omits the cachaça quantity; 2 oz / 60 ml is explicitly identified as an added preparation suggestion. Its sugar quantity follows the card's volume measure. Unspecified mixers, cream, and sauces are labeled to top, to float, or to taste. White Lady's optional egg-white amount is a preparation suggestion; optional egg whites are labeled pasteurized. Large card recipes such as Hurricane and Zombie may be divided into smaller portions.
+## Edit content in batches
 
-`app.js` is the live data source. `recipes.json` is an optional reference export, not a file loaded by the website; changing it alone will not change the menu. `RECIPES.md` contains the readable full recipe list. The supplied photographs are not included in the website package.
+See **EDITING-GUIDE.md**. All live recipe content now lives in `recipes.js`, separate from interactions and illustrations. Tags and recipe sources can be added drink by drink. `recipes.json` and `RECIPES.md` are reference exports only and are not loaded by the site; update them separately if you need matching exports.
 
-## Checks
+New fields reserve space for `shortMethod`, `detailedSteps`, and `recipeSources` for a later flip-card interface. Existing `steps` still powers the current dialog. Detailed instructions have not been researched in this release. Both Moscow Mule cards have distinct IDs and image slots for easy later replacement.
 
-Passed JavaScript syntax and automated logic checks covering all 54 recipe dialogs, unit switching, unique card IDs, four complete suits, two jokers, illustrations, spirit filters, duplicate-name search, empty state, and focus return. Browser spot checks confirmed the burgundy mobile layout, desktop cards, combined gin/search filtering, reset, Aviation measurements, and Escape dismissal. No browser errors were logged during those checks. An exhaustive browser click-through was interrupted by the tool time limit; the complete recipe set was checked by automated logic tests instead. Please also check on your physical phone after uploading.
+## Categories
 
-## QR codes
+- 8 base-spirit categories: whiskey, gin, vodka, tequila, rum, cachaça, applejack, absinthe. Vesper belongs to gin and vodka.
+- 5 card groups: spades, clubs, diamonds, hearts, jokers. Every option has a symbol.
+- 16 style/flavour tags across all 54 drinks, including spirit-forward, citrusy, smoky, herbal, tropical, creamy, coffee, and sparkling.
+- Search names, ingredients, tags, and preparation methods. Accents are optional: `pina` finds Piña Colada.
+- All filters combine. Click a tag to filter by it; use Clear filters to reset everything.
 
-Keep any QR code pointed at the same published URL. Replacing files at that address does not require changing its destination. No new QR code is included or scan-tested in this update.
+Taste tags are editorial descriptions, not numerical strength/sweetness measures or allergen certifications. Suit and spirit are separate: the hearts Moscow Mule remains vodka; the Zombie is a rum-based joker.
+
+## Preview
+
+Open `index.html` with all required files beside it. No installation or build step is required. For a local server, run `python -m http.server 8000` in this folder and open http://localhost:8000 . Stop with Ctrl+C.
+
+## Verification
+
+Passed syntax and automated checks for all 54 data records, recipe dialogs, unit switching, artwork paths, 16 tag filters, 8 spirit categories, 5 suit groups, combined filters, accented search, and optional image overrides. Browser checks confirmed successful image replacement in the hero and dialog, fallback restoration after removing the test image, tag clicking, empty-result reset, and recipe units. At a 390 px viewport the page had no horizontal overflow and recipe artwork remained visible. The temporary artwork test file was removed before packaging.
+
+## Recipe and QR notes
+
+Recipes retain the photographed-card versions and their previous transcription notes. Bar conversion remains 30 ml per recipe ounce. Caipirinha's omitted cachaça quantity is marked as an added 60 ml / 2 oz suggestion; unspecified mixers remain to top/to taste. Optional egg whites are labeled pasteurized. The original photographs are not redistributed.
+
+Any QR pointing to the existing site address can keep the same destination after this update. No new QR code is included or scan-tested.
