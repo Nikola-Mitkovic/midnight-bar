@@ -4,7 +4,11 @@
 const ARTWORK = {
   version: '1',
   overrides: {
-    // 'old-fashioned': {src: 'images/old-fashioned.png', alt: 'Old Fashioned watercolor', version: '2'},
-    // 'manhattan': {src: null}, // Always use its original SVG illustration.
+    'death-in-the-afternoon': {
+  src: 'images/death-in-the-afternoon.jpg'
+  },
+'zombie': {
+  src: 'images/zombie.jpg'
+},
   }
 };
