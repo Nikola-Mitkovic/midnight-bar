@@ -25,3 +25,11 @@ dialog .coffee-placeholder{height:180px;width:180px;margin:auto}dialog .coffee-p
 
 /* Keep each printed pocket number upright and centered in its fixed sector. */
 .pocket-number{height:auto;width:21px;margin:0;padding:0;transform:translate(-50%,-50%) rotate(var(--angle)) translateY(calc((var(--ball-track) - 28px) * -1)) rotate(calc(-1 * var(--angle)));transform-origin:center;align-items:center;justify-content:center}
+
+/* Wider monitors get more cards, while phone layouts keep their existing sizing. */
+@media (min-width: 1000px) {
+.menu { max-width: none; width: 94%; padding-inline: 0; }
+.menu .cards { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+}
+.coffee-card { display: flex; flex-direction: column; }
+.coffee-card button { margin-top: auto; }

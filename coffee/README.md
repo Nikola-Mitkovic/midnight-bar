@@ -19,6 +19,6 @@ Background references:
 Ingredient exclusions prevent drinks containing the selected ingredient from being drawn. A menu with text search and style filtering lets guests deliberately select any recipe.
 
 ## Artwork
-The first seven finished watercolor illustrations are optimized WebP files in `coffee/images/` (the original SVG starters remain available as fallbacks): espresso, cappuccino, iced-latte, mocha, affogato, pumpkin-spice, irish-coffee. The remaining 30 recipes display elegant placeholders. For a final image, upload a WebP or PNG to the same folder and set the corresponding recipe's `artwork` property to `images/your-file.webp` or `.png`. No illustration file is necessary for a placeholder.
+The first fourteen finished watercolor illustrations are optimized WebP files in `coffee/images/` (the original SVG starters remain available as fallbacks): espresso, cappuccino, iced-latte, mocha, affogato, pumpkin-spice, irish-coffee. Doppio, ristretto, lungo, americano, macchiato, cortado and flat white are also illustrated. The remaining 23 recipes display elegant placeholders. For a final image, upload a WebP or PNG to the same folder and set the corresponding recipe's `artwork` property to `images/your-file.webp` or `.png`. No illustration file is necessary for a placeholder.
 
 Source files: `coffee/index.html` (layout), `coffee/cafe.css` (theme), `coffee/cafe.js` (interactive roulette, exclusions, menu), `coffee/recipes.js` (recipes).

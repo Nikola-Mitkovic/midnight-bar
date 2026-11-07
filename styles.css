@@ -60,3 +60,9 @@ header{background:#441d29;max-width:none;padding-inline:max(6%,calc((100vw - 116
 
 /* Clear sister-site portal in navigation. */
 header nav .cafe-portal{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 15px;border:2px double #d4b574;border-radius:5px;background:#173f33;color:#f7e3ae;font-weight:bold;letter-spacing:.5px;box-shadow:0 4px 12px #0005;white-space:nowrap}header nav .cafe-portal:hover{background:#225a45;color:#fff1c9}@media(max-width:600px){header nav .cafe-portal{font-size:9px;padding:8px;white-space:normal;text-align:center}}
+
+/* Wider monitors get more cards, while phone layouts keep their existing sizing. */
+@media (min-width: 1000px) {
+.menu-section { max-width: none; width: 94%; padding-inline: 0; }
+.menu-section .cards { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+}

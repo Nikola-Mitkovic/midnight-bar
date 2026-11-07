@@ -28,7 +28,7 @@ window.CAFE_RECIPES=[
     "number": 1,
     "color": "red",
     "source": "https://coffeeassoc.com/coffee-101/styles-of-coffee/",
-    "artwork": "images/cappuccino.webp"
+    "artwork": "images/cappuccino-v2.webp"
   },
   {
     "id": "iced-latte",
@@ -76,7 +76,7 @@ window.CAFE_RECIPES=[
     "number": 4,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": "images/affogato.webp"
+    "artwork": "images/affogato-v2.webp"
   },
   {
     "id": "pumpkin-spice",
@@ -94,7 +94,7 @@ window.CAFE_RECIPES=[
     "number": 5,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": "images/pumpkin-spice.webp"
+    "artwork": "images/pumpkin-spice-v2.webp"
   },
   {
     "id": "irish-coffee",
