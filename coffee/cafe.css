@@ -22,3 +22,6 @@ header .site-switch:hover{background:#853c4e;transform:translateY(-2px)}
 dialog .coffee-placeholder{height:180px;width:180px;margin:auto}dialog .coffee-placeholder>strong{font-size:50px}dialog .recipe-note{font:italic 12px/1.7 Georgia,serif;color:#7c6348}dialog .source-link{color:#754c2e;font-size:13px}
 @media(max-width:530px){.wheel-wrap{--ball-track:calc((min(82vw, 360px) / 2) - 28px)}.pocket-number{font-size:9px}.roulette-ball{width:14px;height:14px}header .site-switch{font-size:10px;padding:8px 10px}}
 @media(prefers-reduced-motion:reduce){header .site-switch{transition:none}}
+
+/* Keep each printed pocket number upright and centered in its fixed sector. */
+.pocket-number{height:auto;width:21px;margin:0;padding:0;transform:translate(-50%,-50%) rotate(var(--angle)) translateY(calc((var(--ball-track) - 28px) * -1)) rotate(calc(-1 * var(--angle)));transform-origin:center;align-items:center;justify-content:center}
