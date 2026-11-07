@@ -33,3 +33,44 @@ dialog .coffee-placeholder{height:180px;width:180px;margin:auto}dialog .coffee-p
 }
 .coffee-card { display: flex; flex-direction: column; }
 .coffee-card button { margin-top: auto; }
+
+/* A small dealt card celebrates the draw without replacing the filterable menu. */
+.motion-option{display:flex;align-items:center;justify-content:center;gap:9px;margin:20px auto 0;font-size:13px;color:var(--cream)}
+.motion-option input{width:19px;height:19px;accent-color:#cba55f}
+.motion-note{font-size:11px;color:#c4b79a;margin:8px 0}
+.roulette-ball{transition:none;will-change:transform}
+.result{cursor:default;min-height:30px}
+.winner-card{max-width:310px;margin:25px auto 35px;transform:rotate(-2deg)}
+.winner-card[hidden]{display:none}
+.winner-card>.coffee-card{width:100%;font:inherit;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.winner-card>.coffee-card:hover{transform:rotate(2deg) translateY(-4px);box-shadow:0 18px 35px #0007}
+.winner-card img,.winner-card .coffee-placeholder{height:190px}
+.winner-card h3{font-size:27px}
+.winner-link{border-top:1px solid #a88b55;padding-top:13px;font-size:12px;color:#614a27}
+.drawn-card{outline:3px solid var(--gold);outline-offset:5px}
+.coffee-card:focus-visible{outline-color:#e3bc6a}
+dialog{max-width:660px;max-height:92dvh;overflow-y:auto}
+dialog h2{margin:14px 20px 22px}
+.coffee-flip-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;border-block:1px solid #a88b5566;padding:10px 0;margin-bottom:20px}
+.coffee-flip-tools span{font-size:11px;color:#79603d}
+.coffee-flip-tools button{background:#194837;color:#f5e4bb;border:3px double #bc995e;border-radius:5px;min-height:44px;padding:9px 16px}
+.coffee-face{animation:coffee-turn .28s ease-out}
+.coffee-face[hidden]{display:none}
+.coffee-face>img{width:100%;height:240px}
+.coffee-face>p{font-size:14px;line-height:1.8}
+.coffee-ingredients{list-style:none;padding:0;text-align:left;max-width:420px;margin:auto}
+.coffee-ingredients li{border-bottom:1px solid #a88b5533;padding:9px;font-size:13px}
+.coffee-back{background:linear-gradient(145deg,#184936,#0b2d24);color:#f4e6c9;border:3px double #b59458;border-radius:9px;padding:24px;text-align:left}
+.coffee-back h3,.coffee-back h4{color:#e6c68b;font-family:Georgia,serif;font-weight:normal}
+.coffee-back h3,.back-ornament,.coffee-back .equipment{text-align:center}
+.coffee-back h4{font-size:19px;margin:0 0 8px}
+.coffee-back ol{padding-left:24px;font-size:14px;line-height:1.8}
+.coffee-back li{padding:0 0 14px 6px}
+.coffee-back aside{border-left:2px solid #c9a65e;background:#ffe7ac09;margin:17px 0;padding:14px}
+.coffee-back aside p{font-size:13px;line-height:1.8;margin:0}
+.coffee-back .equipment{font-size:12px;color:#d2bd94;border-block:1px solid #c9a65e55;padding:12px 0}
+.coffee-back .source-link{color:#efcf90}
+.coffee-back .recipe-note{color:#cbbb9b}
+@keyframes coffee-turn{from{opacity:.4;transform:perspective(900px) rotateY(-10deg)}to{opacity:1;transform:perspective(900px) rotateY(0)}}
+@media(max-width:530px){dialog{padding:24px 16px}.coffee-back{padding:18px 14px}.coffee-flip-tools button{padding:8px 10px;font-size:13px}.coffee-face>img{height:210px}}
+@media(prefers-reduced-motion:reduce){.coffee-face{animation:none}.winner-card>.coffee-card{transition:none}}

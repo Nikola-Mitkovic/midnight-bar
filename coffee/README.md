@@ -22,3 +22,8 @@ Ingredient exclusions prevent drinks containing the selected ingredient from bei
 The first fourteen finished watercolor illustrations are optimized WebP files in `coffee/images/` (the original SVG starters remain available as fallbacks): espresso, cappuccino, iced-latte, mocha, affogato, pumpkin-spice, irish-coffee. Doppio, ristretto, lungo, americano, macchiato, cortado and flat white are also illustrated. The remaining 23 recipes display elegant placeholders. For a final image, upload a WebP or PNG to the same folder and set the corresponding recipe's `artwork` property to `images/your-file.webp` or `.png`. No illustration file is necessary for a placeholder.
 
 Source files: `coffee/index.html` (layout), `coffee/cafe.css` (theme), `coffee/cafe.js` (interactive roulette, exclusions, menu), `coffee/recipes.js` (recipes).
+
+## Recipe backs and roulette motion
+`coffee/details.js` contains detailed steps, technique, flavor notes and optional source overrides for all 37 recipes. Keep its IDs aligned with `recipes.js`. The card front retains quantities and The Ritual; Flip the card reveals the detailed back.
+
+The roulette uses explicit animation frames for repeatable multi-turn movement. Animate the spin initially follows the device reduced-motion preference and can be changed by the visitor. The winning preview card clears menu filters and focuses the matching menu card.

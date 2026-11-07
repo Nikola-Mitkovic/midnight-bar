@@ -18,23 +18,44 @@ function paintWheel(){
 }
 paintWheel();
 let currentAngle=0,busy=false;
-function showDrink(c){result.innerHTML='<span class="result-dot '+c.color+'"></span> '+esc(c.name)+' <small>· '+esc(c.measure)+'</small><br><span class="result-hint">Tap to open recipe ↗</span>';result.dataset.drink=c.id;result.classList.add('winner');}
+const winner=document.querySelector('#winner-card');
+const motion=document.querySelector('#animate-spin');
+const motionPreference=matchMedia('(prefers-reduced-motion: reduce)');
+motion.checked=!motionPreference.matches;
+function motionNote(){document.querySelector('#motion-note').textContent=motion.checked?'The ball circles the fixed wheel before landing.':'Motion is off. Enable “Animate the spin” to watch the ball circle.';}
+motionNote();motion.addEventListener('change',motionNote);
+motionPreference.addEventListener('change',e=>{motion.checked=!e.matches;motionNote();});
+function showDrink(c){
+ result.textContent='Your cup: '+c.name+' · pocket '+c.number;
+ winner.innerHTML='<button class="coffee-card pocket-'+c.color+'" data-winner="'+c.id+'" aria-label="Find '+esc(c.name)+' in the coffee menu"><span class="number">'+String(c.number).padStart(2,'0')+' ◆ YOUR LUCKY CUP</span>'+art(c)+'<h3>'+esc(c.name)+'</h3><p>'+esc(window.CAFE_DETAILS[c.id].expect)+'</p><span class="winner-link">Find this card in the menu ↗</span></button>';
+ winner.hidden=false;
+}
+// Explicit frames avoid transform-transition coalescing and matrix interpolation differences.
+function animateBall(from,to,duration,done){
+ let start;
+ function frame(now){
+  if(start===undefined)start=now;
+  const progress=duration?Math.min((now-start)/duration,1):1;
+  const eased=1-Math.pow(1-progress,3);
+  ball.style.transform='translate(-50%, -50%) rotate('+(from+(to-from)*eased)+'deg) translateY(calc(var(--ball-track) * -1))';
+  if(progress<1)requestAnimationFrame(frame);else done();
+ }
+ requestAnimationFrame(frame);
+}
 spin.addEventListener('click',()=>{
  if(busy)return;
  const pool=allowed();
- if(!pool.length){result.textContent='No recipes match. Remove an exclusion to spin.';delete result.dataset.drink;return;}
- busy=true;spin.disabled=true;delete result.dataset.drink;
+ if(!pool.length){result.textContent='No recipes match. Remove an exclusion to spin.';winner.hidden=true;return;}
+ busy=true;spin.disabled=true;motion.disabled=true;winner.hidden=true;
  const c=pool[Math.floor(Math.random()*pool.length)];
  const slot=pocketOrder.indexOf(c.number);
  const landing=(slot+.5)*segment;
  const normalized=((currentAngle%360)+360)%360;
  const offset=(landing-normalized+360)%360;
+ const from=currentAngle;
  currentAngle+=360*6+offset;
- result.textContent='The ball is circling…';
- const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
- ball.style.transition=reduce?'none':'transform 4.4s cubic-bezier(.1,.72,.16,1)';
- ball.style.transform='translate(-50%, -50%) rotate('+currentAngle+'deg) translateY(calc(var(--ball-track) * -1))';
- setTimeout(()=>{showDrink(c);busy=false;spin.disabled=false;},reduce?20:4450);
+ result.textContent=motion.checked?'The ball is circling…':'Choosing your cup…';
+ animateBall(from,currentAngle,motion.checked?4400:0,()=>{showDrink(c);busy=false;spin.disabled=false;motion.disabled=false;});
 });
 document.querySelector('#clear').addEventListener('click',()=>{exclusions.querySelectorAll('input').forEach(el=>el.checked=false);});
 function art(c){return c.artwork?'<img src="'+esc(c.artwork)+'" alt="Vintage illustration of '+esc(c.name)+'" loading="lazy">':'<div class="coffee-placeholder" role="img" aria-label="Illustration coming later"><span>✦</span><strong>☕</strong><small>ILLUSTRATION<br>COMING SOON</small><span>✦</span></div>';}
@@ -44,11 +65,30 @@ function render(){
 }
 document.querySelector('#search').addEventListener('input',render);document.querySelector('#type').addEventListener('change',render);
 cards.addEventListener('click',e=>{const b=e.target.closest('[data-id]');if(b)openRecipe(b.dataset.id);});
-function openRecipe(id){const c=drinks.find(x=>x.id===id);if(!c)return;document.querySelector('#detail').innerHTML=art(c)+'<p class="eyebrow">THE MIDNIGHT CAFÉ · POCKET '+c.number+'</p><h2>'+esc(c.name)+'</h2><h3>Ingredients · one serving unless noted</h3><p>'+esc(c.measure)+'</p><h3>The ritual</h3><p>'+esc(c.method)+'</p><p class="recipe-note">House version; coffee ratios can vary by café and equipment.</p><a class="source-link" href="'+esc(c.source)+'" target="_blank" rel="noopener noreferrer">Recipe reference ↗</a>';dialog.showModal();}
+function openRecipe(id){
+ const c=drinks.find(x=>x.id===id);if(!c)return;
+ const d=window.CAFE_DETAILS[id],source=d.source||['Recipe background',c.source];
+ document.querySelector('#detail').innerHTML='<p class="eyebrow">THE MIDNIGHT CAFÉ · POCKET '+c.number+'</p><h2 id="coffee-title">'+esc(c.name)+'</h2><div class="coffee-flip-tools"><span id="face-status" role="status">Front · at a glance</span><button id="flip-coffee" aria-controls="coffee-front coffee-back" aria-pressed="false">Flip the card ↻</button></div><section id="coffee-front" class="coffee-face" aria-label="Recipe card front">'+art(c)+'<h3>In the cup</h3><ul class="coffee-ingredients">'+c.measure.split(';').map(s=>'<li>'+esc(s.trim())+'</li>').join('')+'</ul><h3>The Ritual</h3><p>'+esc(c.method)+'</p><p class="recipe-note">Barista’s note — '+esc(d.expect)+'</p></section><section id="coffee-back" class="coffee-face coffee-back" aria-label="Recipe card back" hidden><p class="back-ornament">✦ ◆ ✦</p><h3>The Ritual · step by step</h3><p class="equipment">'+esc(d.equipment)+'</p><ol>'+d.steps.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ol><aside><h4>Technique</h4><p>'+esc(d.technique)+'</p></aside><aside><h4>What to expect</h4><p>'+esc(d.expect)+'</p></aside><p class="recipe-note">House preparation; ratios and flavored variations are our menu’s starting points. The reference explains the recipe or underlying technique.</p><a class="source-link" href="'+esc(source[1])+'" target="_blank" rel="noopener noreferrer">'+esc(source[0])+' ↗</a></section>';
+ const flip=document.querySelector('#flip-coffee');
+ flip.addEventListener('click',()=>{
+  const back=flip.getAttribute('aria-pressed')!=='true';
+  flip.setAttribute('aria-pressed',String(back));
+  document.querySelector('#coffee-front').hidden=back;document.querySelector('#coffee-back').hidden=!back;
+  document.querySelector('#face-status').textContent=back?'Back · behind the brew':'Front · at a glance';
+  flip.textContent=back?'Back to the front ↶':'Flip the card ↻';
+  dialog.scrollTop=0;
+ });
+ dialog.showModal();
+}
 dialog.querySelector('.close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
-result.addEventListener('click',()=>{const id=result.dataset.drink;if(id)openRecipe(id);});
-result.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&result.dataset.drink){e.preventDefault();openRecipe(result.dataset.drink);}});
-result.tabIndex=0;result.setAttribute('aria-label','Winning coffee, activate to open recipe');
+winner.addEventListener('click',e=>{
+ const b=e.target.closest('[data-winner]');if(!b)return;
+ document.querySelector('#search').value='';document.querySelector('#type').value='all';render();
+ const card=document.getElementById(b.dataset.winner);
+ card.scrollIntoView({behavior:motionPreference.matches?'instant':'smooth',block:'center'});
+ card.querySelector('button').focus({preventScroll:true});
+ card.classList.add('drawn-card');
+});
 const topBtn=document.querySelector('#to-top');window.addEventListener('scroll',()=>topBtn.classList.toggle('visible',scrollY>320),{passive:true});topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
 render();
