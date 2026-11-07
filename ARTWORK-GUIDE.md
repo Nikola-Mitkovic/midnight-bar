@@ -2,7 +2,7 @@
 
 ## Easiest path: one image file per drink
 
-1. For all four suits, replace the included PNG; for other cards, prepare a WebP image of the drink illustration (a transparent background works best).
+1. Replace the included PNG for any of the 54 drinks; a transparent background works best.
 2. Use its exact filename from the table below. Filenames are lowercase and case-sensitive on GitHub Pages.
 3. In GitHub, open the `images` folder, choose **Add file → Upload files**, and upload it. Commit the change.
 4. Once Pages redeploys, refresh the site. That image appears on the menu card, in recipe details, and in the hero whenever that drink is drawn. The same path is reused everywhere.
@@ -23,7 +23,7 @@ Use `src: null` to deliberately keep SVG artwork for that drink. A per-drink ver
 
 ## Exact filenames
 
-Some IDs keep simplified spellings for compatibility (for example `pi-a-colada`). Use the names below exactly rather than guessing them. All four suits use included PNG overrides; all other cards default to WebP.
+Some IDs keep simplified spellings for compatibility (for example `pi-a-colada`). Use the names below exactly rather than guessing them. All 54 cards use included PNG overrides.
 
 | Card | File in images/ |
 | --- | --- |
@@ -79,5 +79,5 @@ Some IDs keep simplified spellings for compatibility (for example `pi-a-colada`)
 | J ♥ Jack Rose | `jack-rose.png` |
 | Q ♥ Ti’ Punch | `ti-punch.png` |
 | K ♥ Mojito | `mojito.png` |
-| JOKER ★ Zombie | `zombie.webp` |
-| JOKER ★ Death in the Afternoon | `death-in-the-afternoon.webp` |
+| JOKER ★ Zombie | `zombie.png` |
+| JOKER ★ Death in the Afternoon | `death-in-the-afternoon.png` |

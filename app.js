@@ -28,9 +28,10 @@ function matchingCocktails(){
  return cocktails.filter(c=>(spiritSelect.value==='all'||c.categories.includes(spiritSelect.value))&&(suitSelect.value==='all'||c.suit===suitSelect.value)&&(styleSelect.value==='all'||c.tags.includes(styleSelect.value))&&normalize([c.name,c.spirit,c.method,c.profile,c.suit,c.rank,...c.categories,...c.tags,...c.ingredients.map(i=>i[2])].join(' ')).includes(query));
 }
 function tagMarkup(c){return `<div class="flavour-tags" aria-label="${escapeHTML(c.name)} tags">${c.tags.map(tag=>`<button type="button" class="tag-chip" data-tag="${escapeHTML(tag)}" aria-label="Filter by ${escapeHTML(tag)}" aria-pressed="${styleSelect.value===tag}">${escapeHTML(tag)}</button>`).join('')}</div>`;}
+function cardMarkup(c,suffix='card'){return `<article class="cocktail-card ${['♥','♦'].includes(c.suit)?'red-suit':''} ${c.researched?'heart-edition':''}"><span class="corner" aria-hidden="true">${escapeHTML(c.rank==='JOKER'?'Jkr':c.rank)}<br>${escapeHTML(c.suit)}</span><p class="card-kicker">${escapeHTML(c.label)}</p><h3>${escapeHTML(c.name)}</h3>${artwork(c,suffix)}<p class="description">${escapeHTML(c.description)}</p>${tagMarkup(c)}<div class="tags">${escapeHTML(c.spirit)} &nbsp; / &nbsp; ${escapeHTML(c.method)}</div><button class="recipe-button" data-recipe="${escapeHTML(c.id)}" aria-label="View ${escapeHTML(c.name)} recipe"><span aria-hidden="true">${escapeHTML(c.suit)}</span> Discover the recipe <span aria-hidden="true">${escapeHTML(c.suit)}</span></button></article>`;}
 function renderCards(){
  const shown=matchingCocktails();
- grid.innerHTML=shown.map(c=>`<article class="cocktail-card ${['♥','♦'].includes(c.suit)?'red-suit':''} ${c.researched?'heart-edition':''}"><span class="corner" aria-hidden="true">${escapeHTML(c.rank==='JOKER'?'Jkr':c.rank)}<br>${escapeHTML(c.suit)}</span><p class="card-kicker">${escapeHTML(c.label)}</p><h3>${escapeHTML(c.name)}</h3>${artwork(c,'card')}<p class="description">${escapeHTML(c.description)}</p>${tagMarkup(c)}<div class="tags">${escapeHTML(c.spirit)} &nbsp; / &nbsp; ${escapeHTML(c.method)}</div><button class="recipe-button" data-recipe="${escapeHTML(c.id)}" aria-label="View ${escapeHTML(c.name)} recipe"><span aria-hidden="true">${escapeHTML(c.suit)}</span> Discover the recipe <span aria-hidden="true">${escapeHTML(c.suit)}</span></button></article>`).join('');
+ grid.innerHTML=shown.map(c=>cardMarkup(c)).join('');
  document.querySelector('#results').textContent=`${shown.length} OF ${cocktails.length} CARDS`;
  document.querySelector('#empty').hidden=shown.length!==0;
  const active=[spiritSelect,suitSelect,styleSelect].filter(el=>el.value!=='all').map(el=>el.options[el.selectedIndex].text);
@@ -38,6 +39,7 @@ function renderCards(){
  document.querySelector('#active-filters').textContent=active.length?active.join(' · '):'Browse by spirit, suit, or flavour. Tap a tag to explore.';
  document.querySelector('#clear-filters').hidden=active.length===0;
  activateArtwork(grid);
+ if(typeof renderDeck==='function')renderDeck(shown);
 }
 function renderIngredients(){document.querySelector('#ingredient-list').innerHTML=current.ingredients.map(i=>`<li><strong>${escapeHTML(i[unit])}</strong> ${escapeHTML(i[2])}</li>`).join('');}
 function sourceMarkup(c){

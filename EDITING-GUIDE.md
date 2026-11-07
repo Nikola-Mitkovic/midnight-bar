@@ -11,6 +11,7 @@ The website still opens directly from disk and runs on GitHub Pages without a bu
 | `images/` | Your uploaded artwork; see `ARTWORK-GUIDE.md` for every filename |
 | `illustrations.js` | Original SVG fallback drawings |
 | `games/deck.js` | Future game logic; not yet loaded by the menu |
+| `deck-view.js` | Swipe hand, ordering, pointer gestures, and slide/turn motion |
 | `hero.js` | Landing card shuffle interval and controls |
 | `app.js` | Filtering, recipe dialogs, and image loading behavior |
 | `styles.css` | Layout, color, typography |

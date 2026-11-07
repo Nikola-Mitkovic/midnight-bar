@@ -1,5 +1,5 @@
 'use strict';
-// Included artwork; change individual paths or cache versions here.
+// Included artwork; change paths or cache versions here.
 const ARTWORK = {
   "version": "hearts-1",
   "overrides": {
@@ -17,11 +17,11 @@ const ARTWORK = {
     },
     "pi-a-colada": {
       "src": "images/pi-a-colada.png",
-      "alt": "Vintage watercolor illustration of PiÃ±a Colada"
+      "alt": "Vintage watercolor illustration of Piña Colada"
     },
     "dark-n-stormy": {
       "src": "images/dark-n-stormy.png",
-      "alt": "Vintage watercolor illustration of Dark â€™nâ€™ Stormy"
+      "alt": "Vintage watercolor illustration of Dark ’n’ Stormy"
     },
     "painkiller": {
       "src": "images/painkiller.png",
@@ -33,7 +33,7 @@ const ARTWORK = {
     },
     "planter-s-punch": {
       "src": "images/planter-s-punch.png",
-      "alt": "Vintage watercolor illustration of Planterâ€™s Punch"
+      "alt": "Vintage watercolor illustration of Planter’s Punch"
     },
     "hurricane": {
       "src": "images/hurricane.png",
@@ -49,7 +49,7 @@ const ARTWORK = {
     },
     "ti-punch": {
       "src": "images/ti-punch.png",
-      "alt": "Vintage watercolor illustration of Tiâ€™ Punch"
+      "alt": "Vintage watercolor illustration of Ti’ Punch"
     },
     "mojito": {
       "src": "images/mojito.png",
@@ -57,67 +57,67 @@ const ARTWORK = {
     },
     "old-fashioned": {
       "src": "images/old-fashioned.png",
-      "alt": "Vintage watercolor illustration of old fashioned",
+      "alt": "Vintage watercolor illustration of Old Fashioned",
       "version": "spades-1"
     },
     "manhattan": {
       "src": "images/manhattan.png",
-      "alt": "Vintage watercolor illustration of manhattan",
+      "alt": "Vintage watercolor illustration of Manhattan",
       "version": "spades-1"
     },
     "whiskey-sour": {
       "src": "images/whiskey-sour.png",
-      "alt": "Vintage watercolor illustration of whiskey sour",
+      "alt": "Vintage watercolor illustration of Whiskey Sour",
       "version": "spades-1"
     },
     "mint-julep": {
       "src": "images/mint-julep.png",
-      "alt": "Vintage watercolor illustration of mint julep",
+      "alt": "Vintage watercolor illustration of Mint Julep",
       "version": "spades-1"
     },
     "sazerac": {
       "src": "images/sazerac.png",
-      "alt": "Vintage watercolor illustration of sazerac",
+      "alt": "Vintage watercolor illustration of Sazerac",
       "version": "spades-1"
     },
     "boulevardier": {
       "src": "images/boulevardier.png",
-      "alt": "Vintage watercolor illustration of boulevardier",
+      "alt": "Vintage watercolor illustration of Boulevardier",
       "version": "spades-1"
     },
     "irish-coffee": {
       "src": "images/irish-coffee.png",
-      "alt": "Vintage watercolor illustration of irish coffee",
+      "alt": "Vintage watercolor illustration of Irish Coffee",
       "version": "spades-1"
     },
     "rusty-nail": {
       "src": "images/rusty-nail.png",
-      "alt": "Vintage watercolor illustration of rusty nail",
+      "alt": "Vintage watercolor illustration of Rusty Nail",
       "version": "spades-1"
     },
     "penicillin": {
       "src": "images/penicillin.png",
-      "alt": "Vintage watercolor illustration of penicillin",
+      "alt": "Vintage watercolor illustration of Penicillin",
       "version": "spades-1"
     },
     "rob-roy": {
       "src": "images/rob-roy.png",
-      "alt": "Vintage watercolor illustration of rob roy",
+      "alt": "Vintage watercolor illustration of Rob Roy",
       "version": "spades-1"
     },
     "new-york-sour": {
       "src": "images/new-york-sour.png",
-      "alt": "Vintage watercolor illustration of new york sour",
+      "alt": "Vintage watercolor illustration of New York Sour",
       "version": "spades-1"
     },
     "godfather": {
       "src": "images/godfather.png",
-      "alt": "Vintage watercolor illustration of godfather",
+      "alt": "Vintage watercolor illustration of Godfather",
       "version": "spades-1"
     },
     "blood-and-sand": {
       "src": "images/blood-and-sand.png",
-      "alt": "Vintage watercolor illustration of blood and sand",
+      "alt": "Vintage watercolor illustration of Blood and Sand",
       "version": "spades-1"
     },
     "dry-martini": {
@@ -249,6 +249,16 @@ const ARTWORK = {
       "src": "images/batanga.png",
       "alt": "Vintage watercolor illustration of Batanga",
       "version": "diamonds-1"
+    },
+    "zombie": {
+      "src": "images/zombie.png",
+      "alt": "Vintage watercolor illustration of Zombie",
+      "version": "jokers-1"
+    },
+    "death-in-the-afternoon": {
+      "src": "images/death-in-the-afternoon.png",
+      "alt": "Vintage watercolor illustration of Death in the Afternoon",
+      "version": "jokers-1"
     }
   }
 };
