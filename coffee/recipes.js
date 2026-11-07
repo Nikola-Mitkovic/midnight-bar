@@ -228,7 +228,7 @@ window.CAFE_RECIPES=[
     "number": 14,
     "color": "red",
     "source": "https://coffeeassoc.com/coffee-101/styles-of-coffee/",
-    "artwork": null
+    "artwork": "images/latte.webp"
   },
   {
     "id": "freddo-espresso",
@@ -243,7 +243,7 @@ window.CAFE_RECIPES=[
     "number": 15,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/freddo-espresso.webp"
   },
   {
     "id": "freddo-cappuccino",
@@ -259,7 +259,7 @@ window.CAFE_RECIPES=[
     "number": 16,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/freddo-cappuccino.webp"
   },
   {
     "id": "shakerato",
@@ -275,7 +275,7 @@ window.CAFE_RECIPES=[
     "number": 17,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/shakerato.webp"
   },
   {
     "id": "cold-brew",
@@ -291,7 +291,7 @@ window.CAFE_RECIPES=[
     "number": 18,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/cold-brew.webp"
   },
   {
     "id": "vietnamese-iced",
@@ -307,7 +307,7 @@ window.CAFE_RECIPES=[
     "number": 19,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/vietnamese-iced.webp"
   },
   {
     "id": "espresso-tonic",
@@ -323,7 +323,7 @@ window.CAFE_RECIPES=[
     "number": 20,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/espresso-tonic.webp"
   },
   {
     "id": "iced-americano",
