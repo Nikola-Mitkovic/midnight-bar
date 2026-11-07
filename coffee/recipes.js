@@ -13,7 +13,7 @@ window.CAFE_RECIPES=[
     "number": 0,
     "color": "green",
     "source": "https://coffeeassoc.com/coffee-101/styles-of-coffee/",
-    "artwork": "images/espresso.svg"
+    "artwork": "images/espresso.webp"
   },
   {
     "id": "cappuccino",
@@ -28,7 +28,7 @@ window.CAFE_RECIPES=[
     "number": 1,
     "color": "red",
     "source": "https://coffeeassoc.com/coffee-101/styles-of-coffee/",
-    "artwork": "images/cappuccino.svg"
+    "artwork": "images/cappuccino.webp"
   },
   {
     "id": "iced-latte",
@@ -44,7 +44,7 @@ window.CAFE_RECIPES=[
     "number": 2,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": "images/iced-latte.svg"
+    "artwork": "images/iced-latte.webp"
   },
   {
     "id": "mocha",
@@ -61,7 +61,7 @@ window.CAFE_RECIPES=[
     "number": 3,
     "color": "red",
     "source": "https://coffeeassoc.com/coffee-101/styles-of-coffee/",
-    "artwork": "images/mocha.svg"
+    "artwork": "images/mocha.webp"
   },
   {
     "id": "affogato",
@@ -76,7 +76,7 @@ window.CAFE_RECIPES=[
     "number": 4,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": "images/affogato.svg"
+    "artwork": "images/affogato.webp"
   },
   {
     "id": "pumpkin-spice",
@@ -94,7 +94,7 @@ window.CAFE_RECIPES=[
     "number": 5,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": "images/pumpkin-spice.svg"
+    "artwork": "images/pumpkin-spice.webp"
   },
   {
     "id": "irish-coffee",
@@ -111,7 +111,7 @@ window.CAFE_RECIPES=[
     "number": 6,
     "color": "black",
     "source": "https://iba-world.com/iba-cocktail/irish-coffee/",
-    "artwork": "images/irish-coffee.svg"
+    "artwork": "images/irish-coffee.webp"
   },
   {
     "id": "doppio",
