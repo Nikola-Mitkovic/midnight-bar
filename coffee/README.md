@@ -1,13 +1,24 @@
-# Midnight Café — first edition
+# Midnight Café — Coffee Roulette
 
-Visit `/coffee/` on GitHub Pages. The existing cocktail menu remains at the repository root.
+Live page: `/coffee/` under the existing Midnight Bar GitHub Pages site.
 
-The standalone coffee experience uses `coffee/index.html`, `coffee/cafe.css`, `coffee/cafe.js`, and `coffee/recipes.js`. Seven starter recipes are populated; the roulette visual has 37 pockets, but **only the seven populated recipes can win** until the other 30 are authored.
+## Navigation
+Both the cocktail and coffee pages have prominently styled links to the sister page. Their URLs remain stable.
 
-The `coffee/images/` folder contains seven lightweight SVG starter illustrations. They are deliberately replaceable. To use a finished watercolor asset, upload a PNG or WebP to this folder and change the corresponding `images/<id>.svg` references in `coffee/cafe.js` to the new extension. The generated visual concepts can be used as art direction.
+## Wheel
+European roulette pocket order, 0–36; 0 is green, and the other pockets use their standard red/black roulette colors. **The wheel stays fixed while the ball spins** and lands on the randomly selected eligible recipe. All 37 recipes participate. This is a themed interactive picker, not a gambling service or physics simulation.
 
-The wheel supports unrestricted random draws and ingredient exclusions. The manual menu supports search, style filtering and opening individual recipe instructions. The wheel is a themed random selector, not a physical roulette simulator. The seven numbers correspond to the first seven reserved slots.
+## Coffee recipes
+All 37 cards live in `coffee/recipes.js`. Each includes a number, type, quantities, method, ingredient keys, roulette accent color, and a source URL. The listed preparations are practical house variations rather than rigid universal specifications, especially flavored café drinks.
 
-Recipes are editable objects in `coffee/recipes.js`. Add more records and matching images in batches. Ingredient keys are used by the exclusions control. Keep each `id` unique.
+Background references:
+- https://coffeeassoc.com/coffee-101/styles-of-coffee/
+- https://baristarecipes.com/recipes/
+- https://iba-world.com/iba-cocktail/irish-coffee/
 
-Irish Coffee contains alcohol and is marked with the `alcohol` ingredient key, so it can be excluded.
+Ingredient exclusions prevent drinks containing the selected ingredient from being drawn. A menu with text search and style filtering lets guests deliberately select any recipe.
+
+## Artwork
+The first seven illustrations are lightweight SVG starter art in `coffee/images/`: espresso, cappuccino, iced-latte, mocha, affogato, pumpkin-spice, irish-coffee. Other recipes display elegant placeholders. For a final image, upload a WebP or PNG to the same folder and set the corresponding recipe's `artwork` property to `images/your-file.webp` or `.png`. No illustration file is necessary for a placeholder.
+
+Source files: `coffee/index.html` (layout), `coffee/cafe.css` (theme), `coffee/cafe.js` (interactive roulette, exclusions, menu), `coffee/recipes.js` (recipes).
