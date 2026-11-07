@@ -2061,19 +2061,19 @@
     "method": "Shaken",
     "ingredients": [
       [
-        "45 ml",
-        "1.5 oz",
-        "vodka"
+        "40 ml",
+        "1.33 oz",
+        "citrus vodka"
       ],
       [
-        "30 ml",
-        "1 oz",
+        "15 ml",
+        "0.5 oz",
         "Cointreau"
       ],
       [
         "15 ml",
         "0.5 oz",
-        "lime juice"
+        "fresh lime juice"
       ],
       [
         "30 ml",
@@ -2081,20 +2081,19 @@
         "cranberry juice"
       ],
       [
-        "1",
-        "1",
-        "lime twist"
+        "To garnish",
+        "To garnish",
+        "lemon twist (or orange zest, house option)"
       ]
     ],
     "steps": [
-      "Shake the liquid ingredients with ice.",
-      "Strain into a chilled cocktail glass and garnish with lime."
+      "Shake the liquids with ice; strain into a chilled cocktail glass and add a citrus twist."
     ],
     "description": "Cranberry blush with a bright orange-lime finish.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "Cranberry blush with a bright orange-lime finish.",
-    "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "glass": "Chilled cocktail glass",
+    "tip": "Pink, with a point of view.",
     "tags": [
       "Citrusy",
       "Fruity",
@@ -2103,10 +2102,33 @@
     "categories": [
       "vodka"
     ],
-    "shortMethod": "Shake the liquid ingredients with ice. Strain into a chilled cocktail glass and garnish with lime.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "cosmopolitan"
+    "shortMethod": "Shake the liquids with ice; strain into a chilled cocktail glass and add a citrus twist.",
+    "detailedSteps": [
+      "Chill a cocktail glass while you measure the ingredients.",
+      "Add citrus vodka, Cointreau, lime, and cranberry juice to a shaker.",
+      "Fill with ice and shake firmly until thoroughly chilled.",
+      "Strain into the empty glass. Express a lemon twist over the surface and add it; orange zest is our illustrated alternative."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Cosmopolitan",
+        "url": "https://iba-world.com/iba-cocktail/cosmopolitan/",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "cosmopolitan",
+    "learn": "Expressing a twist releases oils from the colored peel. Bend it over the drink before adding it so the aroma reaches the surface.",
+    "expect": "Cranberry and lime give a tart, fruity opening, with orange sweetness underneath. Bright and polished rather than syrupy; try alongside salty canapés.",
+    "recipeVersion": "Follows IBA 40/15/15/30 ml and citrus vodka. IBA specifies lemon twist; the artwork uses orange zest as an optional house garnish.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "moscow-mule",
@@ -2120,35 +2142,34 @@
     "method": "Built",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "45 ml",
+        "1.5 oz",
         "vodka"
-      ],
-      [
-        "15 ml",
-        "0.5 oz",
-        "lime juice"
       ],
       [
         "120 ml",
         "4 oz",
-        "ginger beer"
+        "chilled ginger beer"
       ],
       [
-        "1",
-        "1",
-        "lime wedge"
+        "10 ml",
+        "0.33 oz",
+        "fresh lime juice"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "lime slice"
       ]
     ],
     "steps": [
-      "Fill a copper mug with ice. Add vodka and lime juice.",
-      "Top with ginger beer, stir gently, and add the lime wedge."
+      "Build vodka, ginger beer, and lime over ice in a mule mug. Stir gently and garnish."
     ],
     "description": "Zesty lime and fiery ginger in a frosty mug.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "Zesty lime and fiery ginger in a frosty mug.",
-    "glass": "Copper mug",
-    "tip": "The diamond-suit version from the photographed deck.",
+    "glass": "Mule mug or rocks glass",
+    "tip": "The mug is handsome. The ginger does the talking.",
     "tags": [
       "Citrusy",
       "Refreshing",
@@ -2158,10 +2179,32 @@
     "categories": [
       "vodka"
     ],
-    "shortMethod": "Fill a copper mug with ice. Add vodka and lime juice. Top with ginger beer, stir gently, and add the lime wedge.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "moscow-mule"
+    "shortMethod": "Build vodka, ginger beer, and lime over ice in a mule mug. Stir gently and garnish.",
+    "detailedSteps": [
+      "Fill a mule mug or rocks glass with fresh ice.",
+      "Measure in vodka and lime juice.",
+      "Pour in chilled ginger beer, leaving a little room at the rim.",
+      "Stir gently to combine, then add a lime slice. Do not shake the ginger beer."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Moscow Mule",
+        "url": "https://iba-world.com/iba-cocktail/moscow-mule/",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "moscow-mule",
+    "learn": "A built drink is assembled in its serving vessel. Gentle stirring combines the ingredients while keeping the mixer lively.",
+    "expect": "Spicy ginger and fresh lime, with a clean vodka base and a sparkling finish. Crisp and zingy; a good companion to ginger or chili-spiced snacks.",
+    "recipeVersion": "Uses IBA 45/120/10 ml instead of the photographed 60/120/15 ml. Fresh serving ice is specified for the home version.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ]
   },
   {
     "id": "bloody-mary",
@@ -2172,7 +2215,7 @@
     "spirit": "Vodka",
     "shape": "tall",
     "color": "#b84930",
-    "method": "Rolled",
+    "method": "Stirred",
     "ingredients": [
       [
         "45 ml",
@@ -2187,33 +2230,32 @@
       [
         "15 ml",
         "0.5 oz",
-        "lemon juice"
+        "fresh lemon juice"
       ],
       [
-        "To taste",
-        "To taste",
+        "2 dashes",
+        "2 dashes",
         "Worcestershire sauce"
       ],
       [
         "To taste",
         "To taste",
-        "Tabasco"
+        "Tabasco, celery salt, and black pepper"
       ],
       [
-        "1 stalk",
-        "1 stalk",
-        "celery"
+        "Optional garnish",
+        "Optional garnish",
+        "celery stalk and lemon wedge"
       ]
     ],
     "steps": [
-      "Combine the liquids with ice and gently roll between two mixing vessels.",
-      "Pour into a tall glass and garnish with celery."
+      "Stir the liquids and seasonings gently with ice. Pour into a highball over ice; garnish if desired."
     ],
     "description": "Savory tomato, warming spice, and a citrus lift.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "Savory tomato, warming spice, and a citrus lift.",
     "glass": "Highball glass",
-    "tip": "The card does not specify sauce quantities; season to taste.",
+    "tip": "Season it like you mean dinner, not dessert.",
     "tags": [
       "Citrusy",
       "Savory",
@@ -2222,10 +2264,33 @@
     "categories": [
       "vodka"
     ],
-    "shortMethod": "Combine the liquids with ice and gently roll between two mixing vessels. Pour into a tall glass and garnish with celery.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "bloody-mary"
+    "shortMethod": "Stir the liquids and seasonings gently with ice. Pour into a highball over ice; garnish if desired.",
+    "detailedSteps": [
+      "Measure vodka, tomato juice, and lemon into a mixing glass.",
+      "Add Worcestershire sauce, then a little Tabasco, celery salt, and pepper; taste and adjust the seasoning.",
+      "Add ice and stir gently until cold, keeping the tomato juice smooth rather than frothy.",
+      "Pour into a highball with ice. Add celery and a lemon wedge if desired."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Bloody Mary",
+        "url": "https://iba-world.com/iba-cocktail/bloody-mary/",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "bloody-mary",
+    "learn": "Season to taste means start small, taste, and adjust. Hot sauces differ in intensity, so a fixed large dash is not always interchangeable.",
+    "expect": "Savory tomato, tangy lemon, pepper, and a warming chili finish. More like a seasoned appetizer than a sweet cocktail; try with a brunch spread.",
+    "recipeVersion": "Follows IBA 45/90/15 ml and its highball-with-ice option. Gentle stirring replaces the card’s rolling method.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Mixing glass",
+      "Barspoon"
+    ]
   },
   {
     "id": "espresso-martini",
@@ -2239,35 +2304,39 @@
     "method": "Shaken",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "50 ml",
+        "1.67 oz",
         "vodka"
       ],
       [
         "30 ml",
         "1 oz",
-        "coffee liqueur"
+        "Kahlúa coffee liqueur"
       ],
       [
-        "30 ml",
-        "1 oz",
-        "fresh espresso"
-      ],
-      [
-        "15 ml",
-        "0.5 oz",
+        "10 ml",
+        "0.33 oz",
         "simple syrup"
+      ],
+      [
+        "1 strong shot",
+        "1 strong shot",
+        "fresh espresso, briefly cooled"
+      ],
+      [
+        "3",
+        "3",
+        "coffee beans, to garnish"
       ]
     ],
     "steps": [
-      "Add all ingredients to a shaker with ice.",
-      "Shake hard to create foam and strain into a chilled cocktail glass."
+      "Shake vodka, coffee liqueur, syrup, and espresso hard with ice. Strain into a chilled glass; add three beans."
     ],
     "description": "Fresh espresso and coffee liqueur with a velvet foam.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "Fresh espresso and coffee liqueur with a velvet foam.",
-    "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "glass": "Chilled cocktail glass",
+    "tip": "Three beans. One very good entrance.",
     "tags": [
       "Coffee",
       "Sweet"
@@ -2275,10 +2344,33 @@
     "categories": [
       "vodka"
     ],
-    "shortMethod": "Add all ingredients to a shaker with ice. Shake hard to create foam and strain into a chilled cocktail glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "espresso-martini"
+    "shortMethod": "Shake vodka, coffee liqueur, syrup, and espresso hard with ice. Strain into a chilled glass; add three beans.",
+    "detailedSteps": [
+      "Chill a cocktail glass and brew one strong espresso. Let the shot briefly cool before mixing.",
+      "Measure vodka, Kahlúa, syrup, and the espresso into a shaker.",
+      "Add plenty of ice and shake firmly until very cold and foamy.",
+      "Strain into the chilled glass. Wait a moment for the foam to settle, then place three coffee beans on top."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Espresso Martini",
+        "url": "https://iba-world.com/iba-cocktail/espresso-martini/",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "espresso-martini",
+    "learn": "A firm shake aerates the espresso to create foam. This creamy-looking cap comes from coffee, not dairy or egg white.",
+    "expect": "Roasted coffee leads, with a sweet liqueur middle and a bittersweet finish. Silky foam makes the first sip soft; a small chocolate truffle fits well.",
+    "recipeVersion": "Uses IBA 50 ml vodka, 30 ml Kahlúa, 10 ml syrup, and one strong espresso. The source specifies a shot rather than a fixed espresso volume.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "sex-on-the-beach",
@@ -2289,38 +2381,42 @@
     "spirit": "Vodka",
     "shape": "tall",
     "color": "#e98c5e",
-    "method": "Shaken",
+    "method": "Built",
     "ingredients": [
       [
-        "45 ml",
-        "1.5 oz",
+        "40 ml",
+        "1.33 oz",
         "vodka"
       ],
       [
-        "22.5 ml",
-        "0.75 oz",
+        "20 ml",
+        "0.67 oz",
         "peach schnapps"
       ],
       [
-        "45 ml",
-        "1.5 oz",
+        "40 ml",
+        "1.33 oz",
+        "fresh orange juice"
+      ],
+      [
+        "40 ml",
+        "1.33 oz",
         "cranberry juice"
       ],
       [
-        "45 ml",
-        "1.5 oz",
-        "orange juice"
+        "To garnish",
+        "To garnish",
+        "half orange slice"
       ]
     ],
     "steps": [
-      "Shake all ingredients with ice.",
-      "Strain over fresh ice in a tall glass."
+      "Build all liquids over ice in a highball, combine gently, and add an orange slice."
     ],
     "description": "Peach, orange, and cranberry in a sunny long drink.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "Peach, orange, and cranberry in a sunny long drink.",
     "glass": "Highball glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "A seaside name; no sand required.",
     "tags": [
       "Citrusy",
       "Fruity",
@@ -2329,10 +2425,32 @@
     "categories": [
       "vodka"
     ],
-    "shortMethod": "Shake all ingredients with ice. Strain over fresh ice in a tall glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "sex-on-the-beach"
+    "shortMethod": "Build all liquids over ice in a highball, combine gently, and add an orange slice.",
+    "detailedSteps": [
+      "Fill a highball glass with fresh ice.",
+      "Measure in vodka and peach schnapps.",
+      "Add orange and cranberry juices, then stir gently until the colors and flavors combine.",
+      "Garnish with half an orange slice and serve over the ice."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Sex on the Beach",
+        "url": "https://iba-world.com/iba-cocktail/sex-on-the-beach/",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "sex-on-the-beach",
+    "learn": "Peach schnapps is a sweet fruit liqueur in this recipe. It contributes sweetness as well as peach flavor, so extra syrup is not needed.",
+    "expect": "Juicy peach and orange with cranberry tartness. A fruity, rounded long drink with little bitterness; pair with a fruit platter or mild savory snacks.",
+    "recipeVersion": "Uses IBA’s 40/20/40/40 ml proportions and built method, replacing the card’s shaken version.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ]
   },
   {
     "id": "white-russian",
@@ -2346,14 +2464,14 @@
     "method": "Built",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "30 ml",
+        "1 oz",
         "vodka"
       ],
       [
         "30 ml",
         "1 oz",
-        "coffee liqueur"
+        "Kahlúa coffee liqueur"
       ],
       [
         "30 ml",
@@ -2362,14 +2480,13 @@
       ]
     ],
     "steps": [
-      "Add vodka and coffee liqueur to a rocks glass over ice.",
-      "Slowly float the cream on top."
+      "Pour vodka and coffee liqueur over ice. Float cream over a spoon; stir lightly if you prefer it blended."
     ],
     "description": "Coffee and cream meet a smooth vodka base.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "Coffee and cream meet a smooth vodka base.",
     "glass": "Rocks glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "The cream makes a slow entrance. Let it.",
     "tags": [
       "Creamy",
       "Coffee",
@@ -2378,10 +2495,32 @@
     "categories": [
       "vodka"
     ],
-    "shortMethod": "Add vodka and coffee liqueur to a rocks glass over ice. Slowly float the cream on top.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "white-russian"
+    "shortMethod": "Pour vodka and coffee liqueur over ice. Float cream over a spoon; stir lightly if you prefer it blended.",
+    "detailedSteps": [
+      "Fill a rocks glass with fresh ice.",
+      "Measure coffee liqueur and vodka into the glass.",
+      "Hold a spoon just above the drink and slowly pour the cream over its back for a pale top layer.",
+      "Serve layered, or stir lightly just before sipping for an evenly creamy texture."
+    ],
+    "recipeSources": [
+      {
+        "title": "Kahlúa · White Russian",
+        "url": "https://www.kahlua.com/en-us/drinks/white-russian/",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "white-russian",
+    "learn": "Floating means adding a liquid gently on top instead of immediately mixing it in. A spoon softens the pour and helps make the cream layer visible.",
+    "expect": "Rich cream, sweet roasted coffee, and a soft vanilla impression. Dessert-like and velvety; try with a small plain biscuit rather than another very sweet dish.",
+    "recipeVersion": "Uses Kahlúa’s equal 30 ml vodka, coffee liqueur, and cream version, rather than the card’s larger vodka measure.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ]
   },
   {
     "id": "lemon-drop",
@@ -2395,35 +2534,39 @@
     "method": "Shaken",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "37.5 ml",
+        "1.25 oz",
         "vodka"
       ],
       [
-        "30 ml",
-        "1 oz",
-        "lemon juice"
+        "7.5 ml",
+        "0.25 oz",
+        "triple sec"
       ],
       [
         "22.5 ml",
         "0.75 oz",
-        "simple syrup"
+        "fresh lemon juice"
       ],
       [
-        "For the rim",
-        "For the rim",
+        "For optional rim",
+        "For optional rim",
         "sugar"
+      ],
+      [
+        "Optional garnish",
+        "Optional garnish",
+        "lemon wheel"
       ]
     ],
     "steps": [
-      "Moisten the glass rim with lemon and dip in sugar.",
-      "Shake vodka, lemon, and syrup with ice. Strain into the prepared glass."
+      "Sugar-rim a chilled cocktail glass if desired. Shake the liquids with ice, fine-strain, and optionally add a lemon wheel."
     ],
     "description": "Sweet-tart lemon with a sparkling sugar rim.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "Sweet-tart lemon with a sparkling sugar rim.",
-    "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "glass": "Chilled cocktail glass",
+    "tip": "A little sugar around the edges never hurt the presentation.",
     "tags": [
       "Citrusy",
       "Sour"
@@ -2431,10 +2574,34 @@
     "categories": [
       "vodka"
     ],
-    "shortMethod": "Moisten the glass rim with lemon and dip in sugar. Shake vodka, lemon, and syrup with ice. Strain into the prepared glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "lemon-drop"
+    "shortMethod": "Sugar-rim a chilled cocktail glass if desired. Shake the liquids with ice, fine-strain, and optionally add a lemon wheel.",
+    "detailedSteps": [
+      "Moisten the outside edge of a chilled cocktail glass with lemon and dip it in sugar, if using; keep sugar out of the bowl.",
+      "Measure vodka, triple sec, and lemon juice into a shaker.",
+      "Add ice and shake firmly until cold.",
+      "Fine-strain into the prepared glass and add a lemon wheel if desired."
+    ],
+    "recipeSources": [
+      {
+        "title": "Diageo Bar Academy · Lemon Drop Martini",
+        "url": "https://www.diageobaracademy.com/en-us/home/explore-all-recipes/smirnoff-lemon-drop-martini",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "lemon-drop",
+    "learn": "A sugar rim sweetens individual sips rather than the whole mixture. Coating only the outer edge keeps loose crystals out of the drink.",
+    "expect": "Sharp fresh lemon with a little orange sweetness. The optional rim makes each sip more candy-like; without it, expect a distinctly tart drink.",
+    "recipeVersion": "Uses Diageo Bar Academy’s 1.25/0.25/0.75 oz vodka/triple-sec/lemon version, converted at 30 ml per ounce. Sugar is for the optional rim; no syrup is mixed in. The illustration omits the source’s lemon wheel, which is optional here.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer",
+      "Fine sieve"
+    ]
   },
   {
     "id": "tequila-sunrise",
@@ -2448,30 +2615,39 @@
     "method": "Built",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
+        "45 ml",
+        "1.5 oz",
         "tequila"
       ],
       [
-        "120 ml",
-        "4 oz",
-        "orange juice"
+        "90 ml",
+        "3 oz",
+        "fresh orange juice"
       ],
       [
         "15 ml",
         "0.5 oz",
         "grenadine"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "half orange slice"
+      ],
+      [
+        "Optional house garnish",
+        "Optional house garnish",
+        "cocktail cherry"
       ]
     ],
     "steps": [
-      "Add tequila and orange juice to an ice-filled tall glass.",
-      "Slowly pour in grenadine and let it settle; leave the gradient unstirred."
+      "Build tequila and orange over ice. Add grenadine slowly and leave it unstirred for the sunrise layers."
     ],
     "description": "Orange and tequila with a glowing grenadine sunrise.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "Orange and tequila with a glowing grenadine sunrise.",
     "glass": "Highball glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "For this sunset, put the spoon down.",
     "tags": [
       "Citrusy",
       "Fruity",
@@ -2480,10 +2656,32 @@
     "categories": [
       "tequila"
     ],
-    "shortMethod": "Add tequila and orange juice to an ice-filled tall glass. Slowly pour in grenadine and let it settle; leave the gradient unstirred.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "tequila-sunrise"
+    "shortMethod": "Build tequila and orange over ice. Add grenadine slowly and leave it unstirred for the sunrise layers.",
+    "detailedSteps": [
+      "Fill a highball glass with fresh ice cubes.",
+      "Measure in tequila and orange juice; combine gently before adding the syrup.",
+      "Pour grenadine slowly into the glass and let it settle toward the bottom. Do not stir afterward.",
+      "Add half an orange slice. A cherry is an optional house garnish, as shown in the artwork."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Tequila Sunrise",
+        "url": "https://iba-world.com/iba-cocktail/tequila-sunrise/",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "tequila-sunrise",
+    "learn": "Dense grenadine sinks through the juice, making the red-to-orange gradient. Stirring after adding it blends the colors and removes the sunrise effect.",
+    "expect": "Sweet orange and pomegranate-like syrup, with tequila underneath. Fruity and soft-edged; the first and last sips can differ while the layers remain intact.",
+    "recipeVersion": "Uses IBA 45/90/15 ml rather than the larger photographed pour. Orange follows IBA; the illustrated cherry is an optional house addition.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ]
   },
   {
     "id": "paloma",
@@ -2497,35 +2695,39 @@
     "method": "Built",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "tequila"
+        "50 ml",
+        "1.67 oz",
+        "100% agave tequila"
       ],
       [
-        "15 ml",
-        "0.5 oz",
-        "lime juice"
+        "5 ml",
+        "0.17 oz",
+        "fresh lime juice"
       ],
       [
-        "120 ml",
-        "4 oz",
-        "grapefruit soda"
-      ],
-      [
-        "For the rim",
-        "For the rim",
+        "1 pinch",
+        "1 pinch",
         "salt"
+      ],
+      [
+        "100 ml",
+        "3.33 oz",
+        "chilled pink grapefruit soda"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "lime slice"
       ]
     ],
     "steps": [
-      "Moisten the rim with lime and dip in salt. Fill the glass with ice.",
-      "Add tequila and lime; top with grapefruit soda and stir gently."
+      "Build tequila, lime, and a pinch of salt over ice. Add grapefruit soda, stir gently, and garnish."
     ],
-    "description": "Grapefruit sparkle, fresh lime, and a salted edge.",
-    "label": "Vodka & tequila",
-    "profile": "Grapefruit sparkle, fresh lime, and a salted edge.",
+    "description": "Grapefruit sparkle, fresh lime, and a subtle pinch of salt.",
+    "label": "The diamonds collection",
+    "profile": "Grapefruit sparkle, fresh lime, and a subtle pinch of salt.",
     "glass": "Highball glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "Grapefruit brings the sparkle and a little attitude.",
     "tags": [
       "Citrusy",
       "Refreshing",
@@ -2535,10 +2737,32 @@
     "categories": [
       "tequila"
     ],
-    "shortMethod": "Moisten the rim with lime and dip in salt. Fill the glass with ice. Add tequila and lime; top with grapefruit soda and stir gently.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "paloma"
+    "shortMethod": "Build tequila, lime, and a pinch of salt over ice. Add grapefruit soda, stir gently, and garnish.",
+    "detailedSteps": [
+      "Measure tequila and lime juice into a highball glass.",
+      "Add fresh ice and a small pinch of salt.",
+      "Pour in chilled pink grapefruit soda and stir gently to combine.",
+      "Add a lime slice. The salt goes in the drink in this version, rather than around the rim."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Paloma",
+        "url": "https://iba-world.com/iba-cocktail/paloma/",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "paloma",
+    "learn": "Grapefruit soda is already sweetened and carbonated. Grapefruit juice plus plain soda is a different mixture and needs its own balancing.",
+    "expect": "Bittersweet grapefruit, fresh lime, and an earthy tequila note with lively bubbles. Bright and refreshing; try with tacos or grilled vegetables.",
+    "recipeVersion": "Follows IBA 50/5/100 ml with a pinch of salt in the glass. This replaces the card’s salt rim and larger lime measure.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon"
+    ]
   },
   {
     "id": "tommy-s-margarita",
@@ -2554,28 +2778,32 @@
       [
         "60 ml",
         "2 oz",
-        "tequila"
+        "100% agave tequila"
       ],
       [
         "30 ml",
         "1 oz",
-        "lime juice"
+        "fresh lime juice"
       ],
       [
-        "15 ml",
-        "0.5 oz",
+        "30 ml",
+        "1 oz",
         "agave nectar"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "lime slice"
       ]
     ],
     "steps": [
-      "Shake tequila, lime, and agave nectar with ice.",
-      "Strain over fresh ice in a rocks glass."
+      "Shake tequila, lime, and agave nectar with ice. Strain over fresh ice in a rocks glass; add lime."
     ],
     "description": "A simple trio of tequila, lime, and agave.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "A simple trio of tequila, lime, and agave.",
     "glass": "Rocks glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "tip": "Three ingredients, all pulling in the same direction.",
     "tags": [
       "Citrusy",
       "Sour"
@@ -2583,10 +2811,33 @@
     "categories": [
       "tequila"
     ],
-    "shortMethod": "Shake tequila, lime, and agave nectar with ice. Strain over fresh ice in a rocks glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "tommy-s-margarita"
+    "shortMethod": "Shake tequila, lime, and agave nectar with ice. Strain over fresh ice in a rocks glass; add lime.",
+    "detailedSteps": [
+      "Fill a rocks glass with fresh serving ice.",
+      "Measure tequila, lime juice, and agave nectar into a shaker.",
+      "Add ice and shake firmly until the nectar is fully mixed and the drink is cold.",
+      "Strain into the prepared glass and add a lime slice."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Tommy’s Margarita",
+        "url": "https://iba-world.com/iba-cocktail/tommys-margarita/",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "tommy-s-margarita",
+    "learn": "Tommy’s uses agave nectar in place of orange liqueur. That changes both the sweetness and the flavor, letting tequila and lime stand more clearly apart.",
+    "expect": "Lime-bright with rounded agave sweetness and a direct tequila character. This recipe is relatively generous with nectar; brands vary in sweetness and thickness.",
+    "recipeVersion": "Uses the current IBA 60/30/30 ml formula, including 30 ml agave nectar rather than the photographed 15 ml. Served over ice with lime.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "el-diablo",
@@ -2597,38 +2848,42 @@
     "spirit": "Tequila",
     "shape": "tall",
     "color": "#ae5e52",
-    "method": "Built",
+    "method": "Shaken",
     "ingredients": [
       [
         "45 ml",
         "1.5 oz",
-        "tequila"
+        "reposado tequila"
       ],
       [
-        "15 ml",
-        "0.5 oz",
+        "30 ml",
+        "1 oz",
+        "fresh lime juice"
+      ],
+      [
+        "30 ml",
+        "1 oz",
+        "chilled ginger beer"
+      ],
+      [
+        "7.5 ml",
+        "0.25 oz",
         "crème de cassis"
       ],
       [
-        "15 ml",
-        "0.5 oz",
-        "lime juice"
-      ],
-      [
-        "To top",
-        "To top",
-        "ginger beer"
+        "To garnish",
+        "To garnish",
+        "lime wedge"
       ]
     ],
     "steps": [
-      "Build tequila, cassis, and lime juice over ice in a tall glass.",
-      "Top with ginger beer and stir gently."
+      "Shake tequila and lime with ice. Strain over fresh ice, add ginger beer, drizzle cassis on top, and garnish."
     ],
     "description": "Blackcurrant richness with tequila and ginger bite.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "Blackcurrant richness with tequila and ginger bite.",
-    "glass": "Highball glass",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "glass": "Collins glass",
+    "tip": "The devil is in the final drizzle.",
     "tags": [
       "Citrusy",
       "Refreshing",
@@ -2638,10 +2893,34 @@
     "categories": [
       "tequila"
     ],
-    "shortMethod": "Build tequila, cassis, and lime juice over ice in a tall glass. Top with ginger beer and stir gently.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "el-diablo"
+    "shortMethod": "Shake tequila and lime with ice. Strain over fresh ice, add ginger beer, drizzle cassis on top, and garnish.",
+    "detailedSteps": [
+      "Measure reposado tequila and lime juice into a shaker, keeping ginger beer and cassis separate.",
+      "Add ice and shake until cold; strain into a Collins glass over fresh ice.",
+      "Add ginger beer, then slowly drizzle the measured cassis over the surface.",
+      "Garnish with a lime wedge. Give it a gentle stir before sipping if you prefer an even flavor throughout."
+    ],
+    "recipeSources": [
+      {
+        "title": "Patrón · El Diablo official recipe video",
+        "url": "https://www.youtube.com/watch?v=5MZLcByZJPE",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "el-diablo",
+    "learn": "Crème de cassis is blackcurrant liqueur, not cream. Here it is added last for a dark berry accent; the carbonated ginger beer is never shaken.",
+    "expect": "Tart lime, peppery ginger, dark berries, and gently rounded tequila. This producer version is citrus-forward with only a short ginger-beer top.",
+    "recipeVersion": "Follows Patrón’s official recipe video: 45/30/30/7.5 ml and reposado tequila. Its explicit method resolves the website’s ambiguous instruction about when to add cassis.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer",
+      "Barspoon"
+    ]
   },
   {
     "id": "margarita",
@@ -2655,35 +2934,34 @@
     "method": "Shaken",
     "ingredients": [
       [
-        "60 ml",
-        "2 oz",
-        "tequila"
+        "50 ml",
+        "1.67 oz",
+        "100% agave tequila"
       ],
       [
-        "30 ml",
-        "1 oz",
-        "Cointreau"
+        "20 ml",
+        "0.67 oz",
+        "triple sec"
       ],
       [
-        "30 ml",
-        "1 oz",
+        "15 ml",
+        "0.5 oz",
         "fresh lime juice"
       ],
       [
-        "For the rim",
-        "For the rim",
-        "salt"
+        "Optional",
+        "Optional",
+        "salt for half the rim"
       ]
     ],
     "steps": [
-      "Moisten the rim with lime and dip in salt.",
-      "Shake tequila, Cointreau, and lime with ice. Strain into the prepared glass."
+      "Shake tequila, triple sec, and lime with ice. Strain into a chilled cocktail glass with an optional half-salt rim."
     ],
     "description": "The classic tequila, orange, and lime combination.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "The classic tequila, orange, and lime combination.",
-    "glass": "Chilled coupe",
-    "tip": "Use fresh ice and chill the glass before serving.",
+    "glass": "Chilled cocktail glass",
+    "tip": "Half a rim leaves room for personal taste.",
     "tags": [
       "Citrusy",
       "Sour"
@@ -2691,10 +2969,33 @@
     "categories": [
       "tequila"
     ],
-    "shortMethod": "Moisten the rim with lime and dip in salt. Shake tequila, Cointreau, and lime with ice. Strain into the prepared glass.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "margarita"
+    "shortMethod": "Shake tequila, triple sec, and lime with ice. Strain into a chilled cocktail glass with an optional half-salt rim.",
+    "detailedSteps": [
+      "Chill a cocktail glass. If using salt, moisten half the outer rim with lime and dip that section in salt.",
+      "Measure tequila, triple sec, and fresh lime juice into a shaker.",
+      "Add ice and shake firmly until cold.",
+      "Strain into the empty prepared glass, keeping serving ice out. No additional garnish is needed."
+    ],
+    "recipeSources": [
+      {
+        "title": "IBA · Margarita",
+        "url": "https://iba-world.com/iba-cocktail/margarita/",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "margarita",
+    "learn": "A half-salt rim gives you a choice: turn the glass to sip with or without salt. Keep the coating outside the glass rather than dropping salt into the mixture.",
+    "expect": "Agave and orange lead into a clean lime finish. Short, bright, and spirit-forward, with salt adding a savory edge when used; try with tortilla chips.",
+    "recipeVersion": "Uses IBA 50/20/15 ml and an optional half-salt rim, replacing the card’s 60/30/30 ml formula. Served up without a lime-wheel garnish.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Shaker",
+      "Strainer"
+    ]
   },
   {
     "id": "batanga",
@@ -2710,33 +3011,37 @@
       [
         "60 ml",
         "2 oz",
-        "tequila"
+        "El Tequileño Blanco tequila"
       ],
       [
-        "120 ml",
-        "4 oz",
-        "cola"
+        "Juice of 1",
+        "Juice of 1",
+        "fresh lime"
       ],
       [
-        "15 ml",
-        "0.5 oz",
-        "lime juice"
+        "To top",
+        "To top",
+        "chilled Mexican cola"
       ],
       [
-        "For the rim",
-        "For the rim",
-        "salt"
+        "For rim",
+        "For rim",
+        "coarse salt"
+      ],
+      [
+        "To garnish",
+        "To garnish",
+        "lime wedge"
       ]
     ],
     "steps": [
-      "Salt the rim and fill a tall glass with ice.",
-      "Add tequila and lime, top with cola, and stir gently."
+      "Salt-rim a highball, fill with ice, and add tequila and lime. Top with cola, stir gently, and garnish."
     ],
     "description": "Tequila and cola sharpened with lime and salt.",
-    "label": "Vodka & tequila",
+    "label": "The diamonds collection",
     "profile": "Tequila and cola sharpened with lime and salt.",
     "glass": "Highball glass",
-    "tip": "The card mentions stirring with a knife; a bar spoon is an easier preparation choice.",
+    "tip": "A small ingredient list with a well-dressed rim.",
     "tags": [
       "Citrusy",
       "Refreshing",
@@ -2745,10 +3050,33 @@
     "categories": [
       "tequila"
     ],
-    "shortMethod": "Salt the rim and fill a tall glass with ice. Add tequila and lime, top with cola, and stir gently.",
-    "detailedSteps": [],
-    "recipeSources": [],
-    "artworkKey": "batanga"
+    "shortMethod": "Salt-rim a highball, fill with ice, and add tequila and lime. Top with cola, stir gently, and garnish.",
+    "detailedSteps": [
+      "Moisten the outside rim of a highball with lime and dip it in coarse salt. Fill with cubed ice.",
+      "Measure tequila into the glass and squeeze in the juice of one fresh lime.",
+      "Top with chilled Mexican cola, leaving room to stir.",
+      "Stir gently with a barspoon and add a lime wedge."
+    ],
+    "recipeSources": [
+      {
+        "title": "El Tequileño · La Batanga",
+        "url": "https://www.tequileno.com/la-batanga-cocktail",
+        "accessed": "2026-11-07"
+      }
+    ],
+    "artworkKey": "batanga",
+    "learn": "A recipe calling for one lime follows the fruit rather than an exact juice volume. Lime size and juiciness vary, so taste the balance before serving.",
+    "expect": "Cola spice and sweetness meet bright lime and earthy tequila, with a salty edge. Familiar and fizzy, but more savory than a simple cola highball.",
+    "recipeVersion": "Follows El Tequileño’s 2 oz tequila, whole lime, and cola-to-top recipe. A barspoon replaces the traditional stirring knife for this home version.",
+    "researched": true,
+    "edition": "diamonds-2026-11",
+    "artworkVersion": "diamonds-1",
+    "measureNote": "Metric measures are the reference; oz values are rounded using 30 ml per recipe ounce.",
+    "tools": [
+      "Jigger",
+      "Barspoon",
+      "Citrus press"
+    ]
   },
   {
     "id": "daiquiri",

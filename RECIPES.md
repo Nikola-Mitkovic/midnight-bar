@@ -1,6 +1,6 @@
 # The Midnight Bar — 54 distinct recipes
 
-Clubs, spades, and hearts have researched backs. See their source guides. Flavor and pairing notes are editorial suggestions.
+All four standard suits have researched backs. See their source guides. The two jokers retain their card transcriptions. Flavor and pairing notes are editorial suggestions.
 
 ## A ♠ Old Fashioned
 
@@ -356,120 +356,181 @@ What to expect: Bright lemon and orange with soft wine notes and a delicate anis
 
 ## A ♦ Cosmopolitan
 
-- 45 ml (1.5 oz) vodka
-- 30 ml (1 oz) Cointreau
-- 15 ml (0.5 oz) lime juice
+- 40 ml (1.33 oz) citrus vodka
+- 15 ml (0.5 oz) Cointreau
+- 15 ml (0.5 oz) fresh lime juice
 - 30 ml (1 oz) cranberry juice
-- 1 (1) lime twist
+- To garnish (To garnish) lemon twist (or orange zest, house option)
 
-Shake the liquid ingredients with ice. Strain into a chilled cocktail glass and garnish with lime.
+Shake the liquids with ice; strain into a chilled cocktail glass and add a citrus twist.
+
+One thing to learn: Expressing a twist releases oils from the colored peel. Bend it over the drink before adding it so the aroma reaches the surface.
+
+What to expect: Cranberry and lime give a tart, fruity opening, with orange sweetness underneath. Bright and polished rather than syrupy; try alongside salty canapés.
 
 ## 2 ♦ Moscow Mule
 
-- 60 ml (2 oz) vodka
-- 15 ml (0.5 oz) lime juice
-- 120 ml (4 oz) ginger beer
-- 1 (1) lime wedge
+- 45 ml (1.5 oz) vodka
+- 120 ml (4 oz) chilled ginger beer
+- 10 ml (0.33 oz) fresh lime juice
+- To garnish (To garnish) lime slice
 
-Fill a copper mug with ice. Add vodka and lime juice. Top with ginger beer, stir gently, and add the lime wedge.
+Build vodka, ginger beer, and lime over ice in a mule mug. Stir gently and garnish.
+
+One thing to learn: A built drink is assembled in its serving vessel. Gentle stirring combines the ingredients while keeping the mixer lively.
+
+What to expect: Spicy ginger and fresh lime, with a clean vodka base and a sparkling finish. Crisp and zingy; a good companion to ginger or chili-spiced snacks.
 
 ## 3 ♦ Bloody Mary
 
 - 45 ml (1.5 oz) vodka
 - 90 ml (3 oz) tomato juice
-- 15 ml (0.5 oz) lemon juice
-- To taste (To taste) Worcestershire sauce
-- To taste (To taste) Tabasco
-- 1 stalk (1 stalk) celery
+- 15 ml (0.5 oz) fresh lemon juice
+- 2 dashes (2 dashes) Worcestershire sauce
+- To taste (To taste) Tabasco, celery salt, and black pepper
+- Optional garnish (Optional garnish) celery stalk and lemon wedge
 
-Combine the liquids with ice and gently roll between two mixing vessels. Pour into a tall glass and garnish with celery.
+Stir the liquids and seasonings gently with ice. Pour into a highball over ice; garnish if desired.
+
+One thing to learn: Season to taste means start small, taste, and adjust. Hot sauces differ in intensity, so a fixed large dash is not always interchangeable.
+
+What to expect: Savory tomato, tangy lemon, pepper, and a warming chili finish. More like a seasoned appetizer than a sweet cocktail; try with a brunch spread.
 
 ## 4 ♦ Espresso Martini
 
-- 60 ml (2 oz) vodka
-- 30 ml (1 oz) coffee liqueur
-- 30 ml (1 oz) fresh espresso
-- 15 ml (0.5 oz) simple syrup
+- 50 ml (1.67 oz) vodka
+- 30 ml (1 oz) Kahlúa coffee liqueur
+- 10 ml (0.33 oz) simple syrup
+- 1 strong shot (1 strong shot) fresh espresso, briefly cooled
+- 3 (3) coffee beans, to garnish
 
-Add all ingredients to a shaker with ice. Shake hard to create foam and strain into a chilled cocktail glass.
+Shake vodka, coffee liqueur, syrup, and espresso hard with ice. Strain into a chilled glass; add three beans.
+
+One thing to learn: A firm shake aerates the espresso to create foam. This creamy-looking cap comes from coffee, not dairy or egg white.
+
+What to expect: Roasted coffee leads, with a sweet liqueur middle and a bittersweet finish. Silky foam makes the first sip soft; a small chocolate truffle fits well.
 
 ## 5 ♦ Sex on the Beach
 
-- 45 ml (1.5 oz) vodka
-- 22.5 ml (0.75 oz) peach schnapps
-- 45 ml (1.5 oz) cranberry juice
-- 45 ml (1.5 oz) orange juice
+- 40 ml (1.33 oz) vodka
+- 20 ml (0.67 oz) peach schnapps
+- 40 ml (1.33 oz) fresh orange juice
+- 40 ml (1.33 oz) cranberry juice
+- To garnish (To garnish) half orange slice
 
-Shake all ingredients with ice. Strain over fresh ice in a tall glass.
+Build all liquids over ice in a highball, combine gently, and add an orange slice.
+
+One thing to learn: Peach schnapps is a sweet fruit liqueur in this recipe. It contributes sweetness as well as peach flavor, so extra syrup is not needed.
+
+What to expect: Juicy peach and orange with cranberry tartness. A fruity, rounded long drink with little bitterness; pair with a fruit platter or mild savory snacks.
 
 ## 6 ♦ White Russian
 
-- 60 ml (2 oz) vodka
-- 30 ml (1 oz) coffee liqueur
+- 30 ml (1 oz) vodka
+- 30 ml (1 oz) Kahlúa coffee liqueur
 - 30 ml (1 oz) heavy cream
 
-Add vodka and coffee liqueur to a rocks glass over ice. Slowly float the cream on top.
+Pour vodka and coffee liqueur over ice. Float cream over a spoon; stir lightly if you prefer it blended.
+
+One thing to learn: Floating means adding a liquid gently on top instead of immediately mixing it in. A spoon softens the pour and helps make the cream layer visible.
+
+What to expect: Rich cream, sweet roasted coffee, and a soft vanilla impression. Dessert-like and velvety; try with a small plain biscuit rather than another very sweet dish.
 
 ## 7 ♦ Lemon Drop
 
-- 60 ml (2 oz) vodka
-- 30 ml (1 oz) lemon juice
-- 22.5 ml (0.75 oz) simple syrup
-- For the rim (For the rim) sugar
+- 37.5 ml (1.25 oz) vodka
+- 7.5 ml (0.25 oz) triple sec
+- 22.5 ml (0.75 oz) fresh lemon juice
+- For optional rim (For optional rim) sugar
+- Optional garnish (Optional garnish) lemon wheel
 
-Moisten the glass rim with lemon and dip in sugar. Shake vodka, lemon, and syrup with ice. Strain into the prepared glass.
+Sugar-rim a chilled cocktail glass if desired. Shake the liquids with ice, fine-strain, and optionally add a lemon wheel.
+
+One thing to learn: A sugar rim sweetens individual sips rather than the whole mixture. Coating only the outer edge keeps loose crystals out of the drink.
+
+What to expect: Sharp fresh lemon with a little orange sweetness. The optional rim makes each sip more candy-like; without it, expect a distinctly tart drink.
 
 ## 8 ♦ Tequila Sunrise
 
-- 60 ml (2 oz) tequila
-- 120 ml (4 oz) orange juice
+- 45 ml (1.5 oz) tequila
+- 90 ml (3 oz) fresh orange juice
 - 15 ml (0.5 oz) grenadine
+- To garnish (To garnish) half orange slice
+- Optional house garnish (Optional house garnish) cocktail cherry
 
-Add tequila and orange juice to an ice-filled tall glass. Slowly pour in grenadine and let it settle; leave the gradient unstirred.
+Build tequila and orange over ice. Add grenadine slowly and leave it unstirred for the sunrise layers.
+
+One thing to learn: Dense grenadine sinks through the juice, making the red-to-orange gradient. Stirring after adding it blends the colors and removes the sunrise effect.
+
+What to expect: Sweet orange and pomegranate-like syrup, with tequila underneath. Fruity and soft-edged; the first and last sips can differ while the layers remain intact.
 
 ## 9 ♦ Paloma
 
-- 60 ml (2 oz) tequila
-- 15 ml (0.5 oz) lime juice
-- 120 ml (4 oz) grapefruit soda
-- For the rim (For the rim) salt
+- 50 ml (1.67 oz) 100% agave tequila
+- 5 ml (0.17 oz) fresh lime juice
+- 1 pinch (1 pinch) salt
+- 100 ml (3.33 oz) chilled pink grapefruit soda
+- To garnish (To garnish) lime slice
 
-Moisten the rim with lime and dip in salt. Fill the glass with ice. Add tequila and lime; top with grapefruit soda and stir gently.
+Build tequila, lime, and a pinch of salt over ice. Add grapefruit soda, stir gently, and garnish.
+
+One thing to learn: Grapefruit soda is already sweetened and carbonated. Grapefruit juice plus plain soda is a different mixture and needs its own balancing.
+
+What to expect: Bittersweet grapefruit, fresh lime, and an earthy tequila note with lively bubbles. Bright and refreshing; try with tacos or grilled vegetables.
 
 ## 10 ♦ Tommy’s Margarita
 
-- 60 ml (2 oz) tequila
-- 30 ml (1 oz) lime juice
-- 15 ml (0.5 oz) agave nectar
+- 60 ml (2 oz) 100% agave tequila
+- 30 ml (1 oz) fresh lime juice
+- 30 ml (1 oz) agave nectar
+- To garnish (To garnish) lime slice
 
-Shake tequila, lime, and agave nectar with ice. Strain over fresh ice in a rocks glass.
+Shake tequila, lime, and agave nectar with ice. Strain over fresh ice in a rocks glass; add lime.
+
+One thing to learn: Tommy’s uses agave nectar in place of orange liqueur. That changes both the sweetness and the flavor, letting tequila and lime stand more clearly apart.
+
+What to expect: Lime-bright with rounded agave sweetness and a direct tequila character. This recipe is relatively generous with nectar; brands vary in sweetness and thickness.
 
 ## J ♦ El Diablo
 
-- 45 ml (1.5 oz) tequila
-- 15 ml (0.5 oz) crème de cassis
-- 15 ml (0.5 oz) lime juice
-- To top (To top) ginger beer
+- 45 ml (1.5 oz) reposado tequila
+- 30 ml (1 oz) fresh lime juice
+- 30 ml (1 oz) chilled ginger beer
+- 7.5 ml (0.25 oz) crème de cassis
+- To garnish (To garnish) lime wedge
 
-Build tequila, cassis, and lime juice over ice in a tall glass. Top with ginger beer and stir gently.
+Shake tequila and lime with ice. Strain over fresh ice, add ginger beer, drizzle cassis on top, and garnish.
+
+One thing to learn: Crème de cassis is blackcurrant liqueur, not cream. Here it is added last for a dark berry accent; the carbonated ginger beer is never shaken.
+
+What to expect: Tart lime, peppery ginger, dark berries, and gently rounded tequila. This producer version is citrus-forward with only a short ginger-beer top.
 
 ## Q ♦ Margarita
 
-- 60 ml (2 oz) tequila
-- 30 ml (1 oz) Cointreau
-- 30 ml (1 oz) fresh lime juice
-- For the rim (For the rim) salt
+- 50 ml (1.67 oz) 100% agave tequila
+- 20 ml (0.67 oz) triple sec
+- 15 ml (0.5 oz) fresh lime juice
+- Optional (Optional) salt for half the rim
 
-Moisten the rim with lime and dip in salt. Shake tequila, Cointreau, and lime with ice. Strain into the prepared glass.
+Shake tequila, triple sec, and lime with ice. Strain into a chilled cocktail glass with an optional half-salt rim.
+
+One thing to learn: A half-salt rim gives you a choice: turn the glass to sip with or without salt. Keep the coating outside the glass rather than dropping salt into the mixture.
+
+What to expect: Agave and orange lead into a clean lime finish. Short, bright, and spirit-forward, with salt adding a savory edge when used; try with tortilla chips.
 
 ## K ♦ Batanga
 
-- 60 ml (2 oz) tequila
-- 120 ml (4 oz) cola
-- 15 ml (0.5 oz) lime juice
-- For the rim (For the rim) salt
+- 60 ml (2 oz) El Tequileño Blanco tequila
+- Juice of 1 (Juice of 1) fresh lime
+- To top (To top) chilled Mexican cola
+- For rim (For rim) coarse salt
+- To garnish (To garnish) lime wedge
 
-Salt the rim and fill a tall glass with ice. Add tequila and lime, top with cola, and stir gently.
+Salt-rim a highball, fill with ice, and add tequila and lime. Top with cola, stir gently, and garnish.
+
+One thing to learn: A recipe calling for one lime follows the fruit rather than an exact juice volume. Lime size and juiciness vary, so taste the balance before serving.
+
+What to expect: Cola spice and sweetness meet bright lime and earthy tequila, with a salty edge. Familiar and fizzy, but more savory than a simple cola highball.
 
 ## A ♥ Daiquiri
 

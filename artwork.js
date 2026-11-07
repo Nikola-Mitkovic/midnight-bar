@@ -184,6 +184,71 @@ const ARTWORK = {
       "src": "images/corpse-reviver-2.png",
       "alt": "Vintage watercolor illustration of Corpse Reviver #2",
       "version": "clubs-1"
+    },
+    "cosmopolitan": {
+      "src": "images/cosmopolitan.png",
+      "alt": "Vintage watercolor illustration of Cosmopolitan",
+      "version": "diamonds-1"
+    },
+    "moscow-mule": {
+      "src": "images/moscow-mule.png",
+      "alt": "Vintage watercolor illustration of Moscow Mule",
+      "version": "diamonds-1"
+    },
+    "bloody-mary": {
+      "src": "images/bloody-mary.png",
+      "alt": "Vintage watercolor illustration of Bloody Mary",
+      "version": "diamonds-1"
+    },
+    "espresso-martini": {
+      "src": "images/espresso-martini.png",
+      "alt": "Vintage watercolor illustration of Espresso Martini",
+      "version": "diamonds-1"
+    },
+    "sex-on-the-beach": {
+      "src": "images/sex-on-the-beach.png",
+      "alt": "Vintage watercolor illustration of Sex on the Beach",
+      "version": "diamonds-1"
+    },
+    "white-russian": {
+      "src": "images/white-russian.png",
+      "alt": "Vintage watercolor illustration of White Russian",
+      "version": "diamonds-1"
+    },
+    "lemon-drop": {
+      "src": "images/lemon-drop.png",
+      "alt": "Vintage watercolor illustration of Lemon Drop",
+      "version": "diamonds-1"
+    },
+    "tequila-sunrise": {
+      "src": "images/tequila-sunrise.png",
+      "alt": "Vintage watercolor illustration of Tequila Sunrise",
+      "version": "diamonds-1"
+    },
+    "paloma": {
+      "src": "images/paloma.png",
+      "alt": "Vintage watercolor illustration of Paloma",
+      "version": "diamonds-1"
+    },
+    "tommy-s-margarita": {
+      "src": "images/tommy-s-margarita.png",
+      "alt": "Vintage watercolor illustration of Tommy’s Margarita",
+      "version": "diamonds-1"
+    },
+    "el-diablo": {
+      "src": "images/el-diablo.png",
+      "alt": "Vintage watercolor illustration of El Diablo",
+      "version": "diamonds-1"
+    },
+    "margarita": {
+      "src": "images/margarita.png",
+      "alt": "Vintage watercolor illustration of Margarita",
+      "version": "diamonds-1"
+    },
+    "batanga": {
+      "src": "images/batanga.png",
+      "alt": "Vintage watercolor illustration of Batanga",
+      "version": "diamonds-1"
     }
   }
 };
