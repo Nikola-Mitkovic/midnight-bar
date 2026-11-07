@@ -57,3 +57,6 @@ header{background:#441d29;max-width:none;padding-inline:max(6%,calc((100vw - 116
 .back-to-top:hover{background:linear-gradient(145deg,#85435a,#492236);color:#fff4d7;transform:translateY(-5px)}
 .back-to-top:focus-visible{outline:3px solid #e7c583;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){.featured-card[role="link"],.back-to-top{transition:none}.featured-arrival{animation:none}}
+
+/* Clear sister-site portal in navigation. */
+header nav .cafe-portal{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 15px;border:2px double #d4b574;border-radius:5px;background:#173f33;color:#f7e3ae;font-weight:bold;letter-spacing:.5px;box-shadow:0 4px 12px #0005;white-space:nowrap}header nav .cafe-portal:hover{background:#225a45;color:#fff1c9}@media(max-width:600px){header nav .cafe-portal{font-size:9px;padding:8px;white-space:normal;text-align:center}}
