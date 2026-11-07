@@ -125,7 +125,7 @@ window.CAFE_RECIPES=[
     "number": 7,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/doppio.webp"
   },
   {
     "id": "ristretto",
@@ -139,7 +139,7 @@ window.CAFE_RECIPES=[
     "number": 8,
     "color": "black",
     "source": "https://coffeeassoc.com/coffee-101/styles-of-coffee/",
-    "artwork": null
+    "artwork": "images/ristretto.webp"
   },
   {
     "id": "lungo",
@@ -153,7 +153,7 @@ window.CAFE_RECIPES=[
     "number": 9,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/lungo.webp"
   },
   {
     "id": "americano",
@@ -168,7 +168,7 @@ window.CAFE_RECIPES=[
     "number": 10,
     "color": "black",
     "source": "https://coffeeassoc.com/coffee-101/styles-of-coffee/",
-    "artwork": null
+    "artwork": "images/americano.webp"
   },
   {
     "id": "macchiato",
@@ -183,7 +183,7 @@ window.CAFE_RECIPES=[
     "number": 11,
     "color": "black",
     "source": "https://coffeeassoc.com/coffee-101/styles-of-coffee/",
-    "artwork": null
+    "artwork": "images/macchiato.webp"
   },
   {
     "id": "cortado",
@@ -198,7 +198,7 @@ window.CAFE_RECIPES=[
     "number": 12,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/cortado.webp"
   },
   {
     "id": "flat-white",
@@ -213,7 +213,7 @@ window.CAFE_RECIPES=[
     "number": 13,
     "color": "black",
     "source": "https://coffeeassoc.com/coffee-101/styles-of-coffee/",
-    "artwork": null
+    "artwork": "images/flat-white.webp"
   },
   {
     "id": "latte",
