@@ -61,7 +61,7 @@ function jumpToFeatured() {
   spiritSelect.value = 'all';
   suitSelect.value = 'all';
   styleSelect.value = 'all';
-  if (typeof setView === 'function') setView('grid');
+  if (typeof setDeckView === 'function') setDeckView(false);
   else {
     document.querySelector('#cards').hidden = false;
     document.querySelector('#deck').hidden = true;
