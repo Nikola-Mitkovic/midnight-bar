@@ -13,8 +13,15 @@ exclusions.innerHTML=ingredients.map(k=>'<label><input type="checkbox" value="'+
 const allowed=()=>drinks.filter(c=>!c.ingredients.some(k=>exclusions.querySelector('input[value="'+k+'"]')?.checked));
 const pocketColor=n=>n===0?'green':redNumbers.has(n)?'red':'black';
 function paintWheel(){
- wheel.style.background='conic-gradient('+pocketOrder.map((n,i)=>{const color=pocketColor(n)==='green'?'#166d4d':pocketColor(n)==='red'?'#9a303b':'#171e1b';return color+' '+(i*segment)+'deg '+((i+1)*segment)+'deg'}).join(',')+')';
- wheel.insertAdjacentHTML('beforeend',pocketOrder.map((n,i)=>'<span class="pocket-number" style="--angle:'+((i+.5)*segment)+'deg">'+n+'</span>').join(''));
+ const point=(r,a)=>[300+r*Math.sin(a*Math.PI/180),300-r*Math.cos(a*Math.PI/180)].join(',');
+ const sectors=pocketOrder.map((n,i)=>{
+  const a=i*segment,b=(i+1)*segment,mid=(a+b)/2;
+  const color=pocketColor(n)==='green'?'#326449':pocketColor(n)==='red'?'#923e40':'#292923';
+  const path='M'+point(235,a)+' A235,235 0 0 1 '+point(235,b)+' L'+point(155,b)+' A155,155 0 0 0 '+point(155,a)+' Z';
+  const [x,y]=point(216,mid).split(',');
+  return '<g data-pocket="'+n+'"><path d="'+path+'" fill="'+color+'" fill-opacity=".91" stroke="#c3a16b" stroke-width="1.3"/><path d="M'+point(200,a)+' A200,200 0 0 1 '+point(200,b)+'" fill="none" stroke="#c3a16b" stroke-width="1"/><text x="'+x+'" y="'+y+'" dy=".35em" text-anchor="middle">'+n+'</text></g>';
+ }).join('');
+ wheel.innerHTML='<img class="wheel-painting" src="images/roulette-watercolor.webp" alt="" draggable="false"><svg class="wheel-pockets" viewBox="0 0 600 600" aria-hidden="true">'+sectors+'<circle cx="300" cy="300" r="235" fill="none" stroke="#d2b37d" stroke-width="2.5"/><circle cx="300" cy="300" r="155" fill="none" stroke="#d2b37d" stroke-width="2.5"/></svg>';
 }
 paintWheel();
 let currentAngle=0,busy=false;
@@ -37,7 +44,9 @@ function animateBall(from,to,duration,done){
   if(start===undefined)start=now;
   const progress=duration?Math.min((now-start)/duration,1):1;
   const eased=1-Math.pow(1-progress,3);
-  ball.style.transform='translate(-50%, -50%) rotate('+(from+(to-from)*eased)+'deg) translateY(calc(var(--ball-track) * -1))';
+  const angle=(from+(to-from)*eased)*Math.PI/180;
+  // Translate without rotating the sphere: its highlight and cast shadow stay fixed.
+  ball.style.transform='translate(-50%, -50%) translateX(calc(var(--ball-track) * '+Math.sin(angle)+')) translateY(calc(var(--ball-track) * '+(-Math.cos(angle))+'))';
   if(progress<1)requestAnimationFrame(frame);else done();
  }
  requestAnimationFrame(frame);

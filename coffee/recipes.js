@@ -339,7 +339,7 @@ window.CAFE_RECIPES=[
     "number": 21,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/iced-americano.webp"
   },
   {
     "id": "vanilla-latte",
@@ -356,7 +356,7 @@ window.CAFE_RECIPES=[
     "number": 22,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/vanilla-latte.webp"
   },
   {
     "id": "caramel-macchiato",
@@ -374,7 +374,7 @@ window.CAFE_RECIPES=[
     "number": 23,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/caramel-macchiato.webp"
   },
   {
     "id": "hazelnut-latte",
@@ -391,7 +391,7 @@ window.CAFE_RECIPES=[
     "number": 24,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/hazelnut-latte.webp"
   },
   {
     "id": "white-mocha",
@@ -409,7 +409,7 @@ window.CAFE_RECIPES=[
     "number": 25,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/white-mocha.webp"
   },
   {
     "id": "cafe-bombon",
@@ -424,7 +424,7 @@ window.CAFE_RECIPES=[
     "number": 26,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/cafe-bombon.webp"
   },
   {
     "id": "spanish-latte",
@@ -440,7 +440,7 @@ window.CAFE_RECIPES=[
     "number": 27,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/spanish-latte.webp"
   },
   {
     "id": "tiramisu-latte",

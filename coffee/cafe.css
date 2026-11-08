@@ -74,3 +74,13 @@ dialog h2{margin:14px 20px 22px}
 @keyframes coffee-turn{from{opacity:.4;transform:perspective(900px) rotateY(-10deg)}to{opacity:1;transform:perspective(900px) rotateY(0)}}
 @media(max-width:530px){dialog{padding:24px 16px}.coffee-back{padding:18px 14px}.coffee-flip-tools button{padding:8px 10px;font-size:13px}.coffee-face>img{height:210px}}
 @media(prefers-reduced-motion:reduce){.coffee-face{animation:none}.winner-card>.coffee-card{transition:none}}
+
+/* Painted European single-zero wheel; numbered pockets remain exact vector geometry. */
+.wheel-wrap{--wheel-size:min(92vw,560px);--ball-track:calc(var(--wheel-size) * .3033);width:var(--wheel-size);margin:36px auto 28px}
+.wheel{border:0;border-radius:50%;background:transparent;box-shadow:none;overflow:visible;display:block;filter:drop-shadow(0 15px 18px #0006)}
+.wheel-painting,.wheel-pockets{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.wheel-painting{object-fit:contain}
+.wheel-pockets text{fill:#f7e6be;font:bold 16px Georgia,serif;paint-order:stroke;stroke:#2d2119;stroke-width:.6px}
+.roulette-ball{width:clamp(19px,4.7vw,29px);height:clamp(19px,4.7vw,29px);border:1px solid #a58a55;background:radial-gradient(circle at 30% 24%,#fff9df 0%,#f4e5bb 26%,#e6d1a1 55%,#b99a68 84%,#8e7149 100%);box-shadow:inset -2px -3px 4px #8e6e4038,inset 1px 1px 2px #fffbedaa,3px 5px 5px #26180e80;transform:translate(-50%,-50%) translateY(calc(var(--ball-track) * -1))}
+.roulette-ball:after{content:"";position:absolute;inset:2px;border-radius:50%;background:repeating-linear-gradient(116deg,transparent 0 3px,#a0803820 4px,transparent 5px 8px);opacity:.45}
+@media(max-width:530px){.roulette{padding-inline:0}.roulette>.section-title,.roulette>.exclusions{margin-inline:18px}.wheel-wrap{--ball-track:calc(var(--wheel-size) * .3033)}.motion-note{padding-inline:18px}}
