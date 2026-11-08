@@ -6,9 +6,6 @@ const viewGrid=document.querySelector('#view-grid'),viewDeck=document.querySelec
 const deckRanks=['A','2','3','4','5','6','7','8','9','10','J','Q','K','JOKER'];
 let deckMode=false,deckVisited=false,deckHand=[],deckIndex=0,deckSignature='',deckBusy=false,deckRevision=0,deckAnimation=null,deckPointer=null,deckSuppressClick=false;
 function stopDeckMotion(){deckRevision++;deckAnimation?.cancel();deckAnimation=null;deckBusy=false;deckPointer=null;}
-function deckSelectedSuit(){
- document.querySelectorAll('[data-hand]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.hand===suitSelect.value)));
-}
 function paintDeck(){
  const c=deckHand[deckIndex];
  deckCard.innerHTML=c?cardMarkup(c,'swipe'):'';
@@ -18,7 +15,6 @@ function paintDeck(){
  deckNext.disabled=!c||deckIndex===deckHand.length-1;
  document.querySelector('#deck-position').textContent=c?`${deckIndex+1} / ${deckHand.length} · ${c.rank==='JOKER'?'Joker':c.rank} ${c.suit} · ${c.name}`:'0 cards';
  activateArtwork(deckCard);
- deckSelectedSuit();
 }
 function renderDeck(shown){
  // Existing recipe order groups suits. Explicit rank ordering guarantees ace-to-king within each suit.
@@ -59,10 +55,6 @@ async function stepDeck(direction){
 viewGrid.addEventListener('click',()=>setDeckView(false));
 viewDeck.addEventListener('click',()=>setDeckView(true));
 deckPrevious.addEventListener('click',()=>stepDeck(-1));deckNext.addEventListener('click',()=>stepDeck(1));
-document.querySelectorAll('[data-hand]').forEach(b=>b.addEventListener('click',()=>{
- search.value='';spiritSelect.value='all';styleSelect.value='all';suitSelect.value=b.dataset.hand;
- stopDeckMotion();deckIndex=0;deckSignature='';renderCards();
-}));
 deckStage.addEventListener('keydown',event=>{
  if(event.key==='ArrowLeft'||event.key==='ArrowRight'){event.preventDefault();stepDeck(event.key==='ArrowLeft'?-1:1);}
 });

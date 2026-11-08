@@ -1,4 +1,14 @@
 'use strict';
+// A stable mixed display order; recipe pocket numbers and roulette mapping never change.
+window.CAFE_BROWSE_ORDER = [
+ 'espresso','vanilla-latte','doppio','iced-latte','irish-coffee','gingerbread-latte',
+ 'cold-brew','caramel-macchiato','ristretto','maple-cinnamon','freddo-espresso',
+ 'hazelnut-latte','affogato','flat-white','shakerato','salted-caramel','lungo',
+ 'white-mocha','vietnamese-iced','lavender-honey','macchiato','tiramisu-latte',
+ 'espresso-tonic','pistachio-latte','cafe-bombon','cortado','iced-americano',
+ 'spanish-latte','mocha','pumpkin-spice','americano','nutella-latte',
+ 'freddo-cappuccino','coconut-latte','cappuccino','latte','dalgona'
+];
 // Display metadata stays separate from quantities and preparation instructions.
 // French wheel sectors: https://www.playsmart.ca/table-games/roulette/how-to-play/european-roulette/
 (() => {

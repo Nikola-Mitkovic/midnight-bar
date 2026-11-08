@@ -88,7 +88,7 @@ function paintHand(){
 function render(){
  slideAnimation?.cancel();slideAnimation=null;
  const q=norm(menuSearch.value.trim());
- hand=drinks.filter(c=>{const m=window.CAFE_MENU[c.id];return (typeFilter.value==='all'||typeFilter.value===c.type)&&(baseFilter.value==='all'||baseFilter.value===m.base)&&norm([c.name,c.type,m.base,m.description,m.sector,...c.ingredients].join(' ')).includes(q);});
+ hand=window.CAFE_BROWSE_ORDER.map(id=>drinks.find(c=>c.id===id)).filter(c=>{const m=window.CAFE_MENU[c.id];return (typeFilter.value==='all'||typeFilter.value===c.type)&&(baseFilter.value==='all'||baseFilter.value===m.base)&&norm([c.name,c.type,m.base,m.description,m.sector,...c.ingredients].join(' ')).includes(q);});
  handIndex=0;
  cards.hidden=swipeMode;deck.hidden=!swipeMode;
  cards.innerHTML=swipeMode?'':hand.map(coffeeCard).join('');

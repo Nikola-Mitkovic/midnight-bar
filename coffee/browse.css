@@ -5,3 +5,6 @@
 #coffee-deck{max-width:420px;margin:20px auto;perspective:1000px}#coffee-stage{touch-action:pan-y;user-select:none}#coffee-stage img{-webkit-user-drag:none;pointer-events:none}#coffee-stage:focus-visible{outline:2px solid var(--gold);outline-offset:8px}.coffee-deck-nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:22px}.coffee-deck-nav button{padding:10px}.coffee-deck-nav button:disabled{opacity:.35;cursor:default}#coffee-position{text-align:center;font-size:11px;max-width:180px}.swipe-hint{text-align:center;font-size:12px;color:#c4b79a}
 @media(max-width:600px){.cafe-view-switch button{flex:1;padding:12px 8px}.filters{grid-template-columns:repeat(2,minmax(0,1fr))}.coffee-card .coffee-description{font-size:18px}.coffee-card .number{font-size:13px}.coffee-deck-nav{gap:6px}}
 @media(prefers-reduced-motion:reduce){.coffee-recipe-button,.coffee-bean{transition:none!important}}
+
+/* Navigation stays above the card in both visual and reading order. */
+.coffee-deck-nav{margin:0 0 12px}.swipe-hint{margin:0 0 20px}
