@@ -458,7 +458,7 @@ window.CAFE_RECIPES=[
     "number": 28,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/tiramisu-latte.webp"
   },
   {
     "id": "nutella-latte",
@@ -476,7 +476,7 @@ window.CAFE_RECIPES=[
     "number": 29,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/nutella-latte.webp"
   },
   {
     "id": "gingerbread-latte",
@@ -493,7 +493,7 @@ window.CAFE_RECIPES=[
     "number": 30,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/gingerbread-latte.webp"
   },
   {
     "id": "maple-cinnamon",
@@ -510,7 +510,7 @@ window.CAFE_RECIPES=[
     "number": 31,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/maple-cinnamon.webp"
   },
   {
     "id": "salted-caramel",
@@ -527,7 +527,7 @@ window.CAFE_RECIPES=[
     "number": 32,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/salted-caramel.webp"
   },
   {
     "id": "lavender-honey",
@@ -544,7 +544,7 @@ window.CAFE_RECIPES=[
     "number": 33,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/lavender-honey.webp"
   },
   {
     "id": "pistachio-latte",
@@ -561,7 +561,7 @@ window.CAFE_RECIPES=[
     "number": 34,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/pistachio-latte.webp"
   },
   {
     "id": "coconut-latte",
@@ -576,7 +576,7 @@ window.CAFE_RECIPES=[
     "number": 35,
     "color": "black",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/coconut-latte.webp"
   },
   {
     "id": "dalgona",
@@ -592,6 +592,6 @@ window.CAFE_RECIPES=[
     "number": 36,
     "color": "red",
     "source": "https://baristarecipes.com/recipes/",
-    "artwork": null
+    "artwork": "images/dalgona.webp"
   }
 ];

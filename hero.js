@@ -5,6 +5,18 @@ const HERO_INTERVAL_MS = 20000;
 const featuredCard = document.querySelector('.featured-card');
 const heroPause = document.querySelector('#hero-pause');
 const heroNext = document.querySelector('#hero-next');
+// Keep one set of controls, in reading and keyboard order below the mobile card.
+const heroControls = document.querySelector('.hero-controls');
+const heroMobile = window.matchMedia('(max-width: 600px)');
+function positionHeroControls() {
+  if (heroMobile.matches) {
+    document.querySelector('.hero-art').after(heroControls);
+  } else {
+    document.querySelector('.hero-copy').append(heroControls);
+  }
+}
+positionHeroControls();
+heroMobile.addEventListener('change', positionHeroControls);
 let heroCurrentId = null;
 let heroPaused = false;
 let heroTimer = null;
