@@ -68,12 +68,70 @@ spin.addEventListener('click',()=>{
 });
 document.querySelector('#clear').addEventListener('click',()=>{exclusions.querySelectorAll('input').forEach(el=>el.checked=false);});
 function art(c){return c.artwork?'<img src="'+esc(c.artwork)+'" alt="Vintage illustration of '+esc(c.name)+'" loading="lazy">':'<div class="coffee-placeholder" role="img" aria-label="Illustration coming later"><span>✦</span><strong>☕</strong><small>ILLUSTRATION<br>COMING SOON</small><span>✦</span></div>';}
-function render(){
- const q=document.querySelector('#search').value.toLowerCase(),type=document.querySelector('#type').value;
- cards.innerHTML=drinks.filter(c=>c.name.toLowerCase().includes(q)&&(type==='all'||type===c.type)).map(c=>'<article class="coffee-card pocket-'+c.color+'" id="'+c.id+'"><span class="number">'+String(c.number).padStart(2,'0')+' ◆ '+esc(c.type.toUpperCase())+'</span>'+art(c)+'<h3>'+esc(c.name)+'</h3><p>'+esc(c.measure)+'</p><button data-id="'+c.id+'">Discover the recipe ↗</button></article>').join('');
+const menuSearch=document.querySelector('#search'),typeFilter=document.querySelector('#type'),baseFilter=document.querySelector('#base');
+const deck=document.querySelector('#coffee-deck'),stage=document.querySelector('#coffee-stage');
+const prev=document.querySelector('#coffee-prev'),next=document.querySelector('#coffee-next');
+const clearMenu=document.querySelector('#clear-menu');
+const bean='<svg class="coffee-bean" aria-hidden="true" viewBox="0 0 32 32"><ellipse cx="16" cy="16" rx="11" ry="15" transform="rotate(35 16 16)" fill="currentColor"/><path d="M23 5C8 12 23 20 9 27" fill="none" stroke="#d6ae70" stroke-width="2" stroke-linecap="round"/></svg>';
+const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+let swipeMode=false,hand=[],handIndex=0,slideAnimation=null,swipeStart=null,suppressClick=false;
+baseFilter.innerHTML+=[...new Set(Object.values(window.CAFE_MENU).map(c=>c.base))].sort().map(b=>'<option>'+esc(b)+'</option>').join('');
+function coffeeCard(c){
+ const m=window.CAFE_MENU[c.id];
+ return '<article class="coffee-card pocket-'+c.color+'" id="'+c.id+'"><span class="number">'+String(c.number).padStart(2,'0')+' ◆ '+esc(m.sector)+'</span>'+art(c)+'<h3>'+esc(c.name)+'</h3><p class="coffee-description">'+esc(m.description)+'</p><div class="coffee-tags"><button class="coffee-tag" data-base="'+esc(m.base)+'" aria-pressed="'+(baseFilter.value===m.base)+'">'+esc(m.base)+'</button><button class="coffee-tag" data-style="'+c.type+'" aria-pressed="'+(typeFilter.value===c.type)+'">'+esc(c.type[0].toUpperCase()+c.type.slice(1))+'</button></div><button class="coffee-recipe-button" data-id="'+c.id+'" aria-label="View '+esc(c.name)+' recipe">'+bean+'<span>Discover the recipe</span>'+bean+'</button></article>';
 }
-document.querySelector('#search').addEventListener('input',render);document.querySelector('#type').addEventListener('change',render);
-cards.addEventListener('click',e=>{const b=e.target.closest('[data-id]');if(b)openRecipe(b.dataset.id);});
+function paintHand(){
+ stage.innerHTML=hand.length?coffeeCard(hand[handIndex]):'';
+ prev.disabled=!hand.length||handIndex===0;next.disabled=!hand.length||handIndex===hand.length-1;
+ document.querySelector('#coffee-position').textContent=hand.length?(handIndex+1)+' / '+hand.length+' · '+hand[handIndex].name:'0 cards';
+}
+function render(){
+ slideAnimation?.cancel();slideAnimation=null;
+ const q=norm(menuSearch.value.trim());
+ hand=drinks.filter(c=>{const m=window.CAFE_MENU[c.id];return (typeFilter.value==='all'||typeFilter.value===c.type)&&(baseFilter.value==='all'||baseFilter.value===m.base)&&norm([c.name,c.type,m.base,m.description,m.sector,...c.ingredients].join(' ')).includes(q);});
+ handIndex=0;
+ cards.hidden=swipeMode;deck.hidden=!swipeMode;
+ cards.innerHTML=swipeMode?'':hand.map(coffeeCard).join('');
+ stage.innerHTML='';if(swipeMode)paintHand();
+ document.querySelector('#coffee-empty').hidden=hand.length!==0;
+ document.querySelector('#coffee-count').textContent=hand.length+' OF '+drinks.length+' COFFEES';
+ const active=[typeFilter,baseFilter].filter(el=>el.value!=='all').map(el=>el.options[el.selectedIndex].textContent);
+ if(q)active.push('“'+menuSearch.value.trim()+'”');
+ document.querySelector('#cafe-active').textContent=active.join(' · ');
+ clearMenu.hidden=active.length===0;
+}
+function resetMenu(){menuSearch.value='';typeFilter.value='all';baseFilter.value='all';render();}
+clearMenu.addEventListener('click',()=>{resetMenu();menuSearch.focus();});
+menuSearch.addEventListener('input',render);[typeFilter,baseFilter].forEach(el=>el.addEventListener('change',render));
+function menuClick(e){
+ if(suppressClick){e.preventDefault();return;}
+ const recipe=e.target.closest('[data-id]');if(recipe){openRecipe(recipe.dataset.id);return;}
+ const tag=e.target.closest('[data-base],[data-style]');if(!tag)return;
+ const filter=tag.dataset.base?baseFilter:typeFilter,value=tag.dataset.base||tag.dataset.style;
+ filter.value=filter.value===value?'all':value;render();filter.focus();
+}
+cards.addEventListener('click',menuClick);stage.addEventListener('click',menuClick);
+function setView(enabled){swipeMode=enabled;document.querySelector('#cafe-grid').setAttribute('aria-pressed',String(!enabled));document.querySelector('#cafe-swipe').setAttribute('aria-pressed',String(enabled));render();}
+document.querySelector('#cafe-grid').addEventListener('click',()=>setView(false));
+document.querySelector('#cafe-swipe').addEventListener('click',()=>setView(true));
+function moveCoffee(direction){
+ if(slideAnimation||handIndex+direction<0||handIndex+direction>=hand.length)return;
+ handIndex+=direction;paintHand();
+ if(!motionPreference.matches){
+  slideAnimation=stage.animate([{opacity:0,transform:'translateX('+direction*65+'px) rotateY('+direction*18+'deg)'},{opacity:1,transform:'none'}],{duration:280,easing:'ease-out'});
+  slideAnimation.onfinish=()=>{slideAnimation=null;};
+ }
+}
+prev.addEventListener('click',()=>moveCoffee(-1));next.addEventListener('click',()=>moveCoffee(1));
+stage.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();moveCoffee(e.key==='ArrowLeft'?-1:1);}});
+stage.addEventListener('pointerdown',e=>{if(!e.isPrimary||e.button!==0)return;swipeStart={id:e.pointerId,x:e.clientX,y:e.clientY};});
+stage.addEventListener('pointerup',e=>{
+ if(!swipeStart||swipeStart.id!==e.pointerId)return;
+ const dx=e.clientX-swipeStart.x,dy=e.clientY-swipeStart.y;swipeStart=null;
+ if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)*1.3){suppressClick=true;moveCoffee(dx<0?1:-1);setTimeout(()=>{suppressClick=false;},0);}
+});
+stage.addEventListener('pointercancel',()=>{swipeStart=null;});
+
 function openRecipe(id){
  const c=drinks.find(x=>x.id===id);if(!c)return;
  const d=window.CAFE_DETAILS[id],source=d.source||['Recipe background',c.source];
@@ -93,7 +151,7 @@ dialog.querySelector('.close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
 winner.addEventListener('click',e=>{
  const b=e.target.closest('[data-winner]');if(!b)return;
- document.querySelector('#search').value='';document.querySelector('#type').value='all';render();
+ swipeMode=false;document.querySelector('#cafe-grid').setAttribute('aria-pressed','true');document.querySelector('#cafe-swipe').setAttribute('aria-pressed','false');resetMenu();
  const card=document.getElementById(b.dataset.winner);
  card.scrollIntoView({behavior:motionPreference.matches?'instant':'smooth',block:'center'});
  card.querySelector('button').focus({preventScroll:true});

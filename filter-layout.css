@@ -1,0 +1,3 @@
+.toolbar .filter-summary{grid-column:1/-1;margin:0}.toolbar .search{grid-column:1/-1}.toolbar{grid-template-columns:repeat(3,minmax(0,1fr))}.filter-summary:has(#clear-filters[hidden]){display:none}
+@media(max-width:600px){.toolbar{grid-template-columns:repeat(2,minmax(0,1fr))}.toolbar label[for=spirit]{grid-column:1;grid-row:1}.toolbar label[for=style]{grid-column:2;grid-row:1}.toolbar label[for=suit]{grid-column:1/-1;grid-row:2;width:60%;justify-self:center}.toolbar .filter-summary{grid-row:3;width:100%;align-items:center}.toolbar .search{grid-row:4}.view-switch{display:flex;gap:10px}.view-switch button{flex:1;min-width:0}}
+@media(max-width:360px){.toolbar label[for=suit]{width:80%}.spirit-filter select{padding-inline:8px;font-size:11px}}

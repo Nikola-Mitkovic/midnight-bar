@@ -76,10 +76,6 @@ function clearFilters(){search.value='';[spiritSelect,suitSelect,styleSelect].fo
  grid.addEventListener('click',e=>{const recipe=e.target.closest('[data-recipe]');if(recipe){openRecipe(recipe.dataset.recipe,recipe);return;}const tag=e.target.closest('[data-tag]');if(tag){styleSelect.value=styleSelect.value===tag.dataset.tag?'all':tag.dataset.tag;renderCards();styleSelect.focus();}});
  search.addEventListener('input',renderCards);
  [spiritSelect,suitSelect,styleSelect].forEach(el=>el.addEventListener('change',renderCards));
- document.querySelector('#browse-diamonds').addEventListener('click',()=>{search.value='';spiritSelect.value='all';styleSelect.value='all';suitSelect.value='♦';renderCards();suitSelect.focus();});
- document.querySelector('#browse-clubs').addEventListener('click',()=>{search.value='';spiritSelect.value='all';styleSelect.value='all';suitSelect.value='♣';renderCards();suitSelect.focus();});
- document.querySelector('#browse-spades').addEventListener('click',()=>{search.value='';spiritSelect.value='all';styleSelect.value='all';suitSelect.value='♠';renderCards();suitSelect.focus();});
- document.querySelector('#browse-hearts').addEventListener('click',()=>{search.value='';spiritSelect.value='all';styleSelect.value='all';suitSelect.value='♥';renderCards();suitSelect.focus();});
  document.querySelector('#reset').addEventListener('click',clearFilters);
  document.querySelector('#clear-filters').addEventListener('click',clearFilters);
  dialog.querySelector('.close').addEventListener('click',()=>dialog.close());
