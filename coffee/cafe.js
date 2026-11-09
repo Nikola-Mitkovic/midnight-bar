@@ -78,7 +78,7 @@ let swipeMode=false,hand=[],handIndex=0,slideAnimation=null,swipeStart=null,supp
 baseFilter.innerHTML+=[...new Set(Object.values(window.CAFE_MENU).map(c=>c.base))].sort().map(b=>'<option>'+esc(b)+'</option>').join('');
 function coffeeCard(c){
  const m=window.CAFE_MENU[c.id];
- return '<article class="coffee-card pocket-'+c.color+'" id="'+c.id+'"><span class="number">'+String(c.number).padStart(2,'0')+' ◆ '+esc(m.sector)+'</span>'+art(c)+'<h3>'+esc(c.name)+'</h3><p class="coffee-description">'+esc(m.description)+'</p><div class="coffee-tags"><button class="coffee-tag" data-base="'+esc(m.base)+'" aria-pressed="'+(baseFilter.value===m.base)+'">'+esc(m.base)+'</button><button class="coffee-tag" data-style="'+c.type+'" aria-pressed="'+(typeFilter.value===c.type)+'">'+esc(c.type[0].toUpperCase()+c.type.slice(1))+'</button></div><button class="coffee-recipe-button" data-id="'+c.id+'" aria-label="View '+esc(c.name)+' recipe">'+bean+'<span>Discover the recipe</span>'+bean+'</button></article>';
+ return '<article class="coffee-card '+(SelectedCard.get('cafe')===c.id?'chosen-card ':'')+'pocket-'+c.color+'" id="'+c.id+'"><span class="number">'+String(c.number).padStart(2,'0')+' ◆ '+esc(m.sector)+'</span>'+art(c)+'<h3>'+esc(c.name)+'</h3><p class="coffee-description">'+esc(m.description)+'</p><div class="coffee-tags"><button class="coffee-tag" data-base="'+esc(m.base)+'" aria-pressed="'+(baseFilter.value===m.base)+'">'+esc(m.base)+'</button><button class="coffee-tag" data-style="'+c.type+'" aria-pressed="'+(typeFilter.value===c.type)+'">'+esc(c.type[0].toUpperCase()+c.type.slice(1))+'</button></div><button class="coffee-recipe-button" data-id="'+c.id+'" aria-label="View '+esc(c.name)+' recipe">'+bean+'<span>Discover the recipe</span>'+bean+'</button></article>';
 }
 function paintHand(){
  stage.innerHTML=hand.length?coffeeCard(hand[handIndex]):'';
@@ -151,11 +151,11 @@ dialog.querySelector('.close').addEventListener('click',()=>dialog.close());
 dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
 winner.addEventListener('click',e=>{
  const b=e.target.closest('[data-winner]');if(!b)return;
- swipeMode=false;document.querySelector('#cafe-grid').setAttribute('aria-pressed','true');document.querySelector('#cafe-swipe').setAttribute('aria-pressed','false');resetMenu();
+ SelectedCard.set('cafe',b.dataset.winner);swipeMode=false;document.querySelector('#cafe-grid').setAttribute('aria-pressed','true');document.querySelector('#cafe-swipe').setAttribute('aria-pressed','false');resetMenu();
  const card=document.getElementById(b.dataset.winner);
  card.scrollIntoView({behavior:motionPreference.matches?'instant':'smooth',block:'center'});
  card.querySelector('button').focus({preventScroll:true});
- card.classList.add('drawn-card');
+
 });
 const topBtn=document.querySelector('#to-top');window.addEventListener('scroll',()=>topBtn.classList.toggle('visible',scrollY>320),{passive:true});topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
 render();

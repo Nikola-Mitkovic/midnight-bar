@@ -20,8 +20,20 @@ heroMobile.addEventListener('change', positionHeroControls);
 let heroCurrentId = null;
 let heroPaused = false;
 let heroTimer = null;
+let heroDealing = false;
+let heroFinishTimer = null;
+const heroMotion = matchMedia('(prefers-reduced-motion: reduce)');
+function finishHeroDeal(){
+ clearTimeout(heroFinishTimer);heroDealing=false;heroNext.disabled=false;
+ featuredCard.classList.remove('is-dealing');document.querySelector('.hero-art').classList.remove('is-dealing');
+ featuredCard.removeAttribute('aria-busy');
+}
+featuredCard.addEventListener('animationend',e=>{if(e.target===featuredCard)finishHeroDeal();});
+heroMotion.addEventListener('change',()=>{if(heroMotion.matches)finishHeroDeal();});
 
 function dealHeroCard() {
+  if(heroDealing)return;
+  const animate = heroCurrentId !== null && !heroMotion.matches;
   const choices = cocktails.filter(c => c.id !== heroCurrentId);
   const c = choices[Math.floor(Math.random() * choices.length)];
   if (!c) return;
@@ -32,6 +44,11 @@ function dealHeroCard() {
   featuredCard.setAttribute('aria-label', 'Go to ' + c.name + ' in the cocktail menu');
   featuredCard.innerHTML = `<div class="featured-content"><span class="corner" aria-hidden="true">${escapeHTML(rank)}<br>${escapeHTML(c.suit)}</span><p class="card-kicker">${escapeHTML(c.label)}</p><h2>${escapeHTML(c.name)}</h2><div id="hero-drink">${artwork(c, 'hero')}</div><p class="card-caption">${escapeHTML(c.spirit)} · ${escapeHTML(c.method)}</p><span class="corner bottom" aria-hidden="true">${escapeHTML(rank)}<br>${escapeHTML(c.suit)}</span></div>`;
   activateArtwork(featuredCard);
+  if(animate){
+   heroDealing=true;heroNext.disabled=true;featuredCard.setAttribute('aria-busy','true');
+   featuredCard.classList.add('is-dealing');document.querySelector('.hero-art').classList.add('is-dealing');
+   heroFinishTimer=setTimeout(finishHeroDeal,3200);
+  }
 }
 
 function scheduleHero() {
@@ -65,9 +82,11 @@ featuredCard.setAttribute('role', 'link');
 featuredCard.setAttribute('tabindex', '0');
 featuredCard.setAttribute('aria-label', 'Go to featured cocktail');
 function jumpToFeatured() {
+  if(heroDealing)return;
   const id = featuredCard.dataset.cocktail;
   const drink = cocktails.find(c => c.id === id);
   if (!drink) return;
+  SelectedCard.set('bar',id);
   // Show the full grid even if a previous filter or deck view is active.
   search.value = '';
   spiritSelect.value = 'all';
@@ -85,10 +104,7 @@ function jumpToFeatured() {
     .find(button => button.dataset.recipe === id)?.closest('.cocktail-card');
   if (!target) return;
   target.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'center'});
-  target.classList.remove('featured-arrival');
-  void target.offsetWidth;
-  target.classList.add('featured-arrival');
-  window.setTimeout(() => target.classList.remove('featured-arrival'), 2300);
+
 }
 featuredCard.addEventListener('click', jumpToFeatured);
 featuredCard.addEventListener('keydown', event => {
