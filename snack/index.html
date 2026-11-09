@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#302016">
+<meta name="description" content="Midnight Snack: a backgammon-inspired dessert room. Explore 31 recipes for hot chocolate, muffins, tiramisu, trifles, brownie cookies and cinnamon rolls.">
+<title>Midnight Snack — The Backgammon Room</title>
+<link rel="stylesheet" href="snack.css?v=1"><script src="recipes.js?v=1" defer></script><script src="snack.js?v=1" defer></script>
+</head>
+<body id="top">
+<a class="skip" href="#menu">Skip to dessert menu</a>
+<header><a class="brand" href="#top"><span aria-hidden="true">◈</span> MIDNIGHT <small>THE BACKGAMMON ROOM</small></a><nav aria-label="The Midnight rooms"><a href="../#top">♠ To Midnight Bar ↗</a><a href="../coffee/#top">☕ To Midnight Café ↗</a><a href="#menu">Dessert menu ↓</a></nav></header>
+<main>
+<section class="intro"><p class="eyebrow">THE HOUSE OF CHANCE · A SWEETER AFTER-HOURS</p><h1>Midnight <em>Snack.</em></h1><p>A little sweetness. One more game.<br>Pull up a chair in the backgammon room.</p><div class="intro-rule"><span>WALNUT & IVORY</span><i aria-hidden="true">◆</i><span>THIRTY-ONE LITTLE RITUALS</span></div></section>
+<section class="game-room" aria-labelledby="board-title">
+<div class="board-heading"><div><p class="eyebrow">LET THE DICE DECIDE</p><h2 id="board-title">Something sweet<br><em>is on the board.</em></h2></div><p>Roll two dice. Follow the ivory marker.<br>Your next indulgence is a move away.</p></div>
+<div class="table-layout"><div class="board-column"><div class="board-frame"><div class="board" aria-label="Dessert backgammon board, 24 selectable points"><div id="points-top" class="point-row top-row"></div><div class="board-wordmark" aria-hidden="true">M I D N I G H T <span>THE SWEET LIFE</span></div><div id="points-bottom" class="point-row bottom-row"></div><div class="board-bar" aria-hidden="true"><i></i><i></i></div></div></div><div class="dice-controls"><div id="dice" class="dice" role="img" aria-label="Dice: 3 and 5"><span>⚂</span><span>⚄</span></div><button id="roll" class="gold-button">Roll for dessert <span aria-hidden="true">↗</span></button><button id="new-table" class="text-button">Set a new table ↻</button></div><p id="roll-status" class="board-status" role="status" aria-live="polite">24 points. 31 possibilities. Pick a point or roll the dice.</p><details class="how-to"><summary>A little table etiquette</summary><p>This is a dessert selector inspired by backgammon, rather than a competitive match. Each point holds a recipe. Two dice move the ivory marker around the 24 points; doubles count as four moves of the same value. “Set a new table” deals 24 recipes from the full collection, bringing new treats into play. Menu filters below only change the menu.</p></details></div><aside id="board-pick" class="board-pick" aria-label="Selected dessert"></aside></div>
+</section>
+<section class="menu" id="menu" aria-labelledby="menu-title"><div class="menu-heading"><div><p class="eyebrow">THE DESSERT CABINET</p><h2 id="menu-title">Save room <em>for this.</em></h2></div><p>Warm cups. Soft crumbs. Beautiful layers.<br>Good things take a little time.</p></div>
+<div class="toolbar"><label>Something to savour<select id="category"><option value="all">All desserts</option><option>Hot chocolate</option><option>Muffins</option><option>Brownie cookies</option><option>Tiramisu</option><option>Trifle</option><option>Cinnamon rolls</option></select></label><label>In the mood for<select id="flavour"><option value="all">All flavours</option></select></label><label class="search-label">Find your sweet spot<input id="search" type="search" placeholder="Dessert, ingredient, or flavour…"></label><button id="clear-filters" class="text-button">Clear filters ×</button></div>
+<div class="menu-tools"><p id="count" role="status"></p><div class="view-switch" role="group" aria-label="Dessert menu view"><button id="grid-view" aria-pressed="true">▦ Card grid</button><button id="single-view" aria-pressed="false">◈ One at a time</button></div></div>
+<div id="single-controls" class="single-controls" hidden><button id="previous">← Previous</button><span id="position" role="status"></span><button id="next">Next →</button></div><p id="swipe-hint" class="swipe-hint" hidden>Swipe left or right, or use the arrow keys.</p>
+<div id="cards" class="cards"></div><p id="empty" hidden>No desserts match that combination. Try another flavour or clear the filters.</p>
+</section>
+<section class="closing"><span aria-hidden="true">◈</span><p>One for the road?<br><em>Make it something sweet.</em></p><a href="../coffee/#top">Put the kettle on · To Midnight Café ↗</a></section>
+</main><footer><span>MIDNIGHT SNACK · THE BACKGAMMON ROOM</span><p>House recipe adaptations · Metric measures · Illustrated sketches, with watercolors to follow</p><a href="#top">Back to the table ↑</a></footer>
+<dialog id="recipe" aria-labelledby="recipe-title"><button id="close-recipe" class="close" aria-label="Close recipe">×</button><div id="detail"></div></dialog>
+<noscript><p class="noscript">Enable JavaScript to use the dessert board and recipe cards.</p></noscript>
+</body></html>
