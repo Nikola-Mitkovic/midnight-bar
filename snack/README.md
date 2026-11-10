@@ -14,11 +14,11 @@ Stable recipe IDs are separate from board point numbers, allowing future game ru
 
 ## Artwork workflow
 
-The first seven cards in menu order have watercolor WebPs in `images/`, mapped by recipe ID in `recipes.js`. Other cards use cup, glass or ramekin sketches from `snack.js`.
+Illustrated cards use watercolor WebPs in `images/`, mapped by recipe ID in `recipes.js`. Other cards use cup, glass or ramekin sketches from `snack.js`.
 
 1. Add the final image to `snack/images/`, ideally a transparent WebP/PNG or cream-background image with room around the whole vessel.
 2. Set `image: 'images/example.webp'` on its recipe record in `recipes.js` (or in the relevant factory output for that ID).
-3. Upload the image and edited recipe file to the same GitHub paths. Bump the version on `recipes.js?v=2` in this directory's `index.html` when changing the file.
+3. Upload the image and edited recipe file to the same GitHub paths. Bump the cache version on `recipes.js` in this directory's `index.html` when changing the file.
 
 The shared renderer uses `object-fit: contain`, accessible alt text, and a sketch fallback for missing images. Art must show desserts served in cups, glasses, or ramekins, not plates. Six family-level renderers keep placeholders easy to replace.
 
