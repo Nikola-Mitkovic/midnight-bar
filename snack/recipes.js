@@ -32,6 +32,16 @@ const snackArtwork = {
   'lemon-tiramisu': 'images/lemon-tiramisu.webp',
   'red-velvet-trifle': 'images/red-velvet-trifle.webp',
   'hot-chocolate-mocha': 'images/hot-chocolate-mocha.webp',
+  'double-chocolate-muffins': 'images/double-chocolate-muffins.webp',
+  'pumpkin-tiramisu': 'images/pumpkin-tiramisu.webp',
+  'hot-chocolate-white': 'images/hot-chocolate-white.webp',
+  'apple-cinnamon-muffins': 'images/apple-cinnamon-muffins.webp',
+  'hot-chocolate-spiced': 'images/hot-chocolate-spiced.webp',
+  'pumpkin-muffins': 'images/pumpkin-muffins.webp',
+  'hot-chocolate-peanut-butter': 'images/hot-chocolate-peanut-butter.webp',
+  'raspberry-muffins': 'images/raspberry-muffins.webp',
+  'hot-chocolate-orange': 'images/hot-chocolate-orange.webp',
+  'hot-chocolate-dark': 'images/hot-chocolate-dark.webp',
 };
 const addSnack = recipe => snacks.push({ image: snackArtwork[recipe.id] ?? null, ...recipe });
 addSnack({id:'cinnamon-rolls',name:'Cinnamon Rolls',category:'Cinnamon rolls',kind:'rolls',tags:['Spiced','Buttery'],colour:'#b87942',serves:'2 generous rolls',time:'2½ hours, including rising',ingredients:['120 g plain flour, plus 2 tsp for the filling','1 tbsp caster sugar','1 tsp instant yeast','½ tsp fine salt, plus a pinch for the filling','76 ml lukewarm milk, plus 1–2 tbsp for brushing','28 g soft unsalted butter','½ tsp vanilla extract','40 g soft brown sugar','¾ tsp ground cinnamon','57 g icing sugar','2–3 tsp milk for the icing'],ritual:'Knead, let rise, roll with cinnamon sugar, prove again, then bake and glaze.',steps:['Mix the 120 g flour, caster sugar, yeast, ½ tsp salt, 76 ml milk, butter and vanilla. Knead until smooth. Cover and leave 45–60 minutes until puffy.','Mix the brown sugar, 2 tsp flour, cinnamon and pinch of salt. Press the dough into a rectangle about 10 × 25 cm. Brush with the extra milk and scatter over the filling.','Cut lengthwise into two strips. Roll each strip into a spiral, tuck the end underneath and set on a lined baking tray. Cover and prove for another 45–60 minutes.','Heat the oven to 190°C conventional / 170°C fan. Bake 15–18 minutes, until golden and the centre reaches about 88°C. Cool slightly.','Stir icing sugar with 2–3 tsp milk; spoon over the warm rolls. Serve each in a wide porcelain cup, cutting to fit if needed.'],technique:'Proofing is the rest that lets yeast inflate the dough. Look for puffiness, rather than following the clock alone.',learn:'A cold kitchen slows yeast. The dough’s appearance is a better guide than a fixed waiting time.',expect:'Soft, buttery spirals with a cinnamon centre. A small black coffee balances the icing.',note:'The house recommends getting the icing on your fingers.',storage:'Keep covered at room temperature for up to 2 days; warm gently before serving.',source:'rolls'});
