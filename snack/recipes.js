@@ -19,9 +19,9 @@ const snackArtwork = {
   'chocolate-trifle': 'images/chocolate-trifle.webp?v=2',
   'hot-chocolate-mint': 'images/hot-chocolate-mint.webp?v=2',
   'chocolate-chip-muffins': 'images/chocolate-chip-muffins.webp',
-  'red-velvet-brownie-cookies': 'images/red-velvet-brownie-cookies.webp',
+  'red-velvet-brownie-cookies': 'images/red-velvet-brownie-cookies.webp?v=2',
   'strawberry-tiramisu': 'images/strawberry-tiramisu.webp',
-  'strawberry-trifle': 'images/strawberry-trifle.webp',
+  'strawberry-trifle': 'images/strawberry-trifle.webp?v=2',
   'hot-chocolate-hazelnut': 'images/hot-chocolate-hazelnut.webp',
   'banana-nut-muffins': 'images/banana-nut-muffins.webp?v=2',
   'fudgy-brownie-cookies': 'images/fudgy-brownie-cookies.webp',
@@ -103,3 +103,15 @@ tiramisus.forEach(([id,label,colour,tags,extra,special,expect,learn])=>addSnack(
 const snackOrder = [];
 const families = [...new Set(snacks.map(r=>r.category))].map(c=>snacks.filter(r=>r.category===c));
 while(families.some(f=>f.length)) families.forEach(f=>{if(f.length)snackOrder.push(f.shift());});
+
+// Menu metadata only; no recipe or board changes.
+snacks.forEach(r=>{
+ const text=r.ingredients.join(' ').toLowerCase();
+ const cues=[[/strawberr/,'Strawberry'],[/blueberr/,'Blueberry'],[/raspberr/,'Raspberry'],[/banana/,'Banana'],[/walnut/,'Walnut'],[/hazelnut/,'Hazelnut'],[/peanut/,'Peanut Butter'],[/lemon/,'Lemon'],[/orange/,'Orange'],[/pumpkin/,'Pumpkin'],[/peppermint/,'Mint'],[/apple/,'Apple'],[/white chocolate/,'White Chocolate'],[/caramel/,'Caramel'],[/coffee|espresso/,'Coffee']];
+ const extra=cues.filter(([test])=>test.test(text)).map(([,tag])=>tag);
+ if(['tiramisu','trifle'].includes(r.kind))extra.push('Chilled');
+ if(r.kind==='cookie')extra.push('Chewy');
+ if(r.kind==='cocoa')extra.push('Warm','Creamy');
+ if(r.kind==='muffin'||r.kind==='rolls')extra.push('Baked');
+ r.tags=[...new Set([...r.tags,...extra])].slice(0,5);
+});

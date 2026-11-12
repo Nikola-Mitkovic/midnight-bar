@@ -26,3 +26,13 @@ window.CAFE_BROWSE_ORDER = [
   sector:voisins.has(c.number)?'Voisins du Zéro':tiers.has(c.number)?'Tiers du Cylindre':'Orphelins'
  }]));
 })();
+
+// Up to five card tags including the existing base and style tags.
+window.CAFE_RECIPES.forEach(c=>{
+ const text=c.ingredients.join(' ')+' '+c.measure;
+ const cues=[[/hazelnut|Nutella/i,'Hazelnut'],[/chocolate/i,'Chocolate'],[/caramel/i,'Caramel'],[/vanilla/i,'Vanilla'],[/pumpkin/i,'Pumpkin'],[/cinnamon|ginger|spices/i,'Spiced'],[/pistachio/i,'Pistachio'],[/coconut/i,'Coconut'],[/lavender/i,'Lavender'],[/honey/i,'Honey'],[/maple/i,'Maple'],[/whiskey/i,'Whiskey'],[/tonic/i,'Tonic']];
+ const tags=cues.filter(([test])=>test.test(text)).map(([,tag])=>tag);
+ if(c.ingredients.includes('ice')&&c.type!=='iced')tags.push('Iced');
+ if(/milk|cream|gelato/i.test(text))tags.push('Creamy');
+ window.CAFE_MENU[c.id].tags=[...new Set(tags)].slice(0,3);
+});

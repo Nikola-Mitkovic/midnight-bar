@@ -20,7 +20,7 @@ function sketch(r) {
 }
 function art(r){return `<div class="art-wrap">${r.image?`<img class="snack-art custom-art" src="${escapeText(r.image)}" alt="Watercolor illustration of ${escapeText(r.name)}" loading="lazy"><div class="fallback-art" hidden>${sketch(r)}</div>`:sketch(r)}</div>${r.image?'':'<span class="sketch-label">FROM THE HOUSE SKETCHBOOK</span>'}`;}
 function loadArt(root){root.querySelectorAll('.custom-art').forEach(img=>{const fallback=()=>{img.hidden=true;img.nextElementSibling.hidden=false;};img.addEventListener('error',fallback,{once:true});if(img.complete&&!img.naturalWidth)fallback();});}
-function card(r,board=false){return `<article class="snack-card ${selectedId===r.id?'chosen':''}" data-card="${r.id}"><p class="card-category"><span aria-hidden="true">◈</span>${escapeText(r.category)}</p>${art(r)}<h3>${escapeText(r.name)}</h3><p class="description">${escapeText(r.expect.split('. ')[0])}.</p><div class="tags">${r.tags.map(t=>`<span class="tag">${escapeText(t)}</span>`).join('')}</div><p class="card-meta">${escapeText(r.serves)} · ${escapeText(r.time)}</p><button class="recipe-button" data-recipe="${r.id}" ${board?'data-from-board="true"':''} aria-label="Discover ${escapeText(r.name)} recipe">Discover the recipe <span aria-hidden="true">↗</span></button></article>`;}
+function card(r,board=false){return `<article class="snack-card ${selectedId===r.id?'chosen':''}" data-card="${r.id}"><p class="card-category"><span aria-hidden="true">◈</span>${escapeText(r.category)}</p>${art(r)}<h3>${escapeText(r.name)}</h3><p class="description">${escapeText(r.expect.split('. ')[0])}.</p><div class="tags">${r.tags.map(t=>`<button type="button" class="tag" data-tag="${escapeText(t)}" aria-pressed="${$('#flavour').value===t}">${escapeText(t)}</button>`).join('')}</div><p class="card-meta">${escapeText(r.serves)} · ${escapeText(r.time)}</p><button class="recipe-button" data-recipe="${r.id}" ${board?'data-from-board="true"':''} aria-label="Discover ${escapeText(r.name)} recipe">Discover the recipe <span aria-hidden="true">↗</span></button></article>`;}
 function renderMenu(){
  const q=$('#search').value.trim().toLocaleLowerCase();
  filtered=snackOrder.filter(r=>($('#category').value==='all'||r.category===$('#category').value)&&($('#flavour').value==='all'||r.tags.includes($('#flavour').value))&&[r.name,r.category,...r.tags,...r.ingredients].join(' ').toLocaleLowerCase().includes(q));
@@ -35,6 +35,7 @@ function renderMenu(){
  $('#cards').tabIndex=single?0:-1;
  $('#grid-view').setAttribute('aria-pressed',String(!single));$('#single-view').setAttribute('aria-pressed',String(single));
  loadArt($('#cards'));
+ $('#board-pick').querySelectorAll('[data-tag]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.tag===$('#flavour').value)));
 }
 for(const tag of [...new Set(snacks.flatMap(r=>r.tags))].sort()){const o=document.createElement('option');o.textContent=tag;$('#flavour').append(o);}
 ['#category','#flavour','#search'].forEach(selector=>$(selector).addEventListener(selector==='#search'?'input':'change',()=>{index=0;renderMenu();}));
@@ -76,10 +77,30 @@ $('#new-table').addEventListener('click',()=>{newTable();$('#roll-status').textC
 $('#roll').addEventListener('click',async()=>{
  if(rolling)return;rolling=true;$('#roll').disabled=true;$('#new-table').disabled=true;renderBoard();
  const a=1+Math.floor(Math.random()*6),b=1+Math.floor(Math.random()*6),moves=a===b?a*4:a+b;
- $('#dice').setAttribute('aria-label',`Dice: ${a} and ${b}`);$('#dice').innerHTML=`<span>${String.fromCodePoint(0x267f+a)}</span><span>${String.fromCodePoint(0x267f+b)}</span>`;$('#dice').classList.add('rolling');
+ $('#dice').setAttribute('aria-label',`Dice: ${a} and ${b}`);$('#dice').innerHTML=die(a,'ivory')+die(b,'ebony');$('#dice').classList.add('rolling');
  $('#roll-status').textContent=`${a} and ${b}${a===b?' — doubles':''}. Moving ${moves} points…`;
  if(!motion.matches)await new Promise(resolve=>setTimeout(resolve,650));
  for(let i=0;i<moves;i++){point=(point+1)%24;renderBoard();if(!motion.matches)await new Promise(resolve=>setTimeout(resolve,75));}
  rolling=false;$('#roll').disabled=false;$('#new-table').disabled=false;$('#dice').classList.remove('rolling');renderBoard();showPick();$('#roll-status').textContent=`${a} + ${b}${a===b?' · doubles, four moves':''} → Point ${point+1}: ${table[point].name}.`;
 });
+$('#dice').innerHTML=die(3,'ivory')+die(5,'ebony');
 newTable();renderMenu();
+document.addEventListener('click',e=>{
+ const tag=e.target.closest('[data-tag]');if(!tag)return;
+ e.preventDefault();e.stopPropagation();
+ $('#flavour').value=$('#flavour').value===tag.dataset.tag?'all':tag.dataset.tag;
+ index=0;renderMenu();
+ // Board contents and state are deliberately untouched by menu filters.
+ $('#board-pick').querySelectorAll('[data-tag]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.tag===$('#flavour').value)));
+ $('#flavour').focus({preventScroll:true});
+ $('#menu').scrollIntoView({behavior:motion.matches?'instant':'smooth'});
+});
+const topButton=$('#snack-top');
+const updateTop=()=>topButton.classList.toggle('visible',scrollY>320);
+window.addEventListener('scroll',updateTop,{passive:true});updateTop();
+topButton.addEventListener('click',()=>window.scrollTo({top:0,behavior:motion.matches?'instant':'smooth'}));
+
+function die(value,tone){
+ const positions={1:[5],2:[1,9],3:[1,5,9],4:[1,3,7,9],5:[1,3,5,7,9],6:[1,3,4,6,7,9]};
+ return `<span class="physical-die ${tone}" data-value="${value}" aria-hidden="true">${Array.from({length:9},(_,i)=>`<i class="pip ${positions[value].includes(i+1)?'filled':''}"></i>`).join('')}</span>`;
+}

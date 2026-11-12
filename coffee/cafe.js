@@ -69,6 +69,8 @@ spin.addEventListener('click',()=>{
 document.querySelector('#clear').addEventListener('click',()=>{exclusions.querySelectorAll('input').forEach(el=>el.checked=false);});
 function art(c){return c.artwork?'<img src="'+esc(c.artwork)+'" alt="Vintage illustration of '+esc(c.name)+'" loading="lazy">':'<div class="coffee-placeholder" role="img" aria-label="Illustration coming later"><span>✦</span><strong>☕</strong><small>ILLUSTRATION<br>COMING SOON</small><span>✦</span></div>';}
 const menuSearch=document.querySelector('#search'),typeFilter=document.querySelector('#type'),baseFilter=document.querySelector('#base');
+const flavourFilter=document.querySelector('#flavour');
+flavourFilter.innerHTML+=[...new Set(Object.values(window.CAFE_MENU).flatMap(m=>m.tags))].sort().map(t=>'<option>'+esc(t)+'</option>').join('');
 const deck=document.querySelector('#coffee-deck'),stage=document.querySelector('#coffee-stage');
 const prev=document.querySelector('#coffee-prev'),next=document.querySelector('#coffee-next');
 const clearMenu=document.querySelector('#clear-menu');
@@ -78,7 +80,7 @@ let swipeMode=false,hand=[],handIndex=0,slideAnimation=null,swipeStart=null,supp
 baseFilter.innerHTML+=[...new Set(Object.values(window.CAFE_MENU).map(c=>c.base))].sort().map(b=>'<option>'+esc(b)+'</option>').join('');
 function coffeeCard(c){
  const m=window.CAFE_MENU[c.id];
- return '<article class="coffee-card '+(SelectedCard.get('cafe')===c.id?'chosen-card ':'')+'pocket-'+c.color+'" id="'+c.id+'"><span class="number">'+String(c.number).padStart(2,'0')+' ◆ '+esc(m.sector)+'</span>'+art(c)+'<h3>'+esc(c.name)+'</h3><p class="coffee-description">'+esc(m.description)+'</p><div class="coffee-tags"><button class="coffee-tag" data-base="'+esc(m.base)+'" aria-pressed="'+(baseFilter.value===m.base)+'">'+esc(m.base)+'</button><button class="coffee-tag" data-style="'+c.type+'" aria-pressed="'+(typeFilter.value===c.type)+'">'+esc(c.type[0].toUpperCase()+c.type.slice(1))+'</button></div><button class="coffee-recipe-button" data-id="'+c.id+'" aria-label="View '+esc(c.name)+' recipe">'+bean+'<span>Discover the recipe</span>'+bean+'</button></article>';
+ return '<article class="coffee-card '+(SelectedCard.get('cafe')===c.id?'chosen-card ':'')+'pocket-'+c.color+'" id="'+c.id+'"><span class="number">'+String(c.number).padStart(2,'0')+' ◆ '+esc(m.sector)+'</span>'+art(c)+'<h3>'+esc(c.name)+'</h3><p class="coffee-description">'+esc(m.description)+'</p><div class="coffee-tags"><button class="coffee-tag" data-base="'+esc(m.base)+'" aria-pressed="'+(baseFilter.value===m.base)+'">'+esc(m.base)+'</button><button class="coffee-tag" data-style="'+c.type+'" aria-pressed="'+(typeFilter.value===c.type)+'">'+esc(c.type[0].toUpperCase()+c.type.slice(1))+'</button>'+m.tags.map(t=>'<button class="coffee-tag" data-flavour="'+esc(t)+'" aria-pressed="'+(flavourFilter.value===t)+'">'+esc(t)+'</button>').join('')+'</div><button class="coffee-recipe-button" data-id="'+c.id+'" aria-label="View '+esc(c.name)+' recipe">'+bean+'<span>Discover the recipe</span>'+bean+'</button></article>';
 }
 function paintHand(){
  stage.innerHTML=hand.length?coffeeCard(hand[handIndex]):'';
@@ -88,26 +90,26 @@ function paintHand(){
 function render(){
  slideAnimation?.cancel();slideAnimation=null;
  const q=norm(menuSearch.value.trim());
- hand=window.CAFE_BROWSE_ORDER.map(id=>drinks.find(c=>c.id===id)).filter(c=>{const m=window.CAFE_MENU[c.id];return (typeFilter.value==='all'||typeFilter.value===c.type)&&(baseFilter.value==='all'||baseFilter.value===m.base)&&norm([c.name,c.type,m.base,m.description,m.sector,...c.ingredients].join(' ')).includes(q);});
+ hand=window.CAFE_BROWSE_ORDER.map(id=>drinks.find(c=>c.id===id)).filter(c=>{const m=window.CAFE_MENU[c.id];return (typeFilter.value==='all'||typeFilter.value===c.type)&&(baseFilter.value==='all'||baseFilter.value===m.base)&&(flavourFilter.value==='all'||m.tags.includes(flavourFilter.value))&&norm([c.name,c.type,m.base,m.description,m.sector,...m.tags,...c.ingredients].join(' ')).includes(q);});
  handIndex=0;
  cards.hidden=swipeMode;deck.hidden=!swipeMode;
  cards.innerHTML=swipeMode?'':hand.map(coffeeCard).join('');
  stage.innerHTML='';if(swipeMode)paintHand();
  document.querySelector('#coffee-empty').hidden=hand.length!==0;
  document.querySelector('#coffee-count').textContent=hand.length+' OF '+drinks.length+' COFFEES';
- const active=[typeFilter,baseFilter].filter(el=>el.value!=='all').map(el=>el.options[el.selectedIndex].textContent);
+ const active=[typeFilter,baseFilter,flavourFilter].filter(el=>el.value!=='all').map(el=>el.options[el.selectedIndex].textContent);
  if(q)active.push('“'+menuSearch.value.trim()+'”');
  document.querySelector('#cafe-active').textContent=active.join(' · ');
  clearMenu.hidden=active.length===0;
 }
-function resetMenu(){menuSearch.value='';typeFilter.value='all';baseFilter.value='all';render();}
+function resetMenu(){flavourFilter.value='all';menuSearch.value='';typeFilter.value='all';baseFilter.value='all';render();}
 clearMenu.addEventListener('click',()=>{resetMenu();menuSearch.focus();});
-menuSearch.addEventListener('input',render);[typeFilter,baseFilter].forEach(el=>el.addEventListener('change',render));
+menuSearch.addEventListener('input',render);[typeFilter,baseFilter,flavourFilter].forEach(el=>el.addEventListener('change',render));
 function menuClick(e){
  if(suppressClick){e.preventDefault();return;}
  const recipe=e.target.closest('[data-id]');if(recipe){openRecipe(recipe.dataset.id);return;}
- const tag=e.target.closest('[data-base],[data-style]');if(!tag)return;
- const filter=tag.dataset.base?baseFilter:typeFilter,value=tag.dataset.base||tag.dataset.style;
+ const tag=e.target.closest('[data-base],[data-style],[data-flavour]');if(!tag)return;
+ const filter=tag.dataset.base?baseFilter:tag.dataset.flavour?flavourFilter:typeFilter,value=tag.dataset.base||tag.dataset.flavour||tag.dataset.style;
  filter.value=filter.value===value?'all':value;render();filter.focus();
 }
 cards.addEventListener('click',menuClick);stage.addEventListener('click',menuClick);
