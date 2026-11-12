@@ -11,13 +11,13 @@ const snackSources = {
 };
 const snacks = [];
 const snackArtwork = {
-  'cinnamon-rolls': 'images/cinnamon-rolls.webp',
-  'hot-chocolate-classic': 'images/hot-chocolate-classic.webp',
-  'blueberry-muffins': 'images/blueberry-muffins.webp',
-  'classic-brownie-cookies': 'images/classic-brownie-cookies.webp',
-  'classic-tiramisu': 'images/classic-tiramisu.webp',
-  'chocolate-trifle': 'images/chocolate-trifle.webp',
-  'hot-chocolate-mint': 'images/hot-chocolate-mint.webp',
+  'cinnamon-rolls': 'images/cinnamon-rolls.webp?v=2',
+  'hot-chocolate-classic': 'images/hot-chocolate-classic.webp?v=2',
+  'blueberry-muffins': 'images/blueberry-muffins.webp?v=2',
+  'classic-brownie-cookies': 'images/classic-brownie-cookies.webp?v=2',
+  'classic-tiramisu': 'images/classic-tiramisu.webp?v=2',
+  'chocolate-trifle': 'images/chocolate-trifle.webp?v=2',
+  'hot-chocolate-mint': 'images/hot-chocolate-mint.webp?v=2',
   'chocolate-chip-muffins': 'images/chocolate-chip-muffins.webp',
   'red-velvet-brownie-cookies': 'images/red-velvet-brownie-cookies.webp',
   'strawberry-tiramisu': 'images/strawberry-tiramisu.webp',
