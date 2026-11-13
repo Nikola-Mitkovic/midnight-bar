@@ -9,11 +9,7 @@ const heroNext = document.querySelector('#hero-next');
 const heroControls = document.querySelector('.hero-controls');
 const heroMobile = window.matchMedia('(max-width: 600px)');
 function positionHeroControls() {
-  if (heroMobile.matches) {
-    document.querySelector('.hero-art').after(heroControls);
-  } else {
-    document.querySelector('.hero-copy').append(heroControls);
-  }
+  document.querySelector('.hero-art').after(heroControls);
 }
 positionHeroControls();
 heroMobile.addEventListener('change', positionHeroControls);
