@@ -23,6 +23,9 @@ function loadArt(root){root.querySelectorAll('.custom-art').forEach(img=>{const 
 function card(r,board=false){return `<article class="snack-card ${selectedId===r.id?'chosen':''}" data-card="${r.id}"><p class="card-category"><span aria-hidden="true">◈</span>${escapeText(r.category)}</p>${art(r)}<h3>${escapeText(r.name)}</h3><p class="description">${escapeText(r.expect.split('. ')[0])}.</p><div class="tags">${r.tags.map(t=>`<button type="button" class="tag" data-tag="${escapeText(t)}" aria-pressed="${$('#flavour').value===t}">${escapeText(t)}</button>`).join('')}</div><p class="card-meta">${escapeText(r.serves)} · ${escapeText(r.time)}</p><button class="recipe-button" data-recipe="${r.id}" ${board?'data-from-board="true"':''} aria-label="Discover ${escapeText(r.name)} recipe">Discover the recipe <span aria-hidden="true">↗</span></button></article>`;}
 function renderMenu(){
  const q=$('#search').value.trim().toLocaleLowerCase();
+ const active=[['category','Dessert'],['flavour','Flavour'],['search','Search']].filter(([id])=>id==='search'?q:$('#'+id).value!=='all');
+ $('#clear-filters').hidden=!active.length;
+ $('#snack-active').innerHTML=active.map(([id,label])=>`<button type="button" data-remove-filter="${id}" aria-label="Remove ${label}: ${escapeText($('#'+id).value)}">${label}: ${escapeText($('#'+id).value)} <span aria-hidden="true">×</span></button>`).join('');
  filtered=snackOrder.filter(r=>($('#category').value==='all'||r.category===$('#category').value)&&($('#flavour').value==='all'||r.tags.includes($('#flavour').value))&&[r.name,r.category,...r.tags,...r.ingredients].join(' ').toLocaleLowerCase().includes(q));
  index=Math.max(0,Math.min(index,filtered.length-1));
  $('#count').textContent=`${filtered.length} OF ${snacks.length} RECIPES`;
@@ -51,11 +54,12 @@ $('#cards').addEventListener('touchend',e=>{if(!touchStart||!single)return;const
 function selectRecipe(id){selectedId=id;try{sessionStorage.setItem('midnight-selected-snack',id);}catch{}renderMenu();}
 function renderDetail(back=false){
  const r=dialogRecipe,source=snackSources[r.source];
- $('#detail').innerHTML=`<div class="detail-heading"><p class="eyebrow">THE MIDNIGHT KITCHEN · ${escapeText(r.category)}</p><h2 id="recipe-title">${escapeText(r.name)}</h2><p>${escapeText(r.serves)} · ${escapeText(r.time)}</p></div><button class="flip-toggle" aria-expanded="${back}" aria-controls="recipe-face">${back?'↶ Return to the front':'↻ Flip the card · The full ritual'}</button><section id="recipe-face" class="${back?'detail-back':'detail-front'}">${back?`<h3>The full ritual</h3><ol class="steps">${r.steps.map(s=>`<li>${escapeText(s)}</li>`).join('')}</ol><div class="learning"><section><h3>Technique</h3><p>${escapeText(r.technique)}</p></section><section><h3>One thing to learn</h3><p>${escapeText(r.learn)}</p></section></div><h3>What to expect</h3><p class="ritual">${escapeText(r.expect)}</p><h3>Keep a little for later</h3><p class="storage">${escapeText(r.storage)}</p><p class="source-note">House adaptation, with independently written flavour variations. Reference for the base method: <a href="${source[1]}" target="_blank" rel="noopener noreferrer">${escapeText(source[0])} ↗</a>. These house variations have not been kitchen-tested.</p>`:`${art(r)}<h3>The measures</h3><ul class="ingredients">${r.ingredients.map(i=>`<li>${escapeText(i)}</li>`).join('')}</ul><h3>The Ritual</h3><p class="ritual">${escapeText(r.ritual)}</p><p class="house-note">“${escapeText(r.note)}”</p>`}</section>`;
- loadArt($('#detail'));
+ $('#recipe').classList.toggle('showing-back',back);
+ $('#detail').innerHTML=`<div class="detail-heading"><p class="eyebrow">THE MIDNIGHT KITCHEN · ${escapeText(r.category)}</p><h2 id="recipe-title">${escapeText(r.name)}</h2><p>${escapeText(r.serves)} · ${escapeText(r.time)}</p></div><button class="flip-toggle" aria-expanded="${back}" aria-controls="recipe-face">${back?'↶ Return to the front':'↻ Flip the card · The full ritual'}</button><section id="recipe-face" class="${back?'detail-back':'detail-front'}">${back?`<h3>The full ritual</h3><ol class="steps">${r.steps.map(s=>`<li>${escapeText(s)}</li>`).join('')}</ol><div class="learning"><section><h3>Technique</h3><p>${escapeText(r.technique)}</p></section><section><h3>One thing to learn</h3><p>${escapeText(r.learn)}</p></section></div><h3>What to expect</h3><p class="ritual">${escapeText(r.expect)}</p><h3>Keep a little for later</h3><p class="storage">${escapeText(r.storage)}</p><p class="source-note">House adaptation, with independently written flavour variations. Reference for the base method: <a href="${source[1]}" target="_blank" rel="noopener noreferrer">${escapeText(source[0])} ↗</a>. These house variations have not been kitchen-tested.</p>`:`<div class="illustrated-detail">${art(r)}<div class="compact-detail"><h3>The measures</h3><ul class="ingredients">${r.ingredients.map(i=>`<li>${escapeText(i)}</li>`).join('')}</ul><h3>The Ritual</h3><p class="ritual">${escapeText(r.ritual)}</p></div></div><p class="house-note">“${escapeText(r.note)}”</p>`}</section>`;
+ loadArt($('#detail'));RecipeUnits.install($('#detail'));
  $('#detail .flip-toggle').addEventListener('click',()=>{renderDetail(!back);$('#detail .flip-toggle').focus({preventScroll:true});$('#recipe').scrollTo({top:0,behavior:'instant'});});
 }
-document.addEventListener('click',e=>{const button=e.target.closest('[data-recipe]');if(!button)return;returnFocus=button;dialogRecipe=snacks.find(r=>r.id===button.dataset.recipe);if(!dialogRecipe)return;if(button.dataset.fromBoard)selectRecipe(dialogRecipe.id);renderDetail();$('#recipe').showModal();$('#recipe').scrollTop=0;});
+document.addEventListener('click',e=>{const button=e.target.closest('[data-recipe]');if(!button)return;returnFocus=button;dialogRecipe=snacks.find(r=>r.id===button.dataset.recipe);if(!dialogRecipe)return;if(button.dataset.fromBoard)selectRecipe(dialogRecipe.id);RecipeUnits.reset($('#recipe'));renderDetail();$('#recipe').showModal();$('#recipe').scrollTop=0;});
 $('#close-recipe').addEventListener('click',()=>$('#recipe').close());
 $('#recipe').addEventListener('click',e=>{if(e.target===$('#recipe')){const b=$('#recipe').getBoundingClientRect();if(e.clientX<b.left||e.clientX>b.right||e.clientY<b.top||e.clientY>b.bottom)$('#recipe').close();}});
 $('#recipe').addEventListener('close',()=>{if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});});
@@ -66,7 +70,12 @@ function renderBoard(){
  $('#points-top').innerHTML=Array.from({length:12},(_,i)=>makePoint(i+13)).join('');
  $('#points-bottom').innerHTML=Array.from({length:12},(_,i)=>makePoint(12-i)).join('');
 }
-function showPick(){const r=table[point];$('#board-pick').innerHTML=`<p class="eyebrow">POINT ${String(point+1).padStart(2,'0')} · THE HOUSE SUGGESTS</p>${card(r,true)}`;loadArt($('#board-pick'));}
+function showPick(){const r=table[point];$('#board-pick').innerHTML=`<p class="eyebrow">POINT ${String(point+1).padStart(2,'0')} · THE HOUSE SUGGESTS</p>${card(r,true)}`;loadArt($('#board-pick'));
+ const result=$('#board-pick .snack-card');result.classList.add('game-result');result.tabIndex=0;result.setAttribute('role','group');result.setAttribute('aria-label',`Selected dessert: ${r.name}. Press Enter to open recipe.`);
+ const open=()=>result.querySelector('[data-recipe]').click();
+ result.addEventListener('click',e=>{if(!e.target.closest('button,a'))open();});
+ result.addEventListener('keydown',e=>{if(e.target===result&&['Enter',' '].includes(e.key)){e.preventDefault();open();}});
+}
 function newTable(){
  if(rolling)return;
  // Fisher–Yates gives all 31 recipes a chance at any of the 24 points.
@@ -104,3 +113,5 @@ function die(value,tone){
  const positions={1:[5],2:[1,9],3:[1,5,9],4:[1,3,7,9],5:[1,3,5,7,9],6:[1,3,4,6,7,9]};
  return `<span class="physical-die ${tone}" data-value="${value}" aria-hidden="true">${Array.from({length:9},(_,i)=>`<i class="pip ${positions[value].includes(i+1)?'filled':''}"></i>`).join('')}</span>`;
 }
+
+$('#snack-active').addEventListener('click',e=>{const b=e.target.closest('[data-remove-filter]');if(!b)return;const input=$('#'+b.dataset.removeFilter);input.value=input.id==='search'?'':'all';index=0;renderMenu();input.focus({preventScroll:true});});

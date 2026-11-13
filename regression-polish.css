@@ -1,0 +1,32 @@
+/* Targeted functional corrections; no artwork or game changes. */
+body .room-navigation .room-door{position:relative}
+body .hero{grid-template-columns:minmax(0,480px) minmax(0,600px);justify-content:center;column-gap:48px}
+body .hero-art{width:100%;max-width:600px;justify-self:center}
+body .hero-controls{width:100%;max-width:600px;justify-self:center}
+body .game-room{max-width:1600px}
+body .roulette{max-width:900px}
+body #board-pick .game-result{cursor:pointer;border:2px solid #d6b46c;box-shadow:0 0 0 3px #d6b46c44,0 0 26px #dfb85c66;animation:result-glow 4s ease-in-out infinite}
+body #board-pick .game-result:hover{border-color:#ffe6a4}
+body #board-pick .game-result:focus-visible{outline:3px solid #ffe6a4;outline-offset:5px}
+@keyframes result-glow{50%{box-shadow:0 0 0 3px #d6b46c66,0 0 36px #dfb85c88}}
+#snack-active{grid-column:1/-1;display:flex;gap:8px;flex-wrap:wrap}#snack-active:empty{display:none}
+.active-filter-chips button{background:#493023;color:#fff0cd;border:1px solid #c6a56c;border-radius:20px;min-height:44px;padding:8px 14px;font-size:14px}
+body :is(#active-filters,#cafe-active,.filter-summary,.cafe-filter-summary){font-size:14px;line-height:1.6}
+body [hidden]{display:none!important}
+body[data-room=snack] dialog.showing-back{background:#352319;color:#f6e7cb;border-color:#c6a56c}
+body[data-room=snack] dialog.showing-back :is(h2,h3,.eyebrow,.source-note,.source-note a){color:#e2c185}
+body[data-room=snack] dialog.showing-back .learning section{background:#61432d66}
+body[data-room=snack] dialog.showing-back .close{color:#f6e7cb}
+.measurement-switch{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:16px 0}
+.measurement-switch button{min-height:44px;padding:9px 18px;border:2px double #b18c55;border-radius:5px;background:transparent;color:inherit;font-weight:600}
+.measurement-switch button[aria-pressed=true]{background:var(--room-dark);color:#fff0cd}
+.measurement-switch small{flex-basis:100%;font:12px/1.5 Arial,sans-serif;opacity:.85}
+body[data-room=cafe] dialog,body[data-room=snack] dialog{max-width:760px;width:calc(100% - 28px);text-align:left}
+.illustrated-detail{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:26px;align-items:center}
+body .illustrated-detail>img,body .illustrated-detail .snack-art{width:100%;height:250px;object-fit:contain}
+.compact-detail{min-width:0}.compact-detail h3{margin:16px 0 10px}.compact-detail p,.compact-detail li{font-size:14px;line-height:1.65}
+body .compact-detail .ingredients{columns:1}
+body .recipe-yield{font:12px/1.6 Arial,sans-serif;letter-spacing:.3px;min-height:0;margin:8px 0 12px;opacity:.85}
+@media(max-width:1149px){body .hero{grid-template-columns:minmax(0,440px) minmax(0,420px);gap:28px}}
+@media(max-width:768px){body .hero{grid-template-columns:minmax(0,1fr)}body .hero-art,body .hero-controls{grid-column:1}.illustrated-detail{grid-template-columns:1fr;gap:8px}body .illustrated-detail>img,body .illustrated-detail .snack-art{height:190px}}
+@media(prefers-reduced-motion:reduce){body #board-pick .game-result{animation:none}}
