@@ -116,7 +116,7 @@ $('#roll').addEventListener('click',async()=>{
  for(let i=0;i<moves;i++){point=(point+1)%24;renderBoard();if(!motion.matches)await new Promise(resolve=>setTimeout(resolve,75));}
  const played=turn==='light'?'Ivory':'Ebony';const moved=moveCheckers(a===b?[a,a,a,a]:[a,b]);renderBoard(moved);
  if(!motion.matches)await new Promise(resolve=>setTimeout(resolve,650));
- rolling=false;$('#roll').disabled=false;$('#new-table').disabled=false;$('#dice').classList.remove('rolling');renderBoard(moved);showPick();$('#roll-status').textContent=`${played} played. ${a} + ${b}${a===b?' · doubles, four moves':''} → Point ${point+1}: ${table[point].name}.`;revealRecipe(table[point].id);
+ rolling=false;$('#roll').disabled=false;$('#new-table').disabled=false;$('#dice').classList.remove('rolling');renderBoard(moved);showPick();$('#roll-status').textContent=`${played} played. ${a} + ${b}${a===b?' · doubles, four moves':''} → Point ${point+1}: ${table[point].name}.`;
 });
 $('#dice').innerHTML=die(3,'ivory')+die(5,'ebony');
 newTable();renderMenu();
