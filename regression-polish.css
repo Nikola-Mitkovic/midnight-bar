@@ -30,3 +30,28 @@ body .recipe-yield{font:12px/1.6 Arial,sans-serif;letter-spacing:.3px;min-height
 @media(max-width:1149px){body .hero{grid-template-columns:minmax(0,440px) minmax(0,420px);gap:28px}}
 @media(max-width:768px){body .hero{grid-template-columns:minmax(0,1fr)}body .hero-art,body .hero-controls{grid-column:1}.illustrated-detail{grid-template-columns:1fr;gap:8px}body .illustrated-detail>img,body .illustrated-detail .snack-art{height:190px}}
 @media(prefers-reduced-motion:reduce){body #board-pick .game-result{animation:none}}
+/* Recipe architecture: parchment front, a framed room-colored reverse. */
+body[data-room=snack] dialog.showing-back{background:var(--paper);color:var(--ink)}
+body[data-room=snack] dialog.showing-back .detail-heading :is(h2,p){color:#785436}
+body[data-room=snack] dialog.showing-back .close{color:var(--ink)}
+body :is(.detail-front,.coffee-face) .short-method{border-top:1px solid #b18c5555;margin-top:20px;padding-top:16px}
+body .short-method h3{border:0;padding:0;margin:0 0 10px;font:22px Georgia,serif}
+body .short-method p{font-size:14px;line-height:1.8;margin:0}
+body :is(.detail-front .house-note,#coffee-front .recipe-note){background:#b18c5514;border:1px solid #b18c5533;border-left:3px solid #aa844c;border-radius:3px;padding:15px 18px;color:#715638;font:italic 14px/1.8 Georgia,serif;margin:20px 0 8px}
+body :is(.detail-back,.coffee-back){padding:24px;border:3px double #b99a60;border-radius:8px;background:radial-gradient(ellipse at top left,#ad825022,transparent 70%),linear-gradient(135deg,#533a29,#2e211b);color:#f3e6cc}
+body .coffee-back{background:radial-gradient(ellipse at top left,#adcb8b12,transparent 70%),linear-gradient(135deg,#214f3e,#102d25)}
+body :is(.detail-back,.coffee-back)>h3{border:0;text-align:center;color:#efdbb1;font-size:28px;margin:10px 0 20px;padding:0}
+body :is(.detail-back,.coffee-back) :is(.learning section,.detail-panel,aside){background:#f2d9a80d;border:1px solid #e4c68a22;border-left:2px solid #c4a66a;padding:16px;margin:16px 0}
+body .detail-back .learning{gap:14px}
+body .detail-back .learning section{margin:0}
+body .detail-back :is(.learning h3,.detail-panel h3){border:0;padding:0;margin:0 0 8px;font-size:19px;color:#e0c38b}
+body .detail-back :is(.learning p,.detail-panel p){margin:0;font-size:13px;line-height:1.8}
+body :is(.detail-back,.coffee-back) li::marker{color:#d1b77f;font:18px Georgia,serif}
+body .detail-back .source-note{color:#d0bd9d}
+body .detail-back .source-note a{color:#f0d18c}
+body :is(.flip-toggle,.coffee-flip-tools button){font:14px Georgia,serif;min-height:46px;border:3px double #c4a66a;border-radius:5px;padding:11px 17px;background:var(--room-dark);color:#fff0ce}
+body .coffee-flip-tools{gap:12px;flex-wrap:wrap}
+body .flip-toggle{width:auto;margin-left:auto}
+@media(max-width:600px){body :is(.detail-back,.coffee-back){padding:18px 14px}body .detail-back .learning{grid-template-columns:1fr}body .coffee-flip-tools button{font-size:12px}body .flip-toggle{font-size:12px}}
+
+body .detail-back .back-ornament{text-align:center;color:#c4a66a;letter-spacing:5px;font-size:13px;margin:0}

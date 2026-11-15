@@ -55,7 +55,7 @@ function selectRecipe(id){selectedId=id;try{sessionStorage.setItem('midnight-sel
 function renderDetail(back=false){
  const r=dialogRecipe,source=snackSources[r.source];
  $('#recipe').classList.toggle('showing-back',back);
- $('#detail').innerHTML=`<div class="detail-heading"><p class="eyebrow">THE MIDNIGHT KITCHEN · ${escapeText(r.category)}</p><h2 id="recipe-title">${escapeText(r.name)}</h2><p>${escapeText(r.serves)} · ${escapeText(r.time)}</p></div><button class="flip-toggle" aria-expanded="${back}" aria-controls="recipe-face">${back?'↶ Return to the front':'↻ Flip the card · The full ritual'}</button><section id="recipe-face" class="${back?'detail-back':'detail-front'}">${back?`<h3>The full ritual</h3><ol class="steps">${r.steps.map(s=>`<li>${escapeText(s)}</li>`).join('')}</ol><div class="learning"><section><h3>Technique</h3><p>${escapeText(r.technique)}</p></section><section><h3>One thing to learn</h3><p>${escapeText(r.learn)}</p></section></div><h3>What to expect</h3><p class="ritual">${escapeText(r.expect)}</p><h3>Keep a little for later</h3><p class="storage">${escapeText(r.storage)}</p><p class="source-note">House adaptation, with independently written flavour variations. Reference for the base method: <a href="${source[1]}" target="_blank" rel="noopener noreferrer">${escapeText(source[0])} ↗</a>. These house variations have not been kitchen-tested.</p>`:`<div class="illustrated-detail">${art(r)}<div class="compact-detail"><h3>The measures</h3><ul class="ingredients">${r.ingredients.map(i=>`<li>${escapeText(i)}</li>`).join('')}</ul><h3>The Ritual</h3><p class="ritual">${escapeText(r.ritual)}</p></div></div><p class="house-note">“${escapeText(r.note)}”</p>`}</section>`;
+ $('#detail').innerHTML=`<div class="detail-heading"><p class="eyebrow">THE MIDNIGHT KITCHEN · ${escapeText(r.category)}</p><h2 id="recipe-title">${escapeText(r.name)}</h2><p>${escapeText(r.serves)} · ${escapeText(r.time)}</p></div><button class="flip-toggle" aria-expanded="${back}" aria-controls="recipe-face">${back?'↶ Return to the front':'Flip card · full recipe ↻'}</button><section id="recipe-face" class="${back?'detail-back':'detail-front'}">${back?`<p class="back-ornament" aria-hidden="true">◈ · ◆ · ◈</p><h3>The full ritual</h3><ol class="steps">${r.steps.map(s=>`<li>${escapeText(s)}</li>`).join('')}</ol><div class="learning"><section><h3>Technique</h3><p>${escapeText(r.technique)}</p></section><section><h3>One thing to learn</h3><p>${escapeText(r.learn)}</p></section></div><section class="detail-panel"><h3>What to expect</h3><p class="ritual">${escapeText(r.expect)}</p></section><section class="detail-panel"><h3>Keep a little for later</h3><p class="storage">${escapeText(r.storage)}</p></section><p class="source-note">House adaptation, with independently written flavour variations. Reference for the base method: <a href="${source[1]}" target="_blank" rel="noopener noreferrer">${escapeText(source[0])} ↗</a>. These house variations have not been kitchen-tested.</p>`:`<div class="illustrated-detail">${art(r)}<div class="compact-detail"><h3>The measures</h3><ul class="ingredients">${r.ingredients.map(i=>`<li>${escapeText(i)}</li>`).join('')}</ul></div></div><section class="short-method"><h3>The Ritual</h3><p class="ritual">${escapeText(r.ritual)}</p></section><p class="house-note">“${escapeText(r.note)}”</p>`}</section>`;
  loadArt($('#detail'));RecipeUnits.install($('#detail'));
  $('#detail .flip-toggle').addEventListener('click',()=>{renderDetail(!back);$('#detail .flip-toggle').focus({preventScroll:true});$('#recipe').scrollTo({top:0,behavior:'instant'});});
 }
@@ -65,23 +65,47 @@ $('#recipe').addEventListener('click',e=>{if(e.target===$('#recipe')){const b=$(
 $('#recipe').addEventListener('close',()=>{if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});});
 
 const initialCheckers={1:[2,'dark'],6:[5,'light'],8:[3,'light'],12:[5,'dark'],13:[5,'light'],17:[3,'dark'],19:[5,'dark'],24:[2,'light']};
-function renderBoard(){
- const makePoint=n=>{const r=table[n-1],stack=initialCheckers[n];return `<button class="point ${point===n-1?'selected':''}" data-point="${n-1}" aria-label="Point ${n}: ${escapeText(r.name)}" aria-pressed="${point===n-1}" ${rolling?'disabled':''}><span class="point-number">${n}</span>${stack?Array.from({length:stack[0]},(_,i)=>`<i class="checker ${stack[1]==='dark'?'dark':''}" style="--stack:${i}" aria-hidden="true"></i>`).join(''):''}</button>`;};
+let checkerState={},turn='light',turnCount=0;
+function resetCheckers(){checkerState=Object.fromEntries(Object.entries(initialCheckers).map(([n,v])=>[n,[...v]]));turn='light';turnCount=0;}
+// A circulating exhibition game: opposing stacks block entry; no hits or bearing off.
+// Dessert selection retains its own ivory marker and original dice arithmetic.
+function moveCheckers(values){
+ const moved=[];
+ for(const distance of values){
+  const options=Object.keys(checkerState).map(Number).filter(n=>{
+   const to=((n-1+(turn==='light'?-distance:distance)+24)%24)+1;
+   return checkerState[n][1]===turn&&(!checkerState[to]||checkerState[to][1]===turn);
+  });
+  if(!options.length)continue;
+  const from=options[Math.floor(Math.random()*options.length)],to=((from-1+(turn==='light'?-distance:distance)+24)%24)+1;
+  if(--checkerState[from][0]===0)delete checkerState[from];
+  if(!checkerState[to])checkerState[to]=[0,turn];checkerState[to][0]++;
+  moved.push(to);
+ }
+ turnCount++;turn=turn==='light'?'dark':'light';return moved;
+}
+function renderBoard(moved=[]){
+ const makePoint=n=>{const r=table[n-1],stack=checkerState[n];return `<button class="point ${point===n-1?'selected':''} ${moved.includes(n)?'just-moved':''}" data-point="${n-1}" aria-label="Point ${n}: ${escapeText(r.name)}${stack?`, ${stack[0]} ${stack[1]==='dark'?'ebony':'ivory'} checkers`:''}" aria-pressed="${point===n-1}" ${rolling?'disabled':''}><span class="point-number">${n}</span>${stack?Array.from({length:Math.min(5,stack[0])},(_,i)=>`<i class="checker ${stack[1]==='dark'?'dark':''}" style="--stack:${i}" aria-hidden="true">${i===4&&stack[0]>5?`<span class="stack-count">${stack[0]}</span>`:''}</i>`).join(''):''}</button>`;};
  $('#points-top').innerHTML=Array.from({length:12},(_,i)=>makePoint(i+13)).join('');
  $('#points-bottom').innerHTML=Array.from({length:12},(_,i)=>makePoint(12-i)).join('');
+ $('#turn-status').textContent=`Turn ${turnCount+1} · ${turn==='light'?'Ivory':'Ebony'} to play`;
 }
-function showPick(){const r=table[point];$('#board-pick').innerHTML=`<p class="eyebrow">POINT ${String(point+1).padStart(2,'0')} · THE HOUSE SUGGESTS</p>${card(r,true)}`;loadArt($('#board-pick'));
- const result=$('#board-pick .snack-card');result.classList.add('game-result');result.tabIndex=0;result.setAttribute('role','group');result.setAttribute('aria-label',`Selected dessert: ${r.name}. Press Enter to open recipe.`);
- const open=()=>result.querySelector('[data-recipe]').click();
- result.addEventListener('click',e=>{if(!e.target.closest('button,a'))open();});
- result.addEventListener('keydown',e=>{if(e.target===result&&['Enter',' '].includes(e.key)){e.preventDefault();open();}});
+function revealRecipe(id){
+ selectedId=id;try{sessionStorage.setItem('midnight-selected-snack',id);}catch{}
+ $('#search').value='';$('#category').value='all';$('#flavour').value='all';single=false;index=0;renderMenu();
+ const chosen=$('#cards [data-card="'+id+'"]');
+ chosen.scrollIntoView({behavior:motion.matches?'instant':'smooth',block:'center'});
+ chosen.querySelector('[data-recipe]').focus({preventScroll:true});
+}
+function showPick(){const r=table[point];$('#board-pick').innerHTML=`<p class="eyebrow">POINT ${String(point+1).padStart(2,'0')} · THE HOUSE SUGGESTS</p><button class="snack-card game-result" type="button" aria-label="Find ${escapeText(r.name)} in the dessert menu">${art(r)}<h3>${escapeText(r.name)}</h3><span class="result-hint">Find it in the menu ↓</span></button>`;loadArt($('#board-pick'));
+ $('#board-pick button').addEventListener('click',()=>revealRecipe(r.id));
 }
 function newTable(){
  if(rolling)return;
  // Fisher–Yates gives all 31 recipes a chance at any of the 24 points.
- table=[...snackOrder];for(let i=table.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[table[i],table[j]]=[table[j],table[i]];}table=table.slice(0,24);point=0;renderBoard();showPick();
+ table=[...snackOrder];for(let i=table.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[table[i],table[j]]=[table[j],table[i]];}table=table.slice(0,24);point=0;resetCheckers();renderBoard();showPick();
 }
-$('.board').addEventListener('click',e=>{const button=e.target.closest('[data-point]');if(!button||rolling)return;point=Number(button.dataset.point);renderBoard();showPick();$('.board [data-point="'+point+'"]').focus({preventScroll:true});$('#roll-status').textContent=`Point ${point+1} · ${table[point].name}. Your recipe is beside the board, or just below on a small screen.`;});
+$('.board').addEventListener('click',e=>{const button=e.target.closest('[data-point]');if(!button||rolling)return;point=Number(button.dataset.point);renderBoard();showPick();$('.board [data-point="'+point+'"]').focus({preventScroll:true});$('#roll-status').textContent=`Point ${point+1} · ${table[point].name}. Choose the highlighted suggestion to find it in the menu.`;});
 $('#new-table').addEventListener('click',()=>{newTable();$('#roll-status').textContent='A fresh table: 24 recipes drawn from the full collection.';});
 $('#roll').addEventListener('click',async()=>{
  if(rolling)return;rolling=true;$('#roll').disabled=true;$('#new-table').disabled=true;renderBoard();
@@ -90,7 +114,9 @@ $('#roll').addEventListener('click',async()=>{
  $('#roll-status').textContent=`${a} and ${b}${a===b?' — doubles':''}. Moving ${moves} points…`;
  if(!motion.matches)await new Promise(resolve=>setTimeout(resolve,650));
  for(let i=0;i<moves;i++){point=(point+1)%24;renderBoard();if(!motion.matches)await new Promise(resolve=>setTimeout(resolve,75));}
- rolling=false;$('#roll').disabled=false;$('#new-table').disabled=false;$('#dice').classList.remove('rolling');renderBoard();showPick();$('#roll-status').textContent=`${a} + ${b}${a===b?' · doubles, four moves':''} → Point ${point+1}: ${table[point].name}.`;
+ const played=turn==='light'?'Ivory':'Ebony';const moved=moveCheckers(a===b?[a,a,a,a]:[a,b]);renderBoard(moved);
+ if(!motion.matches)await new Promise(resolve=>setTimeout(resolve,650));
+ rolling=false;$('#roll').disabled=false;$('#new-table').disabled=false;$('#dice').classList.remove('rolling');renderBoard(moved);showPick();$('#roll-status').textContent=`${played} played. ${a} + ${b}${a===b?' · doubles, four moves':''} → Point ${point+1}: ${table[point].name}.`;revealRecipe(table[point].id);
 });
 $('#dice').innerHTML=die(3,'ivory')+die(5,'ebony');
 newTable();renderMenu();
